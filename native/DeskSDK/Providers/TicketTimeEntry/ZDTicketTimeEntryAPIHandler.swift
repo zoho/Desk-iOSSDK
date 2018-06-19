@@ -10,12 +10,12 @@ import Foundation
 @objc public class ZDTicketTimeEntryAPIHandler:NSObject{
     
 //    https://desk.zoho.com/DeskAPIDocument#TicketTimeEntry#TicketTimeEntry_GetaTicketTimeEntry
-    @objc public static func getTicketTimeEntry(_ orgID:String = String().getOrgId(),ticketId:String,ticketTimeEntryId:String,addtionalParms:Parameters = Parameters(), onComplition:@escaping ((ZDTicketTimeEntry?,Error?,Int)->())) -> Void{
+    @objc public static func getTicketTimeEntry(_ orgID:String = String().getOrgId(),ticketId:String,ticketTimeEntryId:String,addtionalParms:Parameters = Parameters(), onComplition:@escaping ((ZDTicketTimeEntry?,[String:AnyObject]?,Error?,Int)->())) -> Void{
         
         let request = ZDBaseRequest(path: String(format: URLPathConstants.getTicketTimeEntry,ticketId,ticketTimeEntryId),parameters:addtionalParms, headers:["orgId":orgID])
         ZDBaseRequester.getJsonDicReponce(baseRequest: request) { (json, responceDTA, error, statusCode) in
-            guard let timeEntryJson = json else{onComplition(nil,error,statusCode);return}
-            onComplition(ZDTicketTimeEntry(ticketTimeEntryJson: timeEntryJson, orgId: orgID),nil, statusCode)
+            guard let timeEntryJson = json else{onComplition(nil,json,error,statusCode);return}
+            onComplition(ZDTicketTimeEntry(ticketTimeEntryJson: timeEntryJson, orgId: orgID),timeEntryJson,nil, statusCode)
         }
     }
     

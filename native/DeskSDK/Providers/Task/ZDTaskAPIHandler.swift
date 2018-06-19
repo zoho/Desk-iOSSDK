@@ -10,12 +10,12 @@ import Foundation
 
 @objc public class ZDTaskAPIHandler: NSObject {
     
-    @objc public static func getTask(_ orgId:String = String().getOrgId(),taskId:String,optionalParams:[String:AnyObject] = [String:AnyObject](),onComplition:@escaping ((ZDTask?,Error?,Int)->())) -> Void{
+    @objc public static func getTask(_ orgId:String = String().getOrgId(),taskId:String,optionalParams:[String:AnyObject] = [String:AnyObject](),onComplition:@escaping ((ZDTask?,[String:AnyObject]?,Error?,Int)->())) -> Void{
         
         let request = ZDBaseRequest(path: URLPathConstants.listTaskByTicket,parameters:optionalParams,headers:["orgId":orgId])
         
         ZDBaseRequester.getJsonDicReponce(baseRequest: request) { (json, reponceData, error, status) in
-            onComplition(ZDTask(taskJsonReponce: json, orgId: orgId), error, status)
+            onComplition(ZDTask(taskJsonReponce: json, orgId: orgId),json,error, status)
         }
     }
     

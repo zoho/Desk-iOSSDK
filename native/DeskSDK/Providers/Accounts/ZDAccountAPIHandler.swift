@@ -11,11 +11,11 @@ import Foundation
 @objc public class ZDAccountAPIHandler: NSObject {
     
 //    https://desk.zoho.com/DeskAPIDocument#Accounts#Accounts_Getanaccount
-    @objc public static func getAccount(_ orgID:String = String().getOrgId(),accountId:String,onComplition:@escaping ((ZDAccountDetail?,Error?,Int)->())) -> Void{
+    @objc public static func getAccount(_ orgID:String = String().getOrgId(),accountId:String,onComplition:@escaping ((ZDAccountDetail?,[String:AnyObject]?,Error?,Int)->())) -> Void{
         
         let request = ZDBaseRequest(path: String(format: URLPathConstants.getAAccounts, accountId),headers:["orgId":orgID])
         ZDBaseRequester.getJsonDicReponce(baseRequest: request) { (json, reponceData, error, status) in
-            onComplition(ZDAccountDetail(accountJsonReponce: json, orgId: orgID), error, status)
+            onComplition(ZDAccountDetail(accountJsonReponce: json, orgId: orgID),json,error, status)
         }
     }
     

@@ -11,13 +11,13 @@ import Foundation
 @objc public class ZDContactAPIHandler: NSObject {
 
 //https://desk.zoho.com/DeskAPIDocument#Contacts#Contacts_Getacontact
-   @objc public static func getContact(_ orgID:String = String().getOrgId(),contactId:String,optionalParams:Parameters = Parameters(),onComplition:@escaping ((ZDContactDetail?,Error?,Int)->())) -> Void{
+    @objc public static func getContact(_ orgID:String = String().getOrgId(),contactId:String,optionalParams:Parameters = Parameters(),onComplition:@escaping ((ZDContactDetail?,[String:AnyObject]?,Error?,Int)->())) -> Void{
         
         let request = ZDBaseRequest(path: String(format: URLPathConstants.getAContact, contactId),parameters:optionalParams,headers:["orgId":orgID])
 
         ZDBaseRequester.getJsonDicReponce(baseRequest: request) { (json, reponceData, error, statusCode) in
-            guard let contactJson = json else{onComplition(nil,error,statusCode);return}
-            onComplition(ZDContactDetail(contactDetailJson: contactJson, orgId: orgID), error, statusCode)
+            guard let contactJson = json else{onComplition(nil,json,error,statusCode);return}
+            onComplition(ZDContactDetail(contactDetailJson: contactJson, orgId: orgID),json, error, statusCode)
         }
     }
     

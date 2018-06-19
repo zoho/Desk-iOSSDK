@@ -22,13 +22,13 @@ extension ZDTicketAPIHandler{
     ///   - include: Zoho Desk enables you to retrieve different related resources through a single API request, which is made possible by the include query param. This query param takes a comma separated list of values corresponding to the API.
     ///   - optionalParams: optional params provoided by developer
     ///   - onCompletion: Oncomplition data will ticket object or Error message and status code of the reponce.
-    @objc public static func getTicketDetails(_ orgID:String = String().getOrgId(),ticketId:String,include:String = "",optionalParams:Parameters = Parameters(),onCompletion:@escaping((ZDTicketDetail?,Error?,Int)->())) -> Void{
+    @objc public static func getTicketDetails(_ orgID:String = String().getOrgId(),ticketId:String,include:String = "",optionalParams:Parameters = Parameters(),onCompletion:@escaping((ZDTicketDetail?,[String:AnyObject]?,Error?,Int)->())) -> Void{
         
        let request =  ZDBaseRequest(path: String(format: URLPathConstants.getATicket, ticketId), parameters: optionalParams, headers: ["orgId":orgID])
         request.parameters["include"] = include
         ZDBaseRequester.getJsonDicReponce(baseRequest: request) { (json, data, error, status) in
-            guard let ticketDetailsJson = json else{onCompletion(nil,error,status);return}
-            onCompletion(ZDTicketDetail(ticketDetailJsonObject: ticketDetailsJson, orgId: orgID),error,status)
+            guard let ticketDetailsJson = json else{onCompletion(nil,json,error,status);return}
+            onCompletion(ZDTicketDetail(ticketDetailJsonObject: ticketDetailsJson, orgId: orgID),ticketDetailsJson,error,status)
         }
     }
 
