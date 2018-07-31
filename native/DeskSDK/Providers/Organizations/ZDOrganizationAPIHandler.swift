@@ -17,7 +17,7 @@ import Foundation
     /// - Parameter onCompletion: Will retrun array of Organization Swift modelObject.
     @objc public static func getAllOrganizations(_ onCompletion:@escaping (([ZDOrganization]?,Error?,Int)->())) -> Void{
    
-        let request = ZDBaseRequest(path: URLPathConstants.allOrganizations)
+        let request = ZDBaseRequest(path: URLPathConstants.Organizations.allOrganizations)
         request.genralAPI = true
         ZDBaseRequester.getJsonDicReponce(baseRequest: request) { (json, reponceData, error, status) in
             guard let orgData = json else{onCompletion(nil,error,status);return}
@@ -34,7 +34,7 @@ import Foundation
     ///   - onCompletion: Organization Swift modelObject
     @objc public static func getOrganization(_ orgId:String, onCompletion:@escaping((ZDOrganization?,Error?,Int)->())) -> Void{
 
-        let details = ZDBaseRequest(path: URLPathConstants.allOrganizations,headers:["orgId":orgId])
+        let details = ZDBaseRequest(path: URLPathConstants.Organizations.allOrganizations,headers:["orgId":orgId])
         
         ZDBaseRequester.getJsonDicReponce(baseRequest: details) { (json, reponceData, error, status) in
             guard let orgData = json else{onCompletion(nil,error,status);return}

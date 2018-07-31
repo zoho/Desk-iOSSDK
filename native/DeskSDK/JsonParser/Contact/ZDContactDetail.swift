@@ -10,38 +10,38 @@ import Foundation
 
 @objc public class ZDContactDetail :NSObject {
 
-    public var state:String?
-    public var twitter:String?
-    public var createdTime       = ""
-    public var zip:String?
-    public var customFields : [String:AnyObject]?
-    public var title:String?
-    public var secondaryEmail:String?
-    public var zohoCRMContact:ZDZohoCRMContact?
-    public var city:String?
-    public var mobile:String?
-    public var ownerId:String?
-    public var facebook:String?
-    public var street:String?
-    public var contactDescription:String?
-    public var customerHappiness = ZDCustomerHappiness()
-    public var accountId:String?
-    public var modifiedTime      = "" 
-    public var country:String?
-    public var firstName:String?
-    public var lastName          = ""
-    public var phone:String?
-    public var photoURL:String?
-    public var id                = ""
-    public var type:String?
-    public var email:String?
-    public var account : ZDAccount?
-    public var isDeleted         = false
+    @objc public var state:String?
+    @objc public var twitter:String?
+    @objc public var createdTime       = ""
+    @objc public var zip:String?
+    @objc public var customFields : [String:AnyObject]?
+    @objc public var title:String?
+    @objc public var secondaryEmail:String?
+    @objc public var zohoCRMContact:ZDZohoCRMContact?
+    @objc public var city:String?
+    @objc public var mobile:String?
+    @objc public var ownerId:String?
+    @objc public var facebook:String?
+    @objc public var street:String?
+    @objc public var contactDescription:String?
+    @objc public var customerHappiness = ZDCustomerHappiness()
+    @objc public var accountId:String?
+    @objc public var modifiedTime      = ""
+    @objc public var country:String?
+    @objc public var firstName:String?
+    @objc public var lastName          = ""
+    @objc public var phone:String?
+    @objc public var photoURL:String?
+    @objc public var id                = ""
+    @objc public var type:String?
+    @objc public var email:String?
+    @objc public var account : ZDAccount?
+    @objc public var isDeleted         = false
     
     
-    internal var orgId = ""
+    @objc public var orgId = ""
     
-    public class func modelsFromArray(dic:[String:AnyObject],orgId:String) -> [ZDContactDetail]{
+    @objc public class func modelsFromArray(dic:[String:AnyObject],orgId:String) -> [ZDContactDetail]{
         
         if let array = dic["data"] as? [[String:AnyObject]]{
             return array.map{ZDContactDetail(contactDetailJson: $0, orgId: orgId)}
@@ -50,7 +50,7 @@ import Foundation
         
     }
     
-    internal init(contactDetailJson: [String:AnyObject],orgId:String) {
+    @objc public init(contactDetailJson: [String:AnyObject],orgId:String) {
         
         self.orgId = orgId
 
@@ -93,7 +93,5 @@ import Foundation
             zohoCRMContact = ZDZohoCRMContact(zohoCRMJsonReponce: zohoCRMContactJson, orgId: orgId)
         }
     }
-    
-    
 }
 

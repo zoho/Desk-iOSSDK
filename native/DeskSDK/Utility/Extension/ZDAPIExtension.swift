@@ -8,7 +8,7 @@
 
 import Foundation
 @objc public class ZDAPIExtension:NSObject {
-    @objc public static func makeAPIRequest(url:URL,method:String = "GET",paramType:String,parameters:Parameters,header:[String:String],onCompletion:@escaping((Data?,Error?,Int)->())){
+    @objc public static func makeAPIRequest(url:URL,method:String = "GET",paramType:String,parameters:Parameters = Parameters(),header:[String:String],onCompletion:@escaping((Data?,Error?,Int)->())){
         
         
         guard let method = Method(rawValue: method) else{
@@ -24,7 +24,7 @@ import Foundation
         let request = ZDBaseRequest(path: "", method: method, paramType:paramType, parameters: parameters, headers: header)
         request.baseURL = url
         request.genralAPI = true
-        ZDRequestMaker.sharedInstance.makeRequest(for: request, success: { (data, statusCode) in
+        ZDRequestMaker().makeRequest(for: request, success: { (data, statusCode) in
             onCompletion(data,nil,statusCode)
         }) { (data, error, statusCode) in
             onCompletion(data,error,statusCode)

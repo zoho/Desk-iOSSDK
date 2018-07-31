@@ -27,9 +27,9 @@ import Foundation
     @objc public var totalCost : String?
     @objc public var invoiceId:String?
     @objc public var owner = ZDAuthor()
-    internal var orgId = ""
+    @objc public  var orgId = ""
     
-    public class func modelsFrom(dic:[String:AnyObject],orgId:String) -> [ZDTicketTimeEntry]
+    @objc public  class func modelsFrom(dic:[String:AnyObject],orgId:String) -> [ZDTicketTimeEntry]
     {
         var models:[ZDTicketTimeEntry] = []
         guard let array = dic["data"] as? [[String:AnyObject]] else { return models }
@@ -40,7 +40,7 @@ import Foundation
         return models
     }
 
-    internal init(ticketTimeEntryJson: [String:AnyObject],orgId:String) {
+    @objc public  init(ticketTimeEntryJson: [String:AnyObject],orgId:String) {
 
         self.orgId = orgId
         

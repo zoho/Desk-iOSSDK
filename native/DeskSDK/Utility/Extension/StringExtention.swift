@@ -24,11 +24,14 @@ extension String {
         return self
     }
     
-   public func getOrgId() -> String {
+   public func getZDOrgId() -> String {
         guard let value = UserDefaultConfiguration.get(key: ZDUserDefaultKeyConstants.defaultOrgID) as? String else{return ""}
         return value
     }
     
+    public func saveZDOrgID() -> Void{
+        UserDefaultConfiguration.save(key: ZDUserDefaultKeyConstants.defaultOrgID, value: self as AnyObject) 
+    }
     
     internal func makeLog(){
         print(self)

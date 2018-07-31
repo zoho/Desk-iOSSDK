@@ -7,6 +7,11 @@
 //
 
 import Foundation
+@objc public class ZDUtility :NSObject{
+    @objc public static func setOrgId(orgId:String){
+        orgId.saveZDOrgID()
+    }
+}
 
 internal class UserDefaultConfiguration: NSObject {
     

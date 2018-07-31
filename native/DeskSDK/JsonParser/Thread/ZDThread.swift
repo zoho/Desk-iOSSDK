@@ -34,9 +34,9 @@ import Foundation
     
     @objc public var threadDetails:ZDThreadDetail?
     
-    private override init() {super.init()}
+    @objc public override init() {super.init()}
 
-    internal class func modelsFromJSON(orgId:String,ticketId:String,jsonList:[String : AnyObject]) -> [ZDThread]{
+    @objc public class func modelsFromJSON(orgId:String,ticketId:String,jsonList:[String : AnyObject]) -> [ZDThread]{
         
         guard let array = jsonList["data"] as? [[String:AnyObject]] else{return [ZDThread]()}
         let models = array.map{ZDThread(orgId: orgId,ticketId: ticketId,JSONThread: $0)}
@@ -45,7 +45,7 @@ import Foundation
     }
 
 
-    internal init(orgId:String,ticketId:String,JSONThread: [String:AnyObject]) {
+    @objc public  init(orgId:String,ticketId:String,JSONThread: [String:AnyObject]) {
         
         super.init()
 
@@ -100,7 +100,7 @@ import Foundation
 
     }
     
-    @objc public func getThreadDetail(onComplition:@escaping ((ZDThreadDetail?,Error?,Int)->())) -> Void {
+    fileprivate func getThreadDetail(onComplition:@escaping ((ZDThreadDetail?,Error?,Int)->())) -> Void {
         if threadDetails != nil{onComplition(threadDetails,nil,200);return}
         ZDThreadAPIHandler.getThread(orgId, ticketId: ticketId, threadId: self.id) { [weak self](threadDetail, error, status) in
             self?.threadDetails = threadDetail

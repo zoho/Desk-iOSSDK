@@ -11,30 +11,30 @@ import Foundation
 
 @objc public class ZDAccountDetail:NSObject {
 
-    public var country:String?
-    public var modifiedTime:String?
-    public var website:String?
-    public var code:String?
-    public var accountName        = ""
-    public var city:String?
-    public var customFields : [String:AnyObject]?
-    public var accountDescription:String?
-    public var industry:String?
-    public var ownerId:String?
-    public var phone:String?
-    public var street:String?
-    public var annualrevenue:String?
-	public var associateSLAs : [AnyObject]?
-    public var createdTime        = ""
-    public var state:String?
-    public var id                 = ""
-    public var fax:String?
-    public var email:String?
+    @objc public var country:String?
+    @objc public var modifiedTime:String?
+    @objc public var website:String?
+    @objc public var code:String?
+    @objc public var accountName        = ""
+    @objc public var city:String?
+    @objc public var customFields : [String:AnyObject]?
+    @objc public var accountDescription:String?
+    @objc public var industry:String?
+    @objc public var ownerId:String?
+    @objc public var phone:String?
+    @objc public var street:String?
+    @objc public var annualrevenue:String?
+	@objc public var associateSLAs : [AnyObject]?
+    @objc public var createdTime        = ""
+    @objc public var state:String?
+    @objc public var id                 = ""
+    @objc public var fax:String?
+    @objc public var email:String?
 
 
     internal var orgId = ""
     
-    internal class func modelsFromDic(dic:[String:AnyObject],orgId:String) -> [ZDAccountDetail]
+    @objc public class func modelsFromDic(dic:[String:AnyObject],orgId:String) -> [ZDAccountDetail]
     {
         var models:[ZDAccountDetail] = []
         guard let array = dic["data"] as? [[String:AnyObject]] else { return models }
@@ -49,7 +49,7 @@ import Foundation
     }
 
 
-    internal init?(accountJsonReponce: [String:AnyObject]?,orgId:String) {
+    @objc public init?(accountJsonReponce: [String:AnyObject]?,orgId:String) {
         
         guard let accountJson = accountJsonReponce else { return nil }
         

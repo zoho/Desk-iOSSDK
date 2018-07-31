@@ -8,17 +8,15 @@
 
 import Foundation
 
-@objc public class ZDSearch: NSObject {
-    
-}
+@objc public class ZDSearch: NSObject {}
 
 @objc public class ZDTicketSearch: NSObject {
     
-    internal var orgId  = ""
+    @objc public var orgId  = ""
     @objc public var tickets = [ZDTicketDetail]()
     @objc public var count = 0
     
-    internal init?(json:[String:AnyObject],orgId:String) {
+    @objc public init?(json:[String:AnyObject],orgId:String) {
         self.orgId = orgId
         self.count = json["count"].toInt()
         if let ticketJson = json["data"] as? [[String:AnyObject]]{
@@ -30,11 +28,11 @@ import Foundation
 
 @objc public class ZDTaskSearch: NSObject {
     
-    internal var orgId  = ""
+    @objc public var orgId  = ""
     @objc public var tasks = [ZDTask]()
     @objc public var count = 0
     
-    internal init?(json:[String:AnyObject],orgId:String) {
+    @objc public init?(json:[String:AnyObject],orgId:String) {
         self.orgId = orgId
         self.count = json["count"].toInt()
         if let taskJson = json["data"] as? [[String:AnyObject]]{
@@ -45,26 +43,26 @@ import Foundation
 
 @objc public class ZDContactSearch: NSObject {
     
-    internal var orgId  = ""
-    @objc public var tickets = [ZDContactDetail]()
+    @objc public var orgId  = ""
+    @objc public var contacts = [ZDContactDetail]()
     @objc public var count = 0
     
-    internal init?(json:[String:AnyObject],orgId:String) {
+    @objc public init?(json:[String:AnyObject],orgId:String) {
         self.orgId = orgId
         self.count = json["count"].toInt()
         if let contactJson = json["data"] as? [[String:AnyObject]]{
-            self.tickets = contactJson.map({ZDContactDetail(contactDetailJson: $0, orgId: orgId)})
+            self.contacts = contactJson.map({ZDContactDetail(contactDetailJson: $0, orgId: orgId)})
         }
     }
 }
 
 @objc public class ZDAccountSearch: NSObject {
     
-    internal var orgId  = ""
+    @objc public var orgId  = ""
     @objc public var account = [ZDAccount]()
     @objc public var count = 0
     
-    internal init?(json:[String:AnyObject],orgId:String) {
+    @objc public init?(json:[String:AnyObject],orgId:String) {
         self.orgId = orgId
         self.count = json["count"].toInt()
         if let accountJson = json["data"] as? [[String:AnyObject]]{

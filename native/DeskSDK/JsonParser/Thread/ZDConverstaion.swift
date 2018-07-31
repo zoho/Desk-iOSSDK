@@ -10,9 +10,8 @@ import Foundation
     case thread,comment
 }
 @objc public class ZDConverstaion:NSObject{
-    public var orgId = ""
-    public var type = ZDConverstaionType.thread
-    public var hasAttach = false
-    public var author = ZDAuthor()
-
+    @objc public var orgId = ""
+    @objc public var type = ZDConverstaionType.thread
+    @objc public var hasAttach = false
+    @objc public var author = ZDAuthor()
 }

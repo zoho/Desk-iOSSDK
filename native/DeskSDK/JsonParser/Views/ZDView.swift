@@ -10,13 +10,13 @@ import Foundation
 
 @objc public class ZDView: NSObject {
     
-    internal var orgId  = ""
+    @objc public var orgId  = ""
     @objc public var isCustomView = false
     @objc public var name = ""
     @objc public var i18NLabel = ""
     @objc public var id = ""
     
-    public class func modelsFromArray(jsonResponce:[String:AnyObject]?,orgId:String) -> [ZDView]? {
+    @objc public  class func modelsFromArray(jsonResponce:[String:AnyObject]?,orgId:String) -> [ZDView]? {
         guard let viewArrayJson = jsonResponce?["data"] as? [[String:AnyObject]]else{ return nil}
         return viewArrayJson.map({ZDView(json: $0, orgId: orgId)})
     }

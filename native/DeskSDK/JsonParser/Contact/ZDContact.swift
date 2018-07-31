@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc public class ZDContact : ZDSearch {
+public class ZDContact : ZDSearch {
 
     @objc public var firstName:String?
     @objc public var lastName  = ""
@@ -24,9 +24,9 @@ import Foundation
     @objc public var ownerId:String?
 	@objc public var account : ZDAccount?
 
-    internal var orgId = ""
+    @objc public var orgId = ""
     
-    public class func modelsFromArray(dic:[String:AnyObject]?,orgId:String) -> [ZDContact]?{
+    @objc public class func modelsFromArray(dic:[String:AnyObject]?,orgId:String) -> [ZDContact]?{
         
         var model = [ZDContact]()
         guard let array = dic?["data"] as? [[String:AnyObject]] else{return nil}
@@ -41,7 +41,7 @@ import Foundation
         
     }
 
-    internal init?(contactJsonReponce: [String:AnyObject]?,orgId:String) {
+    @objc public init?(contactJsonReponce: [String:AnyObject]?,orgId:String) {
         
         guard let contactJson = contactJsonReponce else { return nil}
         
@@ -73,12 +73,12 @@ import Foundation
 }
 
 @objc public class ZDZohoCRMContact:NSObject{
-    public var orgId = ""
+    @objc public var orgId = ""
     
-    public var type = ""
-    public var id = ""
+    @objc public var type = ""
+    @objc public var id = ""
     
-    internal init?(zohoCRMJsonReponce: [String:AnyObject]?,orgId:String) {
+    @objc public init?(zohoCRMJsonReponce: [String:AnyObject]?,orgId:String) {
         
         guard let zohoCRMJson = zohoCRMJsonReponce else { return nil}
         
@@ -91,12 +91,11 @@ import Foundation
 }
 
 @objc public class ZDProduct:NSObject{
-    public var orgId = ""
+    @objc public var orgId = ""
+    @objc public var productName = ""
+    @objc public var id = ""
     
-    public var productName = ""
-    public var id = ""
-    
-    internal init?(productJsonReponce: [String:AnyObject]?,orgId:String) {
+    @objc public init?(productJsonReponce: [String:AnyObject]?,orgId:String) {
         
         guard let productJson = productJsonReponce else { return nil}
         

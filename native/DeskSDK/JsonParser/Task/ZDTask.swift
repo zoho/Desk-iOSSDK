@@ -7,7 +7,6 @@
 //
 
 import Foundation
- 
 
 @objc public class ZDTask : ZDSearch {
 
@@ -74,16 +73,15 @@ import Foundation
 
 @objc public class ZDTaskTicket:NSObject{
     
-    internal var orgId = ""
+    @objc public var orgId = ""
     
     @objc public var ticketNumber = ""
     @objc public var contact:ZDTaskContact?
     @objc public var id = ""
 
+    @objc public override init() {}
     
-    internal override init() {}
-    
-    internal init(taskTicket:[String:AnyObject], orgId:String) {
+    @objc public init(taskTicket:[String:AnyObject], orgId:String) {
         super.init()
         self.orgId = orgId
         
@@ -98,17 +96,15 @@ import Foundation
 
 @objc public class ZDTaskContact:NSObject{
     
-    internal var orgId = ""
-
-    
+    @objc public var orgId = ""
     @objc public var firstName:String?
     @objc public var lastName  = ""
     @objc public var id = ""
     
     
-    internal override init() {}
+    @objc public override init() {}
     
-    internal init(taskContact:[String:AnyObject],orgId:String) {
+    @objc public init(taskContact:[String:AnyObject],orgId:String) {
         super.init()
         
         self.orgId = orgId

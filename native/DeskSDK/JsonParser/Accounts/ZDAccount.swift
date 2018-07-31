@@ -15,9 +15,9 @@ import Foundation
     @objc public var accountName = ""
     @objc public var id          = ""
     
-    internal var orgId = ""
+    @objc public var orgId = ""
     
-    internal class func modelsFromArray(dic:[String:AnyObject]?,orgId:String) -> [ZDAccount]?{
+    @objc public class func modelsFromArray(dic:[String:AnyObject]?,orgId:String) -> [ZDAccount]?{
         
         var model = [ZDAccount]()
         guard let array = dic?["data"] as? [[String:AnyObject]] else { return nil}
@@ -30,7 +30,7 @@ import Foundation
         
     }
     
-    internal init?(accountJsonReponce: [String:AnyObject]?,orgId:String) {
+    @objc public init?(accountJsonReponce: [String:AnyObject]?,orgId:String) {
         
         guard let accountJson = accountJsonReponce else { return nil}
         

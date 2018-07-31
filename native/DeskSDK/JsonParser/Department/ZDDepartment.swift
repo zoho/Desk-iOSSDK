@@ -41,9 +41,9 @@ import Foundation
     ///Display name of the department
     @objc public var nameInCustomerPortal      = ""
 
-    internal var orgId                   = ""
+    @objc public var orgId                   = ""
     
-    internal class func modelsFromDictionaryArray(dic:[String: AnyObject]?,orgId:String) -> [ZDDepartment]?{
+    @objc public class func modelsFromDictionaryArray(dic:[String: AnyObject]?,orgId:String) -> [ZDDepartment]?{
         var models:[ZDDepartment] = []
         guard let array = dic?["data"] as? [[String:AnyObject]] else { return models }
         for item in array{
@@ -54,7 +54,7 @@ import Foundation
         return models
     }
 
-    internal init?(departmentJsonReponce: [String:AnyObject]?,orgId:String) {
+    @objc public init?(departmentJsonReponce: [String:AnyObject]?,orgId:String) {
 
         guard let departmentJson = departmentJsonReponce else { return nil }
         
@@ -73,8 +73,5 @@ import Foundation
         if let associatedAgentIds = departmentJson["associatedAgentIds"] as? [String]{
             self.associatedAgentIds   = associatedAgentIds
         }
-
 	}
-
-
 }

@@ -13,55 +13,55 @@ import Foundation
 //Tickets are organizing units using which service agents handle customer enquiries, requests, complaints, and other such interactions in Zoho Desk.
 @objc public class ZDTicketDetail : ZDSearch{
 
-    public var modifiedTime:String?
-    public var ticketNumber         = ""
-    public var subCategory:String?
-    public var subject              = ""
-    public var customFields : [String:AnyObject]?
-    public var dueDate:String?
-    public var departmentId         = ""
-    public var channel:String?
-    public var ticketDescription:String?
-    public var resolution:String?
-    public var closedTime:String?
-    public var approvalCount        = ""
-    public var timeEntryCount       = ""
-    public var createdTime          = ""
-    public var id                   = ""
-    public var email:String?
-    public var customerResponseTime = ""
-    public var product:ZDProduct?
-    public var productId:String?
-    public var contactId            = ""
-    public var threadCount          = ""
-    public var priority:String?
-    public var classification:String?
-    public var assigneeId:String?
-    public var commentCount         = ""
-    public var taskCount            = ""
-    public var phone:String?
-    public var attachmentCount      = ""
-    public var category:String?
-    public var status               = ""
-    public var statusType           = ""
-    public var layoutId             = ""
-    public var modifiedBy:String?
-    public var teamId:String?
-    public var webUrl               = ""
-    public var contact : ZDContact?
-    public var lastThread:ZDLastThread?
-    public var responseDueDate:String?
-    public var isResponseOverdue = ""
-    public var accountId:String?
-    public var isSpam = ""
+    @objc public var modifiedTime:String?
+    @objc public var ticketNumber         = ""
+    @objc public var subCategory:String?
+    @objc public var subject              = ""
+    @objc public var customFields : [String:AnyObject]?
+    @objc public var dueDate:String?
+    @objc public var departmentId         = ""
+    @objc public var channel:String?
+    @objc public var ticketDescription:String?
+    @objc public var resolution:String?
+    @objc public var closedTime:String?
+    @objc public var approvalCount        = ""
+    @objc public var timeEntryCount       = ""
+    @objc public var createdTime          = ""
+    @objc public var id                   = ""
+    @objc public var email:String?
+    @objc public var customerResponseTime = ""
+    @objc public var product:ZDProduct?
+    @objc public var productId:String?
+    @objc public var contactId            = ""
+    @objc public var threadCount          = ""
+    @objc public var priority:String?
+    @objc public var classification:String?
+    @objc public var assigneeId:String?
+    @objc public var commentCount         = ""
+    @objc public var taskCount            = ""
+    @objc public var phone:String?
+    @objc public var attachmentCount      = ""
+    @objc public var category:String?
+    @objc public var status               = ""
+    @objc public var statusType           = ""
+    @objc public var layoutId             = ""
+    @objc public var modifiedBy:String?
+    @objc public var teamId:String?
+    @objc public var webUrl               = ""
+    @objc public var contact : ZDContact?
+    @objc public var lastThread:ZDLastThread?
+    @objc public var responseDueDate:String?
+    @objc public var isResponseOverdue = ""
+    @objc public var accountId:String?
+    @objc public var isSpam = ""
     
-    public var assignee:ZDAssignee?
+    @objc public var assignee:ZDAssignee?
 
-    public var orgId = ""
+    @objc public var orgId = ""
 
-    public override init() {super.init()}
+    @objc public  override init() {super.init()}
 
-    internal init(ticketDetailJsonObject: [String:AnyObject],orgId:String) {
+    @objc public  init(ticketDetailJsonObject: [String:AnyObject],orgId:String) {
         
         super.init()
         self.orgId = orgId
@@ -124,10 +124,4 @@ import Foundation
         }
 }
 
-}
-extension ZDTicketDetail {
-    
-//    public func updateResolution(resolution:String,onComplition:@escaping (((ZDTicketDetail?, Error?, Int))->())){
-//        ZDTicketProvoider.updateTicket(orgId, ticketId: id, subject: self.subject, departmentId: self.departmentId, additionalParams: ["resolution":resolution as AnyObject], onComplition: onComplition)
-//    }
 }

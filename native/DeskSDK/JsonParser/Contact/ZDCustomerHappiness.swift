@@ -8,15 +8,15 @@
 
 import Foundation
 
-public class ZDCustomerHappiness: NSObject {
+@objc public class ZDCustomerHappiness: NSObject {
     
-    public var badPercentage  = 0
-    public var goodPercentage = 0
-    public var okPercentage   = 0
+    @objc public var badPercentage  = 0
+    @objc public var goodPercentage = 0
+    @objc public var okPercentage   = 0
     
-    internal var orgId = ""
-    internal override init() {}
-    internal init(cutomerHappinessJson: [String:AnyObject],orgId:String) {
+    @objc public var orgId = ""
+    @objc public override init() {}
+    @objc public init(cutomerHappinessJson: [String:AnyObject],orgId:String) {
         
         self.orgId = orgId
         badPercentage = cutomerHappinessJson["badPercentage"].toInt()

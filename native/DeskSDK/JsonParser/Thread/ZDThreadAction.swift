@@ -11,18 +11,18 @@ import Foundation
 
 @objc public class ZDThreadAction: NSObject {
     
-    public var orgId  = ""
-    public var method:String?
-    public var rel:String?
-    public var href:String?
+    @objc public var orgId  = ""
+    @objc public var method:String?
+    @objc public var rel:String?
+    @objc public var href:String?
 
-    private override init() {super.init()}
+    @objc public  override init() {super.init()}
     
-    internal class func initWithArray(orgId:String,actions:[[String:AnyObject]]) -> [ZDThreadAction]{
+    @objc public  class func initWithArray(orgId:String,actions:[[String:AnyObject]]) -> [ZDThreadAction]{
         return actions.map{ZDThreadAction(orgId:orgId,Json: $0)}
     }
     
-    internal init(orgId:String,Json:[String:AnyObject]){
+    @objc public  init(orgId:String,Json:[String:AnyObject]){
         
         self.orgId = orgId
         method = Json["method"].toString()
@@ -31,7 +31,7 @@ import Foundation
 
     }
     
-   public func submitAction(onComplition:@escaping (([String:AnyObject]?,Error?,Int)->())) -> Void {
+   internal func submitAction(onComplition:@escaping (([String:AnyObject]?,Error?,Int)->())) -> Void {
     
         let details = ZDBaseRequest(path: "", method:Method(rawValue: self.method ?? "") ?? .GET, headers: ["orgId":self.orgId])
             details.baseURL = URL(string: self.href ?? "") ?? URL(string: "https://desk.zoho.com/api/v1/")!

@@ -1,18 +1,15 @@
 Pod::Spec.new do |spec|
 spec.name          = 'ZohoDeskSDK'
-spec.version       = '0.0.3'
+spec.version       = '0.0.6'
 spec.license       = { :type => 'MIT' }
 spec.homepage      = 'https://desk.zoho.com'
 spec.authors       = { 'Rajeshkumar Lingavel' => 'rajeshkumar.l@zohocorp.com' }
 spec.summary       = 'iOS API Provoider for Desk'
-spec.source        = { :git => 'https://github.com/zoho/Desk-iOSSDK.git', :tag => spec.version }
-spec.social_media_url = 'https://twitter.com/zoho'
-spec.documentation_url = 'https://www.zoho.com/desk/developers/mobilesdk/ios'
+spec.source        = { :git => 'https://git.csez.zohocorpin.com/zohodesk/idesk-sdk.git', :tag => spec.version }
 
 spec.ios.deployment_target  = '9.0'
+spec.osx.deployment_target  = '10.10'
 
-spec.source_files   = 'native/**/*.{swift,h}'
+spec.source_files   = 'native/**/*.{swift,h,plist}'
 spec.framework      = 'SystemConfiguration'
 end
-
-

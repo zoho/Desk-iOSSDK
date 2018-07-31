@@ -11,23 +11,23 @@ import Foundation
 
 @objc public class ZDTicketComment : ZDConverstaion{
 
-    public var ticketID       = ""
-    public var commentedTime  = ""
-    public var isPublic       = true
-    public var id             = ""
-    public var content        = ""
-    public var commenterId    = ""
-    public var encodedContent = ""
-    public var attachments    = [ZDAttachment]()
+    @objc public var ticketID       = ""
+    @objc public var commentedTime  = ""
+    @objc public var isPublic       = true
+    @objc public var id             = ""
+    @objc public var content        = ""
+    @objc public var commenterId    = ""
+    @objc public var encodedContent = ""
+    @objc public var attachments    = [ZDAttachment]()
     
-    public var modifiedTime:String?
+    @objc public var modifiedTime:String?
 
-    private override init() {
+    @objc public  override init() {
         super.init()
     }
 
     
-    internal class func modelsFromArrayOfDictionary(JSONDictionary:[String:AnyObject],ordId:String,ticketId:String) -> [ZDTicketComment] {
+    @objc public  class func modelsFromArrayOfDictionary(JSONDictionary:[String:AnyObject],ordId:String,ticketId:String) -> [ZDTicketComment] {
         var models:[ZDTicketComment] = []
         
         guard let array = JSONDictionary["data"] as? [[String:AnyObject]] else{return models}
@@ -39,7 +39,7 @@ import Foundation
     }
 
 
-    internal init(ordId:String,ticketId:String,ticketCommentJSON: [String:AnyObject]) {
+    @objc public  init(ordId:String,ticketId:String,ticketCommentJSON: [String:AnyObject]) {
 
         super.init()
         
@@ -65,10 +65,5 @@ import Foundation
         }
         
     }
-
-    public func deleteComment(onComplition:@escaping ((Error?,Int)->())){
-//        ZDTicketProvoider.deleteTicketComment(orgID, ticketID: ticketID, commendId: id, onComplition: onComplition)
-    }
-
-
+    
 }

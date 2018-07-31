@@ -12,7 +12,7 @@ public typealias Parameters = [String: Any]
 
 public typealias Headers = [String: String]
 
-internal enum Method: String {
+public enum Method: String {
     case GET, POST, PUT, DELETE , PATCH 
 }
 
@@ -20,22 +20,22 @@ public enum ParamType: String {
     case json, path, data
 }
 
-internal class ZDBaseRequest {
+public class ZDBaseRequest {
 
     
-    var baseURL:URL              = URL(string: "https://desk.zoho.com/api/v1/")!
-    var path                     = ""
-    var method: Method           = .GET
-    var paramType: ParamType     = .path
-    var parameters: Parameters   = [String: String]()
-    var headers: Headers         = ["Content-Type": "application/json"]
-    var isAuthenticationRequired = true
-    var genralAPI                = false
-    var streamData:Data?
+    public var baseURL:URL              = URL(string: "https://desk.zoho.com/api/v1/")!
+    public var path                     = ""
+    public var method: Method           = .GET
+    public var paramType: ParamType     = .path
+    public var parameters: Parameters   = [String: String]()
+    public var headers: Headers         = ["Content-Type": "application/json"]
+    public var isAuthenticationRequired = true
+    public var genralAPI         = false
+    public var streamData:Data?
     
     private let defaultBaseURL = URL(string: "https://desk.zoho.com/api/v1/")!
 
-    init(path:String,method:Method = .GET,paramType:ParamType = .path,parameters:Parameters = [String: String](),headers:Headers = ["Content-Type": "application/json"]) {
+    public init(path:String,method:Method = .GET,paramType:ParamType = .path,parameters:Parameters = [String: String](),headers:Headers = ["Content-Type": "application/json"]) {
         
         self.baseURL = URL(string: "\(getBaseURL())/api/v1/") ?? defaultBaseURL
         self.path = path
@@ -46,7 +46,7 @@ internal class ZDBaseRequest {
         
     }
     
-    func getBaseURL() -> String{
+    public func getBaseURL() -> String{
         switch ZohoDeskSDK.configuration?.domain ?? .us{
         case .us:
             return "https://desk.zoho.com"

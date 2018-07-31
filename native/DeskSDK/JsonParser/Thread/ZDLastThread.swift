@@ -11,16 +11,16 @@ import Foundation
 
 @objc public class ZDLastThread : NSObject{
     
-    public var orgId           = ""
+    @objc public var orgId           = ""
     
-    public var channel:String?
-    public var isDraft    = false
-    public var isForward  = false
-    public var direction      = ""
+    @objc public var channel:String?
+    @objc public var isDraft    = false
+    @objc public var isForward  = false
+    @objc public var direction      = ""
 
     
     
-    internal init?(lastThreadJsonReponce: [String:AnyObject]?,orgId:String) {
+    @objc public init?(lastThreadJsonReponce: [String:AnyObject]?,orgId:String) {
         
         guard let contactJson = lastThreadJsonReponce else { return nil}
         

@@ -28,10 +28,10 @@ import Foundation
     @objc public var status:String?
     @objc public var timeZone:String?
     
-    public var associatedDepartmentIds = [String]()
-    public var associatedChatDepartmentIds : [String]?
+    @objc public var associatedDepartmentIds = [String]()
+    @objc public var associatedChatDepartmentIds : [String]?
 
-    public class func modelsFrom(orgId:String,dic:[String:AnyObject]?) -> [ZDAgent]?
+    @objc public class func modelsFrom(orgId:String,dic:[String:AnyObject]?) -> [ZDAgent]?
     {
         var models:[ZDAgent] = []
         guard let array = dic?["data"] as? [[String:AnyObject]] else{return models}
@@ -44,8 +44,8 @@ import Foundation
         return models
     }
     
-   public override init() {}
-   public init?(orgId:String,agentJsonReponce: [String:AnyObject]?) {
+   @objc public override init() {}
+   @objc public init?(orgId:String,agentJsonReponce: [String:AnyObject]?) {
 
         guard let agentJson = agentJsonReponce else { return nil }
         self.orgId       = orgId
@@ -85,7 +85,7 @@ import Foundation
     @objc public var role = ZDRole()
     @objc public var profile = ZDProfile()
     
-    public override init?(orgId:String,agentJsonReponce: [String:AnyObject]?) {
+    @objc public override init?(orgId:String,agentJsonReponce: [String:AnyObject]?) {
         super.init(orgId: orgId, agentJsonReponce: agentJsonReponce)
         guard let agentJson = agentJsonReponce else { return nil }
         
@@ -109,12 +109,12 @@ import Foundation
 
 @objc public class ZDObjectHolder:NSObject{
     
-    internal var orgId = ""
+    @objc public var orgId = ""
     @objc public var name = ""
     @objc public var id = ""
     
-    public override init() {}
-    public init(orgId:String,jsonReponce: [String:AnyObject]) {
+    @objc public override init() {}
+    @objc public init(orgId:String,jsonReponce: [String:AnyObject]) {
         self.name = jsonReponce["name"].toString()
         self.id = jsonReponce["id"].toString()
     }
@@ -123,32 +123,32 @@ import Foundation
 @objc public class ZDAssociatedDepartments:ZDObjectHolder{
     
 
-    public override init() {super.init()}
-    public override init(orgId:String,jsonReponce: [String:AnyObject]) {
+    @objc public override init() {super.init()}
+    @objc public override init(orgId:String,jsonReponce: [String:AnyObject]) {
         super.init(orgId: orgId, jsonReponce: jsonReponce)
     }
 }
 
 @objc public class ZDAssociatedChatDepartments:ZDObjectHolder{
     
-    public override init() {super.init()}
-    public override init(orgId:String,jsonReponce: [String:AnyObject]) {
+    @objc public override init() {super.init()}
+    @objc public override init(orgId:String,jsonReponce: [String:AnyObject]) {
        super.init(orgId: orgId, jsonReponce: jsonReponce)
     }
 }
 
 @objc public class ZDProfile:ZDObjectHolder{
     
-    public override init() {super.init()}
-    public override init(orgId:String,jsonReponce: [String:AnyObject]) {
+    @objc public override init() {super.init()}
+    @objc public override init(orgId:String,jsonReponce: [String:AnyObject]) {
         super.init(orgId: orgId, jsonReponce: jsonReponce)
     }
 }
 
 @objc public class ZDRole:ZDObjectHolder{
     
-    public override init() {super.init()}
-    public override init(orgId:String,jsonReponce: [String:AnyObject]) {
+    @objc public override init() {super.init()}
+    @objc public override init(orgId:String,jsonReponce: [String:AnyObject]) {
         super.init(orgId: orgId, jsonReponce: jsonReponce)
     }
 }

@@ -9,9 +9,9 @@
 import Foundation
 @objc public class ZDContactAttachmentAPIHandler:NSObject{
     
-   @objc public static func listAllAttachments(_ orgID:String = String().getOrgId(),contactID:String,from:Int = 0,limit:Int=0,optionalParams:Parameters = Parameters(),onComplition:@escaping (([ZDAttachment]?,Error?,Int)->())) -> Void{
+   @objc public static func listAllAttachments(_ orgID:String = String().getZDOrgId(),contactID:String,from:Int = 0,limit:Int=0,optionalParams:Parameters = Parameters(),onComplition:@escaping (([ZDAttachment]?,Error?,Int)->())) -> Void{
         
-        let path = String(format: URLPathConstants.listAllContactAttchements, contactID)
+        let path = String(format: URLPathConstants.ContactsAttachments.listAllContactAttchements, contactID)
         var params = optionalParams
         params["from"] = from
         params["limit"] = limit
@@ -19,15 +19,15 @@ import Foundation
         
     }
     
-    @objc public static func createAttachement(_ orgID:String = String().getOrgId(),contactID:String,data:Data,fileName:String,onComplition:@escaping ((ZDAttachment?,Error?,Int)->())) -> URLRequest {
+    @objc public static func createAttachement(_ orgID:String = String().getZDOrgId(),contactID:String,data:Data,fileName:String,onComplition:@escaping ((ZDAttachment?,Error?,Int)->())) -> URLRequest {
         
-        let path = String(format: URLPathConstants.createContactAttachment, contactID)
+        let path = String(format: URLPathConstants.ContactsAttachments.createContactAttachment, contactID)
         return ZDAttachementProvoider.createAttachement(orgID, path: path, data: data, fileName: fileName, isPublic: false, parentId: contactID, parentType: .contact, addPublicData: false, onComplition: onComplition)
     }
     
-    @objc public static func deleteAttachment(_ orgID:String = String().getOrgId(),contactID:String,attachementID:String,onComplition:@escaping ((Error?,Int)->())) -> Void{
+    @objc public static func deleteAttachment(_ orgID:String = String().getZDOrgId(),contactID:String,attachementID:String,onComplition:@escaping ((Error?,Int)->())) -> Void{
         
-        let path = String(format: URLPathConstants.deleteContactAttachment, contactID,attachementID)
+        let path = String(format: URLPathConstants.ContactsAttachments.deleteContactAttachment, contactID,attachementID)
         ZDAttachementProvoider.deleteAttachment(orgID, path: path, onComplition: onComplition)
         
     }

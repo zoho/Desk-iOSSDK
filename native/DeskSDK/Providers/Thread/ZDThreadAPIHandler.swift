@@ -20,12 +20,12 @@ import Foundation
     ///   - optionalParams:
     ///   - onComplition: ThreadObject,Error (incase),Status code of the reponce.
     //https://desk.zoho.com/DeskAPIDocument#Threads
-    @objc public static func getThread(_ orgID:String = String().getOrgId(),
+    @objc public static func getThread(_ orgID:String = String().getZDOrgId(),
                                   ticketId:String,
                                   threadId:String,
                                   optionalParams:Parameters = Parameters(),
                                   onComplition:@escaping ((ZDThreadDetail?,Error?,Int)->())) -> Void{
-        let request = ZDBaseRequest(path: String(format: URLPathConstants.getAThread, ticketId,threadId),parameters:optionalParams,headers:["orgId":orgID])
+        let request = ZDBaseRequest(path: String(format: URLPathConstants.Threads.getAThread, ticketId,threadId),parameters:optionalParams,headers:["orgId":orgID])
         
         ZDBaseRequester.getJsonDicReponce(baseRequest: request) { (json, reponceData, error, status) in
             guard let threadJson  = json else{onComplition(nil,error,status);return}
@@ -34,8 +34,8 @@ import Foundation
     }
     
 //https://desk.zoho.com/DeskAPIDocument#Threads#Threads_Listallthreads
-    @objc public static func getAllThreads(_ orgID:String = String().getOrgId(),from:Int = 0,limit:Int = 50,ticketId:String,onComplition:@escaping (([ZDThread]?,Error?,Int)->())) -> Void{
-        let request = ZDBaseRequest(path: String(format: URLPathConstants.listAllThreads, ticketId), parameters:["from":from,"limit":limit], headers: ["orgId":orgID])
+    @objc public static func getAllThreads(_ orgID:String = String().getZDOrgId(),from:Int = 0,limit:Int = 50,ticketId:String,onComplition:@escaping (([ZDThread]?,Error?,Int)->())) -> Void{
+        let request = ZDBaseRequest(path: String(format: URLPathConstants.Threads.listAllThreads, ticketId), parameters:["from":from,"limit":limit], headers: ["orgId":orgID])
 
         ZDBaseRequester.getJsonDicReponce(baseRequest: request) { (json, reponceData, error, status) in
             guard let threadListJson  = json else{onComplition(nil,error,status);return}
@@ -44,7 +44,7 @@ import Foundation
     }
 
 //https://desk.zoho.com/DeskAPIDocument#Threads#Threads_SendEmailReply
-    @objc public static func sendEmailReply(_ orgID:String = String().getOrgId(),
+    @objc public static func sendEmailReply(_ orgID:String = String().getZDOrgId(),
                                       ticketId:String,
                                       fromEmail:String,
                                       toEmail:String,
@@ -52,13 +52,13 @@ import Foundation
                                       addtionalParams:[String:AnyObject] = [String:AnyObject](),
                                       onComplition:@escaping ((ZDThreadDetail?,Error?,Int)->())) -> Void{
 
-        sendOrDraftEmailReply(orgID, path: String(format: URLPathConstants.draftEmail, ticketId), ticketId, content, fromEmail, toEmail, addtionalParams, onComplition)
+        sendOrDraftEmailReply(orgID, path: String(format: URLPathConstants.Threads.draftEmail, ticketId), ticketId, content, fromEmail, toEmail, addtionalParams, onComplition)
 
     }
     
 
 //    https://desk.zoho.com/DeskAPIDocument#Threads#Threads_DraftEmailReply
-    @objc public static func draftEmailReply(_ orgID:String = String().getOrgId(),
+    @objc public static func draftEmailReply(_ orgID:String = String().getZDOrgId(),
                                       ticketId:String,
                                       fromEmail:String,
                                       toEmail:String,
@@ -66,35 +66,35 @@ import Foundation
                                       addtionalParams:[String:AnyObject] = [String:AnyObject](),
                                       onComplition:@escaping ((ZDThreadDetail?,Error?,Int)->())) -> Void{
   
-        sendOrDraftEmailReply(orgID, path: String(format: URLPathConstants.draftEmail, ticketId), ticketId, content, fromEmail, toEmail, addtionalParams as [String : AnyObject], onComplition)
+        sendOrDraftEmailReply(orgID, path: String(format: URLPathConstants.Threads.draftEmail, ticketId), ticketId, content, fromEmail, toEmail, addtionalParams as [String : AnyObject], onComplition)
         
     }
 //    https://desk.zoho.com/DeskAPIDocument#Threads#Threads_UpdateDraft
-    @objc public static func updateDraft(_ orgID:String = String().getOrgId(),
+    @objc public static func updateDraft(_ orgID:String = String().getZDOrgId(),
                                    ticketId:String,
                                    draftId:String,
                                    addtionalParams:[String:AnyObject] = [String:AnyObject](),
                                    onComplition:@escaping ((ZDThreadDetail?,Error?,Int)->())) -> Void{
     
-        emailThread(orgID, urlPath: String(format: URLPathConstants.updateDraft, ticketId), params: addtionalParams, method: .PATCH, onComplition: onComplition)
+        emailThread(orgID, urlPath: String(format: URLPathConstants.Threads.updateDraft, ticketId), params: addtionalParams, method: .PATCH, onComplition: onComplition)
 
     }
 
     
 //    https://desk.zoho.com/DeskAPIDocument#Threads#Threads_Deleteanattachment
-    @objc public static func deleteThreadAttachment(_ orgID:String = String().getOrgId(),
+    @objc public static func deleteThreadAttachment(_ orgID:String = String().getZDOrgId(),
                                               ticketId:String,
                                               threadId:String,
                                               attachmentId:String,
                                               onComplition:@escaping ((Error?,Int)->())) -> Void{
-        let path = String(format: URLPathConstants.deleteThreadAttachement, ticketId,threadId,attachmentId)
+        let path = String(format: URLPathConstants.Threads.deleteThreadAttachement, ticketId,threadId,attachmentId)
         ZDAttachementProvoider.deleteAttachment(orgID, path: path, onComplition: onComplition)
     }
 
-    @objc public static func getAllConversation(_ orgID:String = String().getOrgId(),ticketId:String,from:Int,limit:Int,
+    @objc public static func getAllConversation(_ orgID:String = String().getZDOrgId(),ticketId:String,from:Int,limit:Int,
                                                 onComplition:@escaping (([String:AnyObject]?,Error?,Int)->())) -> Void{
         
-        let request = ZDBaseRequest(path: String(format: URLPathConstants.listAllConversation, ticketId),headers:["orgId":orgID])
+        let request = ZDBaseRequest(path: String(format: URLPathConstants.Threads.listAllConversation, ticketId),headers:["orgId":orgID])
         request.parameters["from"] = from
         request.parameters["limit"] = limit
         ZDBaseRequester.getJsonDicReponce(baseRequest: request) { (json, responceData,error, statusCode) in
@@ -122,7 +122,7 @@ extension ZDThreadAPIHandler{
         emailThread(orgID, urlPath: path, params: params as [String : AnyObject], method: method, onComplition: onComplition)
     }
     
-    internal static func emailThread(_ orgID:String = String().getOrgId(),urlPath:String,
+    internal static func emailThread(_ orgID:String = String().getZDOrgId(),urlPath:String,
                                      params:[String:AnyObject],method:Method = .POST,
                                      onComplition:@escaping ((ZDThreadDetail?,Error?,Int)->())) -> Void{
         

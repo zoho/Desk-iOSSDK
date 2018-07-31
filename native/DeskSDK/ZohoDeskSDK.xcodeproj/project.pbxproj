@@ -8,172 +8,131 @@
 
 /* Begin PBXBuildFile section */
 		925DAA8820AEFB090012B811 /* ZDAPIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925DAA8720AEFB090012B811 /* ZDAPIExtension.swift */; };
-		9285B58020BF12D9002182FB /* ZDSearchAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9285B57F20BF12D9002182FB /* ZDSearchAPIHandler.swift */; };
-		928C4BA720A2C39500EA75F7 /* ZDAttachementProvoider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C4BA620A2C39500EA75F7 /* ZDAttachementProvoider.swift */; };
-		928C4BAD20A2D2BC00EA75F7 /* ZDContactAttachementAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C4BAC20A2D2BC00EA75F7 /* ZDContactAttachementAPIHandler.swift */; };
-		928C4BAE20A2D2BC00EA75F7 /* ZDContactAttachementAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C4BAC20A2D2BC00EA75F7 /* ZDContactAttachementAPIHandler.swift */; };
-		928C4BB220A2D43900EA75F7 /* ZDTaskAttachementAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C4BB120A2D43900EA75F7 /* ZDTaskAttachementAPIHandler.swift */; };
-		928C4BB320A2D43900EA75F7 /* ZDTaskAttachementAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C4BB120A2D43900EA75F7 /* ZDTaskAttachementAPIHandler.swift */; };
-		928C4BB520A2D44F00EA75F7 /* ZDAccountAttachmentAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C4BB420A2D44F00EA75F7 /* ZDAccountAttachmentAPIHandler.swift */; };
-		928C4BB620A2D44F00EA75F7 /* ZDAccountAttachmentAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C4BB420A2D44F00EA75F7 /* ZDAccountAttachmentAPIHandler.swift */; };
-		928C4BB920A2FE7600EA75F7 /* ZDUploadAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C4BB820A2FE7600EA75F7 /* ZDUploadAPIHandler.swift */; };
-		928C4BBA20A2FE7600EA75F7 /* ZDUploadAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C4BB820A2FE7600EA75F7 /* ZDUploadAPIHandler.swift */; };
-		928C4BBD20A3009700EA75F7 /* ZDContractAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C4BBC20A3009700EA75F7 /* ZDContractAPIHandler.swift */; };
-		928C4BBE20A3009700EA75F7 /* ZDContractAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C4BBC20A3009700EA75F7 /* ZDContractAPIHandler.swift */; };
 		928C4BC420A303F500EA75F7 /* ZDContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C4BC320A303F500EA75F7 /* ZDContract.swift */; };
-		928C4BC520A303F500EA75F7 /* ZDContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C4BC320A303F500EA75F7 /* ZDContract.swift */; };
-		92B5C61B20A22E1300469FC2 /* ZDTicketTimeEntryAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C61A20A22E1300469FC2 /* ZDTicketTimeEntryAPIHandler.swift */; };
+		92AD1A7E2110469900E0CE3C /* ZDOrganizationAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A522110469900E0CE3C /* ZDOrganizationAPIHandler.swift */; };
+		92AD1A7F2110469900E0CE3C /* ZDTicketAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A542110469900E0CE3C /* ZDTicketAPIHandler.swift */; };
+		92AD1A802110469900E0CE3C /* ZDContactAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A562110469900E0CE3C /* ZDContactAPIHandler.swift */; };
+		92AD1A812110469900E0CE3C /* ZDContactAttachementAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A582110469900E0CE3C /* ZDContactAttachementAPIHandler.swift */; };
+		92AD1A822110469900E0CE3C /* ZDTicketTimeEntryAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A5A2110469900E0CE3C /* ZDTicketTimeEntryAPIHandler.swift */; };
+		92AD1A832110469900E0CE3C /* ZDContractAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A5C2110469900E0CE3C /* ZDContractAPIHandler.swift */; };
+		92AD1A842110469900E0CE3C /* ZDAgentAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A5E2110469900E0CE3C /* ZDAgentAPIHandler.swift */; };
+		92AD1A852110469900E0CE3C /* ZDUploadAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A602110469900E0CE3C /* ZDUploadAPIHandler.swift */; };
+		92AD1A862110469900E0CE3C /* ZDTicketCommentsAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A622110469900E0CE3C /* ZDTicketCommentsAPIHandler.swift */; };
+		92AD1A872110469900E0CE3C /* ZDTicketAttachmentAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A642110469900E0CE3C /* ZDTicketAttachmentAPIHandler.swift */; };
+		92AD1A882110469900E0CE3C /* ZDSearchAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A662110469900E0CE3C /* ZDSearchAPIHandler.swift */; };
+		92AD1A892110469900E0CE3C /* ZDAttachementProvoider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A692110469900E0CE3C /* ZDAttachementProvoider.swift */; };
+		92AD1A8A2110469900E0CE3C /* ZDLayoutAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A6B2110469900E0CE3C /* ZDLayoutAPIHandler.swift */; };
+		92AD1A8B2110469900E0CE3C /* ZDAccountAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A6D2110469900E0CE3C /* ZDAccountAPIHandler.swift */; };
+		92AD1A8C2110469900E0CE3C /* ZDTaskAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A6F2110469900E0CE3C /* ZDTaskAPIHandler.swift */; };
+		92AD1A8D2110469900E0CE3C /* ZDAccountAttachmentAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A712110469900E0CE3C /* ZDAccountAttachmentAPIHandler.swift */; };
+		92AD1A8E2110469900E0CE3C /* ZDTaskAttachementAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A732110469900E0CE3C /* ZDTaskAttachementAPIHandler.swift */; };
+		92AD1A8F2110469900E0CE3C /* ZDViewAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A752110469900E0CE3C /* ZDViewAPIHandler.swift */; };
+		92AD1A902110469900E0CE3C /* ZDMailReplyAddressAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A772110469900E0CE3C /* ZDMailReplyAddressAPIHandler.swift */; };
+		92AD1A912110469900E0CE3C /* ZDThreadAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A792110469900E0CE3C /* ZDThreadAPIHandler.swift */; };
+		92AD1A922110469900E0CE3C /* ZDDepartmentAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A7B2110469900E0CE3C /* ZDDepartmentAPIHandler.swift */; };
+		92AD1A932110469900E0CE3C /* ZDAgentSignaturesAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A7D2110469900E0CE3C /* ZDAgentSignaturesAPIHandler.swift */; };
+		92AD1AAB2110A2A700E0CE3C /* URLPathConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1AAA2110A2A700E0CE3C /* URLPathConstants.swift */; };
+		92AD1AB52110A2E000E0CE3C /* ZDAgentSignatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1AAD2110A2DF00E0CE3C /* ZDAgentSignatures.swift */; };
+		92AD1AB62110A2E000E0CE3C /* ZDCustomizedSignatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1AAE2110A2DF00E0CE3C /* ZDCustomizedSignatures.swift */; };
+		92AD1AB72110A2E000E0CE3C /* ZDLayouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1AB12110A2E000E0CE3C /* ZDLayouts.swift */; };
+		92AD1AB82110A2E000E0CE3C /* ZDLayoutSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1AB32110A2E000E0CE3C /* ZDLayoutSections.swift */; };
+		92AD1AB92110A2E000E0CE3C /* ZDMyForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1AB42110A2E000E0CE3C /* ZDMyForm.swift */; };
 		92B5C61E20A22E9200469FC2 /* ZDTicketTimeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C61D20A22E9200469FC2 /* ZDTicketTimeEntry.swift */; };
-		92B5C61F20A22E9200469FC2 /* ZDTicketTimeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C61D20A22E9200469FC2 /* ZDTicketTimeEntry.swift */; };
-		92B5C62320A2327900469FC2 /* ZDContactAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C62220A2327900469FC2 /* ZDContactAPIHandler.swift */; };
-		92B5C62420A2327900469FC2 /* ZDContactAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C62220A2327900469FC2 /* ZDContactAPIHandler.swift */; };
 		92B5C62620A2330300469FC2 /* ZDContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C62520A2330300469FC2 /* ZDContactDetail.swift */; };
-		92B5C62720A2330300469FC2 /* ZDContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C62520A2330300469FC2 /* ZDContactDetail.swift */; };
 		92B5C62920A2358800469FC2 /* ZDCustomerHappiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C62820A2358800469FC2 /* ZDCustomerHappiness.swift */; };
-		92B5C62A20A2358800469FC2 /* ZDCustomerHappiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C62820A2358800469FC2 /* ZDCustomerHappiness.swift */; };
-		92B5C62D20A236D400469FC2 /* ZDAccountAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C62C20A236D400469FC2 /* ZDAccountAPIHandler.swift */; };
-		92B5C62E20A236D400469FC2 /* ZDAccountAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C62C20A236D400469FC2 /* ZDAccountAPIHandler.swift */; };
 		92B5C63320A2377600469FC2 /* ZDAccountDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C63220A2377600469FC2 /* ZDAccountDetail.swift */; };
-		92B5C63420A2377600469FC2 /* ZDAccountDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C63220A2377600469FC2 /* ZDAccountDetail.swift */; };
-		92B5C63720A2394A00469FC2 /* ZDTaskAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C63620A2394A00469FC2 /* ZDTaskAPIHandler.swift */; };
-		92B5C63820A2394A00469FC2 /* ZDTaskAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C63620A2394A00469FC2 /* ZDTaskAPIHandler.swift */; };
 		92B5C63B20A2397000469FC2 /* ZDTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C63A20A2397000469FC2 /* ZDTask.swift */; };
-		92B5C63C20A2397000469FC2 /* ZDTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C63A20A2397000469FC2 /* ZDTask.swift */; };
-		92B5C63F20A23B4E00469FC2 /* ZDAgentAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C63E20A23B4E00469FC2 /* ZDAgentAPIHandler.swift */; };
-		92B5C64020A23B4E00469FC2 /* ZDAgentAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C63E20A23B4E00469FC2 /* ZDAgentAPIHandler.swift */; };
 		92B5C64320A23B9800469FC2 /* ZDAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C64220A23B9800469FC2 /* ZDAgent.swift */; };
-		92B5C64420A23B9800469FC2 /* ZDAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C64220A23B9800469FC2 /* ZDAgent.swift */; };
-		92B5C64720A23C7C00469FC2 /* ZDDepartmentAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C64620A23C7C00469FC2 /* ZDDepartmentAPIHandler.swift */; };
-		92B5C64820A23C7C00469FC2 /* ZDDepartmentAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C64620A23C7C00469FC2 /* ZDDepartmentAPIHandler.swift */; };
 		92B5C64B20A23CAC00469FC2 /* ZDDepartment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C64A20A23CAC00469FC2 /* ZDDepartment.swift */; };
-		92B5C64C20A23CAC00469FC2 /* ZDDepartment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C64A20A23CAC00469FC2 /* ZDDepartment.swift */; };
-		92B64A8620A053A200B19060 /* ZohoDeskSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B64A7C20A053A200B19060 /* ZohoDeskSDK.framework */; };
 		92B64A8D20A053A200B19060 /* ZohoDeskSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 92B64A7F20A053A200B19060 /* ZohoDeskSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		92B64ADF20A054AA00B19060 /* ZDOrganizationAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64ADE20A054AA00B19060 /* ZDOrganizationAPIHandler.swift */; };
-		92B64AE020A054AA00B19060 /* ZDOrganizationAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64ADE20A054AA00B19060 /* ZDOrganizationAPIHandler.swift */; };
 		92B64AE320A0552800B19060 /* ZDBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AE220A0552800B19060 /* ZDBaseRequest.swift */; };
-		92B64AE420A0552800B19060 /* ZDBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AE220A0552800B19060 /* ZDBaseRequest.swift */; };
 		92B64AE620A0554500B19060 /* ZDBaseRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AE520A0554500B19060 /* ZDBaseRequester.swift */; };
-		92B64AE720A0554500B19060 /* ZDBaseRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AE520A0554500B19060 /* ZDBaseRequester.swift */; };
 		92B64AE920A0555A00B19060 /* ZDRequestMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AE820A0555A00B19060 /* ZDRequestMaker.swift */; };
-		92B64AEA20A0555A00B19060 /* ZDRequestMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AE820A0555A00B19060 /* ZDRequestMaker.swift */; };
 		92B64AEC20A0556900B19060 /* ZDURLConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AEB20A0556900B19060 /* ZDURLConstructor.swift */; };
-		92B64AED20A0556A00B19060 /* ZDURLConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AEB20A0556900B19060 /* ZDURLConstructor.swift */; };
 		92B64AF120A056B000B19060 /* ZDOrganization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AF020A056B000B19060 /* ZDOrganization.swift */; };
-		92B64AF220A056B000B19060 /* ZDOrganization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AF020A056B000B19060 /* ZDOrganization.swift */; };
 		92B64AF620A0572D00B19060 /* OptionalUNWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AF520A0572D00B19060 /* OptionalUNWrap.swift */; };
-		92B64AF720A0572D00B19060 /* OptionalUNWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AF520A0572D00B19060 /* OptionalUNWrap.swift */; };
-		92B64AFA20A057C700B19060 /* URLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AF920A057C700B19060 /* URLConstants.swift */; };
-		92B64AFB20A057C700B19060 /* URLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AF920A057C700B19060 /* URLConstants.swift */; };
 		92B64AFD20A0587200B19060 /* ZohoDeskSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AFC20A0587200B19060 /* ZohoDeskSDK.swift */; };
-		92B64AFE20A0587200B19060 /* ZohoDeskSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AFC20A0587200B19060 /* ZohoDeskSDK.swift */; };
 		92B64B0120A05E0C00B19060 /* DataExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AFF20A05E0C00B19060 /* DataExtention.swift */; };
-		92B64B0220A05E0C00B19060 /* DataExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AFF20A05E0C00B19060 /* DataExtention.swift */; };
 		92B64B0320A05E0C00B19060 /* StringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B0020A05E0C00B19060 /* StringExtention.swift */; };
 		92B64B0720A05E6300B19060 /* ZDUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B0620A05E6300B19060 /* ZDUserDefaults.swift */; };
-		92B64B0820A05E6300B19060 /* ZDUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B0620A05E6300B19060 /* ZDUserDefaults.swift */; };
-		92B64B0C20A0613F00B19060 /* StringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B0020A05E0C00B19060 /* StringExtention.swift */; };
-		92B64B1F20A1735D00B19060 /* ZDTicketAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B1E20A1735D00B19060 /* ZDTicketAPIHandler.swift */; };
-		92B64B2020A1735D00B19060 /* ZDTicketAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B1E20A1735D00B19060 /* ZDTicketAPIHandler.swift */; };
 		92B64B2220A1758200B19060 /* ZDTicketDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B2120A1758200B19060 /* ZDTicketDetail.swift */; };
-		92B64B2320A1758200B19060 /* ZDTicketDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B2120A1758200B19060 /* ZDTicketDetail.swift */; };
 		92B64B2720A1766900B19060 /* ZDContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B2620A1766900B19060 /* ZDContact.swift */; };
-		92B64B2820A1766900B19060 /* ZDContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B2620A1766900B19060 /* ZDContact.swift */; };
 		92B64B2B20A1768300B19060 /* ZDAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B2A20A1768300B19060 /* ZDAccount.swift */; };
-		92B64B2C20A1768300B19060 /* ZDAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B2A20A1768300B19060 /* ZDAccount.swift */; };
 		92B64B2E20A1789C00B19060 /* ZDTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B2D20A1789C00B19060 /* ZDTicket.swift */; };
-		92B64B2F20A1789C00B19060 /* ZDTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B2D20A1789C00B19060 /* ZDTicket.swift */; };
-		92B64B3220A1A28900B19060 /* ZDThreadAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B3120A1A28900B19060 /* ZDThreadAPIHandler.swift */; };
-		92B64B3320A1A28900B19060 /* ZDThreadAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B3120A1A28900B19060 /* ZDThreadAPIHandler.swift */; };
 		92B64B3920A1A34800B19060 /* ZDThreadAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B3520A1A34700B19060 /* ZDThreadAction.swift */; };
-		92B64B3A20A1A34800B19060 /* ZDThreadAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B3520A1A34700B19060 /* ZDThreadAction.swift */; };
 		92B64B3B20A1A34800B19060 /* ZDAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B3620A1A34800B19060 /* ZDAttachment.swift */; };
-		92B64B3C20A1A34800B19060 /* ZDAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B3620A1A34800B19060 /* ZDAttachment.swift */; };
 		92B64B3D20A1A34800B19060 /* ZDThreadDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B3720A1A34800B19060 /* ZDThreadDetail.swift */; };
-		92B64B3E20A1A34800B19060 /* ZDThreadDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B3720A1A34800B19060 /* ZDThreadDetail.swift */; };
 		92B64B3F20A1A34800B19060 /* ZDThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B3820A1A34800B19060 /* ZDThread.swift */; };
-		92B64B4020A1A34800B19060 /* ZDThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B3820A1A34800B19060 /* ZDThread.swift */; };
 		92B64B4220A1A37400B19060 /* ZDConverstaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B4120A1A37400B19060 /* ZDConverstaion.swift */; };
-		92B64B4320A1A37400B19060 /* ZDConverstaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B4120A1A37400B19060 /* ZDConverstaion.swift */; };
-		92B64B4620A1D2AA00B19060 /* ZDTicketCommentsAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B4520A1D2AA00B19060 /* ZDTicketCommentsAPIHandler.swift */; };
-		92B64B4720A1D2AA00B19060 /* ZDTicketCommentsAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B4520A1D2AA00B19060 /* ZDTicketCommentsAPIHandler.swift */; };
 		92B64B4920A1D34600B19060 /* ZDTicketComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B4820A1D34600B19060 /* ZDTicketComment.swift */; };
-		92B64B4A20A1D34600B19060 /* ZDTicketComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B4820A1D34600B19060 /* ZDTicketComment.swift */; };
-		92C1358E20A30BA3001466B5 /* ZDMailReplyAddressAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C1358D20A30BA3001466B5 /* ZDMailReplyAddressAPIHandler.swift */; };
-		92C19ECA20B67CCB0088D7AC /* ZDTicketAttachmentAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C19EC920B67CCB0088D7AC /* ZDTicketAttachmentAPIHandler.swift */; };
 		92C19ECE20B6E2230088D7AC /* ZDLastThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C19ECD20B6E2230088D7AC /* ZDLastThread.swift */; };
 		92C19ED920B8882C0088D7AC /* ZDSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C19ED820B8882C0088D7AC /* ZDSearch.swift */; };
-		92EC563720B93A660019298C /* ZDViewAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EC563620B93A660019298C /* ZDViewAPIHandler.swift */; };
 		92EC563A20B93D120019298C /* ZDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EC563920B93D120019298C /* ZDView.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		92B64A8720A053A200B19060 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 92B64A7320A053A200B19060 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 92B64A7B20A053A200B19060;
-			remoteInfo = DeskSDK;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		925DAA8720AEFB090012B811 /* ZDAPIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDAPIExtension.swift; sourceTree = "<group>"; };
-		9285B57F20BF12D9002182FB /* ZDSearchAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDSearchAPIHandler.swift; sourceTree = "<group>"; };
-		928C4BA620A2C39500EA75F7 /* ZDAttachementProvoider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDAttachementProvoider.swift; sourceTree = "<group>"; };
-		928C4BAC20A2D2BC00EA75F7 /* ZDContactAttachementAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDContactAttachementAPIHandler.swift; sourceTree = "<group>"; };
-		928C4BB120A2D43900EA75F7 /* ZDTaskAttachementAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDTaskAttachementAPIHandler.swift; sourceTree = "<group>"; };
-		928C4BB420A2D44F00EA75F7 /* ZDAccountAttachmentAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDAccountAttachmentAPIHandler.swift; sourceTree = "<group>"; };
-		928C4BB820A2FE7600EA75F7 /* ZDUploadAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDUploadAPIHandler.swift; sourceTree = "<group>"; };
-		928C4BBC20A3009700EA75F7 /* ZDContractAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDContractAPIHandler.swift; sourceTree = "<group>"; };
 		928C4BC320A303F500EA75F7 /* ZDContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDContract.swift; sourceTree = "<group>"; };
-		92B5C61A20A22E1300469FC2 /* ZDTicketTimeEntryAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDTicketTimeEntryAPIHandler.swift; sourceTree = "<group>"; };
+		92AD1A522110469900E0CE3C /* ZDOrganizationAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDOrganizationAPIHandler.swift; sourceTree = "<group>"; };
+		92AD1A542110469900E0CE3C /* ZDTicketAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTicketAPIHandler.swift; sourceTree = "<group>"; };
+		92AD1A562110469900E0CE3C /* ZDContactAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDContactAPIHandler.swift; sourceTree = "<group>"; };
+		92AD1A582110469900E0CE3C /* ZDContactAttachementAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDContactAttachementAPIHandler.swift; sourceTree = "<group>"; };
+		92AD1A5A2110469900E0CE3C /* ZDTicketTimeEntryAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTicketTimeEntryAPIHandler.swift; sourceTree = "<group>"; };
+		92AD1A5C2110469900E0CE3C /* ZDContractAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDContractAPIHandler.swift; sourceTree = "<group>"; };
+		92AD1A5E2110469900E0CE3C /* ZDAgentAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDAgentAPIHandler.swift; sourceTree = "<group>"; };
+		92AD1A602110469900E0CE3C /* ZDUploadAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDUploadAPIHandler.swift; sourceTree = "<group>"; };
+		92AD1A622110469900E0CE3C /* ZDTicketCommentsAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTicketCommentsAPIHandler.swift; sourceTree = "<group>"; };
+		92AD1A642110469900E0CE3C /* ZDTicketAttachmentAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTicketAttachmentAPIHandler.swift; sourceTree = "<group>"; };
+		92AD1A662110469900E0CE3C /* ZDSearchAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDSearchAPIHandler.swift; sourceTree = "<group>"; };
+		92AD1A692110469900E0CE3C /* ZDAttachementProvoider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDAttachementProvoider.swift; sourceTree = "<group>"; };
+		92AD1A6B2110469900E0CE3C /* ZDLayoutAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDLayoutAPIHandler.swift; sourceTree = "<group>"; };
+		92AD1A6D2110469900E0CE3C /* ZDAccountAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDAccountAPIHandler.swift; sourceTree = "<group>"; };
+		92AD1A6F2110469900E0CE3C /* ZDTaskAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTaskAPIHandler.swift; sourceTree = "<group>"; };
+		92AD1A712110469900E0CE3C /* ZDAccountAttachmentAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDAccountAttachmentAPIHandler.swift; sourceTree = "<group>"; };
+		92AD1A732110469900E0CE3C /* ZDTaskAttachementAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTaskAttachementAPIHandler.swift; sourceTree = "<group>"; };
+		92AD1A752110469900E0CE3C /* ZDViewAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDViewAPIHandler.swift; sourceTree = "<group>"; };
+		92AD1A772110469900E0CE3C /* ZDMailReplyAddressAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDMailReplyAddressAPIHandler.swift; sourceTree = "<group>"; };
+		92AD1A792110469900E0CE3C /* ZDThreadAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDThreadAPIHandler.swift; sourceTree = "<group>"; };
+		92AD1A7B2110469900E0CE3C /* ZDDepartmentAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDDepartmentAPIHandler.swift; sourceTree = "<group>"; };
+		92AD1A7D2110469900E0CE3C /* ZDAgentSignaturesAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDAgentSignaturesAPIHandler.swift; sourceTree = "<group>"; };
+		92AD1AAA2110A2A700E0CE3C /* URLPathConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLPathConstants.swift; sourceTree = "<group>"; };
+		92AD1AAD2110A2DF00E0CE3C /* ZDAgentSignatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDAgentSignatures.swift; sourceTree = "<group>"; };
+		92AD1AAE2110A2DF00E0CE3C /* ZDCustomizedSignatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDCustomizedSignatures.swift; sourceTree = "<group>"; };
+		92AD1AB12110A2E000E0CE3C /* ZDLayouts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDLayouts.swift; sourceTree = "<group>"; };
+		92AD1AB32110A2E000E0CE3C /* ZDLayoutSections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDLayoutSections.swift; sourceTree = "<group>"; };
+		92AD1AB42110A2E000E0CE3C /* ZDMyForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDMyForm.swift; sourceTree = "<group>"; };
 		92B5C61D20A22E9200469FC2 /* ZDTicketTimeEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTicketTimeEntry.swift; sourceTree = "<group>"; };
-		92B5C62220A2327900469FC2 /* ZDContactAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDContactAPIHandler.swift; sourceTree = "<group>"; };
 		92B5C62520A2330300469FC2 /* ZDContactDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDContactDetail.swift; sourceTree = "<group>"; };
 		92B5C62820A2358800469FC2 /* ZDCustomerHappiness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDCustomerHappiness.swift; sourceTree = "<group>"; };
-		92B5C62C20A236D400469FC2 /* ZDAccountAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDAccountAPIHandler.swift; sourceTree = "<group>"; };
 		92B5C63220A2377600469FC2 /* ZDAccountDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDAccountDetail.swift; sourceTree = "<group>"; };
-		92B5C63620A2394A00469FC2 /* ZDTaskAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTaskAPIHandler.swift; sourceTree = "<group>"; };
 		92B5C63A20A2397000469FC2 /* ZDTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTask.swift; sourceTree = "<group>"; };
-		92B5C63E20A23B4E00469FC2 /* ZDAgentAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDAgentAPIHandler.swift; sourceTree = "<group>"; };
 		92B5C64220A23B9800469FC2 /* ZDAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDAgent.swift; sourceTree = "<group>"; };
-		92B5C64620A23C7C00469FC2 /* ZDDepartmentAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDDepartmentAPIHandler.swift; sourceTree = "<group>"; };
 		92B5C64A20A23CAC00469FC2 /* ZDDepartment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDDepartment.swift; sourceTree = "<group>"; };
 		92B64A7C20A053A200B19060 /* ZohoDeskSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZohoDeskSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B64A7F20A053A200B19060 /* ZohoDeskSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZohoDeskSDK.h; sourceTree = "<group>"; };
 		92B64A8020A053A200B19060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92B64A8520A053A200B19060 /* ZohoDeskSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZohoDeskSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		92B64ADE20A054AA00B19060 /* ZDOrganizationAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDOrganizationAPIHandler.swift; sourceTree = "<group>"; };
 		92B64AE220A0552800B19060 /* ZDBaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDBaseRequest.swift; sourceTree = "<group>"; };
 		92B64AE520A0554500B19060 /* ZDBaseRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDBaseRequester.swift; sourceTree = "<group>"; };
 		92B64AE820A0555A00B19060 /* ZDRequestMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDRequestMaker.swift; sourceTree = "<group>"; };
 		92B64AEB20A0556900B19060 /* ZDURLConstructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDURLConstructor.swift; sourceTree = "<group>"; };
 		92B64AF020A056B000B19060 /* ZDOrganization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDOrganization.swift; sourceTree = "<group>"; };
 		92B64AF520A0572D00B19060 /* OptionalUNWrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalUNWrap.swift; sourceTree = "<group>"; };
-		92B64AF920A057C700B19060 /* URLConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLConstants.swift; sourceTree = "<group>"; };
 		92B64AFC20A0587200B19060 /* ZohoDeskSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZohoDeskSDK.swift; sourceTree = "<group>"; };
 		92B64AFF20A05E0C00B19060 /* DataExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtention.swift; sourceTree = "<group>"; };
 		92B64B0020A05E0C00B19060 /* StringExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtention.swift; sourceTree = "<group>"; };
 		92B64B0620A05E6300B19060 /* ZDUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDUserDefaults.swift; sourceTree = "<group>"; };
-		92B64B1E20A1735D00B19060 /* ZDTicketAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTicketAPIHandler.swift; sourceTree = "<group>"; };
 		92B64B2120A1758200B19060 /* ZDTicketDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTicketDetail.swift; sourceTree = "<group>"; };
 		92B64B2620A1766900B19060 /* ZDContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDContact.swift; sourceTree = "<group>"; };
 		92B64B2A20A1768300B19060 /* ZDAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDAccount.swift; sourceTree = "<group>"; };
 		92B64B2D20A1789C00B19060 /* ZDTicket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTicket.swift; sourceTree = "<group>"; };
-		92B64B3120A1A28900B19060 /* ZDThreadAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDThreadAPIHandler.swift; sourceTree = "<group>"; };
 		92B64B3520A1A34700B19060 /* ZDThreadAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDThreadAction.swift; sourceTree = "<group>"; };
 		92B64B3620A1A34800B19060 /* ZDAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDAttachment.swift; sourceTree = "<group>"; };
 		92B64B3720A1A34800B19060 /* ZDThreadDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDThreadDetail.swift; sourceTree = "<group>"; };
 		92B64B3820A1A34800B19060 /* ZDThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDThread.swift; sourceTree = "<group>"; };
 		92B64B4120A1A37400B19060 /* ZDConverstaion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDConverstaion.swift; sourceTree = "<group>"; };
-		92B64B4520A1D2AA00B19060 /* ZDTicketCommentsAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDTicketCommentsAPIHandler.swift; sourceTree = "<group>"; };
 		92B64B4820A1D34600B19060 /* ZDTicketComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTicketComment.swift; sourceTree = "<group>"; };
-		92C1358D20A30BA3001466B5 /* ZDMailReplyAddressAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDMailReplyAddressAPIHandler.swift; sourceTree = "<group>"; };
-		92C19EC920B67CCB0088D7AC /* ZDTicketAttachmentAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTicketAttachmentAPIHandler.swift; sourceTree = "<group>"; };
 		92C19ECD20B6E2230088D7AC /* ZDLastThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDLastThread.swift; sourceTree = "<group>"; };
 		92C19ED820B8882C0088D7AC /* ZDSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDSearch.swift; sourceTree = "<group>"; };
-		92EC563620B93A660019298C /* ZDViewAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDViewAPIHandler.swift; sourceTree = "<group>"; };
 		92EC563920B93D120019298C /* ZDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,81 +144,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92B64A8220A053A200B19060 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				92B64A8620A053A200B19060 /* ZohoDeskSDK.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		928C4BA120A2C09600EA75F7 /* TicketAttchements */ = {
-			isa = PBXGroup;
-			children = (
-				92C19EC920B67CCB0088D7AC /* ZDTicketAttachmentAPIHandler.swift */,
-			);
-			path = TicketAttchements;
-			sourceTree = "<group>";
-		};
-		928C4BA220A2C0B200EA75F7 /* InternalHelperProvoider */ = {
-			isa = PBXGroup;
-			children = (
-				928C4BA320A2C0C400EA75F7 /* Attachments */,
-			);
-			path = InternalHelperProvoider;
-			sourceTree = "<group>";
-		};
-		928C4BA320A2C0C400EA75F7 /* Attachments */ = {
-			isa = PBXGroup;
-			children = (
-				928C4BA620A2C39500EA75F7 /* ZDAttachementProvoider.swift */,
-			);
-			path = Attachments;
-			sourceTree = "<group>";
-		};
-		928C4BAB20A2D27900EA75F7 /* ContactAttachment */ = {
-			isa = PBXGroup;
-			children = (
-				928C4BAC20A2D2BC00EA75F7 /* ZDContactAttachementAPIHandler.swift */,
-			);
-			path = ContactAttachment;
-			sourceTree = "<group>";
-		};
-		928C4BAF20A2D40600EA75F7 /* AccountsAttachment */ = {
-			isa = PBXGroup;
-			children = (
-				928C4BB420A2D44F00EA75F7 /* ZDAccountAttachmentAPIHandler.swift */,
-			);
-			path = AccountsAttachment;
-			sourceTree = "<group>";
-		};
-		928C4BB020A2D41A00EA75F7 /* TaskAttachement */ = {
-			isa = PBXGroup;
-			children = (
-				928C4BB120A2D43900EA75F7 /* ZDTaskAttachementAPIHandler.swift */,
-			);
-			path = TaskAttachement;
-			sourceTree = "<group>";
-		};
-		928C4BB720A2FE4600EA75F7 /* Uploads */ = {
-			isa = PBXGroup;
-			children = (
-				928C4BB820A2FE7600EA75F7 /* ZDUploadAPIHandler.swift */,
-			);
-			path = Uploads;
-			sourceTree = "<group>";
-		};
-		928C4BBB20A3007900EA75F7 /* Contracts */ = {
-			isa = PBXGroup;
-			children = (
-				928C4BBC20A3009700EA75F7 /* ZDContractAPIHandler.swift */,
-			);
-			path = Contracts;
-			sourceTree = "<group>";
-		};
 		928C4BC220A303D900EA75F7 /* Contracts */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,12 +155,252 @@
 			path = Contracts;
 			sourceTree = "<group>";
 		};
-		92B5C61920A22DE600469FC2 /* TicketTimeEntry */ = {
+		92AD1A502110469900E0CE3C /* Providers */ = {
 			isa = PBXGroup;
 			children = (
-				92B5C61A20A22E1300469FC2 /* ZDTicketTimeEntryAPIHandler.swift */,
+				92AD1A512110469900E0CE3C /* Organizations */,
+				92AD1A532110469900E0CE3C /* Tickets */,
+				92AD1A552110469900E0CE3C /* Contact */,
+				92AD1A572110469900E0CE3C /* ContactAttachment */,
+				92AD1A592110469900E0CE3C /* TicketTimeEntry */,
+				92AD1A5B2110469900E0CE3C /* Contracts */,
+				92AD1A5D2110469900E0CE3C /* Agents */,
+				92AD1A5F2110469900E0CE3C /* Uploads */,
+				92AD1A612110469900E0CE3C /* TicketComments */,
+				92AD1A632110469900E0CE3C /* TicketAttchements */,
+				92AD1A652110469900E0CE3C /* Search */,
+				92AD1A672110469900E0CE3C /* InternalHelperProvoider */,
+				92AD1A6A2110469900E0CE3C /* Layouts */,
+				92AD1A6C2110469900E0CE3C /* Accounts */,
+				92AD1A6E2110469900E0CE3C /* Task */,
+				92AD1A702110469900E0CE3C /* AccountsAttachment */,
+				92AD1A722110469900E0CE3C /* TaskAttachement */,
+				92AD1A742110469900E0CE3C /* Views */,
+				92AD1A762110469900E0CE3C /* MailReplyAddress */,
+				92AD1A782110469900E0CE3C /* Thread */,
+				92AD1A7A2110469900E0CE3C /* Departements */,
+				92AD1A7C2110469900E0CE3C /* AgentSignatures */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		92AD1A512110469900E0CE3C /* Organizations */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A522110469900E0CE3C /* ZDOrganizationAPIHandler.swift */,
+			);
+			path = Organizations;
+			sourceTree = "<group>";
+		};
+		92AD1A532110469900E0CE3C /* Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A542110469900E0CE3C /* ZDTicketAPIHandler.swift */,
+			);
+			path = Tickets;
+			sourceTree = "<group>";
+		};
+		92AD1A552110469900E0CE3C /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A562110469900E0CE3C /* ZDContactAPIHandler.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		92AD1A572110469900E0CE3C /* ContactAttachment */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A582110469900E0CE3C /* ZDContactAttachementAPIHandler.swift */,
+			);
+			path = ContactAttachment;
+			sourceTree = "<group>";
+		};
+		92AD1A592110469900E0CE3C /* TicketTimeEntry */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A5A2110469900E0CE3C /* ZDTicketTimeEntryAPIHandler.swift */,
 			);
 			path = TicketTimeEntry;
+			sourceTree = "<group>";
+		};
+		92AD1A5B2110469900E0CE3C /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A5C2110469900E0CE3C /* ZDContractAPIHandler.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		92AD1A5D2110469900E0CE3C /* Agents */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A5E2110469900E0CE3C /* ZDAgentAPIHandler.swift */,
+			);
+			path = Agents;
+			sourceTree = "<group>";
+		};
+		92AD1A5F2110469900E0CE3C /* Uploads */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A602110469900E0CE3C /* ZDUploadAPIHandler.swift */,
+			);
+			path = Uploads;
+			sourceTree = "<group>";
+		};
+		92AD1A612110469900E0CE3C /* TicketComments */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A622110469900E0CE3C /* ZDTicketCommentsAPIHandler.swift */,
+			);
+			path = TicketComments;
+			sourceTree = "<group>";
+		};
+		92AD1A632110469900E0CE3C /* TicketAttchements */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A642110469900E0CE3C /* ZDTicketAttachmentAPIHandler.swift */,
+			);
+			path = TicketAttchements;
+			sourceTree = "<group>";
+		};
+		92AD1A652110469900E0CE3C /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A662110469900E0CE3C /* ZDSearchAPIHandler.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		92AD1A672110469900E0CE3C /* InternalHelperProvoider */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A682110469900E0CE3C /* Attachments */,
+			);
+			path = InternalHelperProvoider;
+			sourceTree = "<group>";
+		};
+		92AD1A682110469900E0CE3C /* Attachments */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A692110469900E0CE3C /* ZDAttachementProvoider.swift */,
+			);
+			path = Attachments;
+			sourceTree = "<group>";
+		};
+		92AD1A6A2110469900E0CE3C /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A6B2110469900E0CE3C /* ZDLayoutAPIHandler.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		92AD1A6C2110469900E0CE3C /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A6D2110469900E0CE3C /* ZDAccountAPIHandler.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		92AD1A6E2110469900E0CE3C /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A6F2110469900E0CE3C /* ZDTaskAPIHandler.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		92AD1A702110469900E0CE3C /* AccountsAttachment */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A712110469900E0CE3C /* ZDAccountAttachmentAPIHandler.swift */,
+			);
+			path = AccountsAttachment;
+			sourceTree = "<group>";
+		};
+		92AD1A722110469900E0CE3C /* TaskAttachement */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A732110469900E0CE3C /* ZDTaskAttachementAPIHandler.swift */,
+			);
+			path = TaskAttachement;
+			sourceTree = "<group>";
+		};
+		92AD1A742110469900E0CE3C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A752110469900E0CE3C /* ZDViewAPIHandler.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		92AD1A762110469900E0CE3C /* MailReplyAddress */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A772110469900E0CE3C /* ZDMailReplyAddressAPIHandler.swift */,
+			);
+			path = MailReplyAddress;
+			sourceTree = "<group>";
+		};
+		92AD1A782110469900E0CE3C /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A792110469900E0CE3C /* ZDThreadAPIHandler.swift */,
+			);
+			path = Thread;
+			sourceTree = "<group>";
+		};
+		92AD1A7A2110469900E0CE3C /* Departements */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A7B2110469900E0CE3C /* ZDDepartmentAPIHandler.swift */,
+			);
+			path = Departements;
+			sourceTree = "<group>";
+		};
+		92AD1A7C2110469900E0CE3C /* AgentSignatures */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1A7D2110469900E0CE3C /* ZDAgentSignaturesAPIHandler.swift */,
+			);
+			path = AgentSignatures;
+			sourceTree = "<group>";
+		};
+		92AD1AAC2110A2DF00E0CE3C /* AgentSignatures */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1AAD2110A2DF00E0CE3C /* ZDAgentSignatures.swift */,
+				92AD1AAE2110A2DF00E0CE3C /* ZDCustomizedSignatures.swift */,
+			);
+			path = AgentSignatures;
+			sourceTree = "<group>";
+		};
+		92AD1AAF2110A2E000E0CE3C /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1AB02110A2E000E0CE3C /* GetLayouts */,
+				92AD1AB22110A2E000E0CE3C /* MyForm */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		92AD1AB02110A2E000E0CE3C /* GetLayouts */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1AB12110A2E000E0CE3C /* ZDLayouts.swift */,
+			);
+			path = GetLayouts;
+			sourceTree = "<group>";
+		};
+		92AD1AB22110A2E000E0CE3C /* MyForm */ = {
+			isa = PBXGroup;
+			children = (
+				92AD1AB32110A2E000E0CE3C /* ZDLayoutSections.swift */,
+				92AD1AB42110A2E000E0CE3C /* ZDMyForm.swift */,
+			);
+			path = MyForm;
 			sourceTree = "<group>";
 		};
 		92B5C61C20A22E8100469FC2 /* TicketTimeEntry */ = {
@@ -284,30 +411,6 @@
 			path = TicketTimeEntry;
 			sourceTree = "<group>";
 		};
-		92B5C62120A2325400469FC2 /* Contact */ = {
-			isa = PBXGroup;
-			children = (
-				92B5C62220A2327900469FC2 /* ZDContactAPIHandler.swift */,
-			);
-			path = Contact;
-			sourceTree = "<group>";
-		};
-		92B5C62B20A236A100469FC2 /* Accounts */ = {
-			isa = PBXGroup;
-			children = (
-				92B5C62C20A236D400469FC2 /* ZDAccountAPIHandler.swift */,
-			);
-			path = Accounts;
-			sourceTree = "<group>";
-		};
-		92B5C63520A2392800469FC2 /* Task */ = {
-			isa = PBXGroup;
-			children = (
-				92B5C63620A2394A00469FC2 /* ZDTaskAPIHandler.swift */,
-			);
-			path = Task;
-			sourceTree = "<group>";
-		};
 		92B5C63920A2396400469FC2 /* Task */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,28 +419,12 @@
 			path = Task;
 			sourceTree = "<group>";
 		};
-		92B5C63D20A23B2F00469FC2 /* Agents */ = {
-			isa = PBXGroup;
-			children = (
-				92B5C63E20A23B4E00469FC2 /* ZDAgentAPIHandler.swift */,
-			);
-			path = Agents;
-			sourceTree = "<group>";
-		};
 		92B5C64120A23B8C00469FC2 /* Agent */ = {
 			isa = PBXGroup;
 			children = (
 				92B5C64220A23B9800469FC2 /* ZDAgent.swift */,
 			);
 			path = Agent;
-			sourceTree = "<group>";
-		};
-		92B5C64520A23C6D00469FC2 /* Departements */ = {
-			isa = PBXGroup;
-			children = (
-				92B5C64620A23C7C00469FC2 /* ZDDepartmentAPIHandler.swift */,
-			);
-			path = Departements;
 			sourceTree = "<group>";
 		};
 		92B5C64920A23C8E00469FC2 /* Department */ = {
@@ -351,8 +438,8 @@
 		92B64A7220A053A200B19060 = {
 			isa = PBXGroup;
 			children = (
+				92AD1A502110469900E0CE3C /* Providers */,
 				92B64A7E20A053A200B19060 /* DeskSDK */,
-				92B64ADC20A0545900B19060 /* Providers */,
 				92B64AEE20A0563000B19060 /* JsonParser */,
 				92B64AE120A0550200B19060 /* NetworkHelper */,
 				92B64AF320A056EA00B19060 /* Utility */,
@@ -364,7 +451,6 @@
 			isa = PBXGroup;
 			children = (
 				92B64A7C20A053A200B19060 /* ZohoDeskSDK.framework */,
-				92B64A8520A053A200B19060 /* ZohoDeskSDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -377,41 +463,6 @@
 				92B64A8020A053A200B19060 /* Info.plist */,
 			);
 			path = DeskSDK;
-			sourceTree = "<group>";
-		};
-		92B64ADC20A0545900B19060 /* Providers */ = {
-			isa = PBXGroup;
-			children = (
-				92EC563520B93A250019298C /* Views */,
-				92B64ADD20A0546F00B19060 /* Organizations */,
-				92B64B1D20A1732F00B19060 /* Tickets */,
-				92B64B3020A1A27200B19060 /* Thread */,
-				92B64B4420A1D23F00B19060 /* TicketComments */,
-				928C4BA120A2C09600EA75F7 /* TicketAttchements */,
-				92B5C61920A22DE600469FC2 /* TicketTimeEntry */,
-				92B5C62120A2325400469FC2 /* Contact */,
-				928C4BAB20A2D27900EA75F7 /* ContactAttachment */,
-				92B5C62B20A236A100469FC2 /* Accounts */,
-				928C4BAF20A2D40600EA75F7 /* AccountsAttachment */,
-				92B5C63520A2392800469FC2 /* Task */,
-				928C4BB020A2D41A00EA75F7 /* TaskAttachement */,
-				92B5C63D20A23B2F00469FC2 /* Agents */,
-				92B5C64520A23C6D00469FC2 /* Departements */,
-				928C4BB720A2FE4600EA75F7 /* Uploads */,
-				928C4BBB20A3007900EA75F7 /* Contracts */,
-				92C1358F20A330D7001466B5 /* Search */,
-				92C1358C20A30B72001466B5 /* MailReplyAddress */,
-				928C4BA220A2C0B200EA75F7 /* InternalHelperProvoider */,
-			);
-			path = Providers;
-			sourceTree = "<group>";
-		};
-		92B64ADD20A0546F00B19060 /* Organizations */ = {
-			isa = PBXGroup;
-			children = (
-				92B64ADE20A054AA00B19060 /* ZDOrganizationAPIHandler.swift */,
-			);
-			path = Organizations;
 			sourceTree = "<group>";
 		};
 		92B64AE120A0550200B19060 /* NetworkHelper */ = {
@@ -428,6 +479,8 @@
 		92B64AEE20A0563000B19060 /* JsonParser */ = {
 			isa = PBXGroup;
 			children = (
+				92AD1AAC2110A2DF00E0CE3C /* AgentSignatures */,
+				92AD1AAF2110A2E000E0CE3C /* Layouts */,
 				92EC563820B93CFF0019298C /* Views */,
 				92C19ED720B888100088D7AC /* Search */,
 				928C4BC220A303D900EA75F7 /* Contracts */,
@@ -476,7 +529,7 @@
 		92B64AF820A057A600B19060 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				92B64AF920A057C700B19060 /* URLConstants.swift */,
+				92AD1AAA2110A2A700E0CE3C /* URLPathConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -487,14 +540,6 @@
 				92B64B0620A05E6300B19060 /* ZDUserDefaults.swift */,
 			);
 			path = UserDefaults;
-			sourceTree = "<group>";
-		};
-		92B64B1D20A1732F00B19060 /* Tickets */ = {
-			isa = PBXGroup;
-			children = (
-				92B64B1E20A1735D00B19060 /* ZDTicketAPIHandler.swift */,
-			);
-			path = Tickets;
 			sourceTree = "<group>";
 		};
 		92B64B2420A1758600B19060 /* Tickets */ = {
@@ -526,14 +571,6 @@
 			path = Accounts;
 			sourceTree = "<group>";
 		};
-		92B64B3020A1A27200B19060 /* Thread */ = {
-			isa = PBXGroup;
-			children = (
-				92B64B3120A1A28900B19060 /* ZDThreadAPIHandler.swift */,
-			);
-			path = Thread;
-			sourceTree = "<group>";
-		};
 		92B64B3420A1A2AC00B19060 /* Thread */ = {
 			isa = PBXGroup;
 			children = (
@@ -547,44 +584,12 @@
 			path = Thread;
 			sourceTree = "<group>";
 		};
-		92B64B4420A1D23F00B19060 /* TicketComments */ = {
-			isa = PBXGroup;
-			children = (
-				92B64B4520A1D2AA00B19060 /* ZDTicketCommentsAPIHandler.swift */,
-			);
-			path = TicketComments;
-			sourceTree = "<group>";
-		};
-		92C1358C20A30B72001466B5 /* MailReplyAddress */ = {
-			isa = PBXGroup;
-			children = (
-				92C1358D20A30BA3001466B5 /* ZDMailReplyAddressAPIHandler.swift */,
-			);
-			path = MailReplyAddress;
-			sourceTree = "<group>";
-		};
-		92C1358F20A330D7001466B5 /* Search */ = {
-			isa = PBXGroup;
-			children = (
-				9285B57F20BF12D9002182FB /* ZDSearchAPIHandler.swift */,
-			);
-			path = Search;
-			sourceTree = "<group>";
-		};
 		92C19ED720B888100088D7AC /* Search */ = {
 			isa = PBXGroup;
 			children = (
 				92C19ED820B8882C0088D7AC /* ZDSearch.swift */,
 			);
 			path = Search;
-			sourceTree = "<group>";
-		};
-		92EC563520B93A250019298C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				92EC563620B93A660019298C /* ZDViewAPIHandler.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		92EC563820B93CFF0019298C /* Views */ = {
@@ -627,24 +632,6 @@
 			productReference = 92B64A7C20A053A200B19060 /* ZohoDeskSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		92B64A8420A053A200B19060 /* ZohoDeskSDKTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 92B64A9320A053A200B19060 /* Build configuration list for PBXNativeTarget "ZohoDeskSDKTests" */;
-			buildPhases = (
-				92B64A8120A053A200B19060 /* Sources */,
-				92B64A8220A053A200B19060 /* Frameworks */,
-				92B64A8320A053A200B19060 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				92B64A8820A053A200B19060 /* PBXTargetDependency */,
-			);
-			name = ZohoDeskSDKTests;
-			productName = DeskSDKTests;
-			productReference = 92B64A8520A053A200B19060 /* ZohoDeskSDKTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -658,9 +645,6 @@
 					92B64A7B20A053A200B19060 = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 0930;
-					};
-					92B64A8420A053A200B19060 = {
-						CreatedOnToolsVersion = 9.3;
 					};
 				};
 			};
@@ -677,20 +661,12 @@
 			projectRoot = "";
 			targets = (
 				92B64A7B20A053A200B19060 /* ZohoDeskSDK */,
-				92B64A8420A053A200B19060 /* ZohoDeskSDKTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		92B64A7A20A053A200B19060 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		92B64A8320A053A200B19060 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -704,121 +680,70 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92B64B4620A1D2AA00B19060 /* ZDTicketCommentsAPIHandler.swift in Sources */,
+				92AD1A862110469900E0CE3C /* ZDTicketCommentsAPIHandler.swift in Sources */,
 				92B64B3B20A1A34800B19060 /* ZDAttachment.swift in Sources */,
 				92B64B2720A1766900B19060 /* ZDContact.swift in Sources */,
 				92B64B3D20A1A34800B19060 /* ZDThreadDetail.swift in Sources */,
 				92B64B0320A05E0C00B19060 /* StringExtention.swift in Sources */,
-				92B5C61B20A22E1300469FC2 /* ZDTicketTimeEntryAPIHandler.swift in Sources */,
-				92EC563720B93A660019298C /* ZDViewAPIHandler.swift in Sources */,
+				92AD1A852110469900E0CE3C /* ZDUploadAPIHandler.swift in Sources */,
+				92AD1A7E2110469900E0CE3C /* ZDOrganizationAPIHandler.swift in Sources */,
+				92AD1AB72110A2E000E0CE3C /* ZDLayouts.swift in Sources */,
 				92C19ED920B8882C0088D7AC /* ZDSearch.swift in Sources */,
 				92B64AF120A056B000B19060 /* ZDOrganization.swift in Sources */,
+				92AD1A8F2110469900E0CE3C /* ZDViewAPIHandler.swift in Sources */,
+				92AD1A842110469900E0CE3C /* ZDAgentAPIHandler.swift in Sources */,
 				92B5C62920A2358800469FC2 /* ZDCustomerHappiness.swift in Sources */,
+				92AD1AB52110A2E000E0CE3C /* ZDAgentSignatures.swift in Sources */,
+				92AD1A912110469900E0CE3C /* ZDThreadAPIHandler.swift in Sources */,
 				92B64AE320A0552800B19060 /* ZDBaseRequest.swift in Sources */,
 				92B64B4220A1A37400B19060 /* ZDConverstaion.swift in Sources */,
-				92C1358E20A30BA3001466B5 /* ZDMailReplyAddressAPIHandler.swift in Sources */,
 				928C4BC420A303F500EA75F7 /* ZDContract.swift in Sources */,
-				92B5C63F20A23B4E00469FC2 /* ZDAgentAPIHandler.swift in Sources */,
-				92B64B1F20A1735D00B19060 /* ZDTicketAPIHandler.swift in Sources */,
 				92B64B2B20A1768300B19060 /* ZDAccount.swift in Sources */,
+				92AD1A8A2110469900E0CE3C /* ZDLayoutAPIHandler.swift in Sources */,
 				92B5C64320A23B9800469FC2 /* ZDAgent.swift in Sources */,
-				92B5C62320A2327900469FC2 /* ZDContactAPIHandler.swift in Sources */,
 				92B5C64B20A23CAC00469FC2 /* ZDDepartment.swift in Sources */,
-				92B5C63720A2394A00469FC2 /* ZDTaskAPIHandler.swift in Sources */,
-				928C4BAD20A2D2BC00EA75F7 /* ZDContactAttachementAPIHandler.swift in Sources */,
-				928C4BB520A2D44F00EA75F7 /* ZDAccountAttachmentAPIHandler.swift in Sources */,
 				92B64B4920A1D34600B19060 /* ZDTicketComment.swift in Sources */,
 				92B5C63320A2377600469FC2 /* ZDAccountDetail.swift in Sources */,
 				92B5C63B20A2397000469FC2 /* ZDTask.swift in Sources */,
+				92AD1A922110469900E0CE3C /* ZDDepartmentAPIHandler.swift in Sources */,
 				92B64AF620A0572D00B19060 /* OptionalUNWrap.swift in Sources */,
-				9285B58020BF12D9002182FB /* ZDSearchAPIHandler.swift in Sources */,
+				92AD1AB62110A2E000E0CE3C /* ZDCustomizedSignatures.swift in Sources */,
 				92B64B3F20A1A34800B19060 /* ZDThread.swift in Sources */,
+				92AD1A902110469900E0CE3C /* ZDMailReplyAddressAPIHandler.swift in Sources */,
+				92AD1A892110469900E0CE3C /* ZDAttachementProvoider.swift in Sources */,
 				92B64AFD20A0587200B19060 /* ZohoDeskSDK.swift in Sources */,
+				92AD1A812110469900E0CE3C /* ZDContactAttachementAPIHandler.swift in Sources */,
+				92AD1A8C2110469900E0CE3C /* ZDTaskAPIHandler.swift in Sources */,
 				92B5C61E20A22E9200469FC2 /* ZDTicketTimeEntry.swift in Sources */,
-				92B64B3220A1A28900B19060 /* ZDThreadAPIHandler.swift in Sources */,
 				92B64B0120A05E0C00B19060 /* DataExtention.swift in Sources */,
-				92B64ADF20A054AA00B19060 /* ZDOrganizationAPIHandler.swift in Sources */,
+				92AD1A822110469900E0CE3C /* ZDTicketTimeEntryAPIHandler.swift in Sources */,
+				92AD1AB92110A2E000E0CE3C /* ZDMyForm.swift in Sources */,
+				92AD1AAB2110A2A700E0CE3C /* URLPathConstants.swift in Sources */,
 				92B64AE920A0555A00B19060 /* ZDRequestMaker.swift in Sources */,
-				92C19ECA20B67CCB0088D7AC /* ZDTicketAttachmentAPIHandler.swift in Sources */,
-				928C4BB220A2D43900EA75F7 /* ZDTaskAttachementAPIHandler.swift in Sources */,
-				92B5C64720A23C7C00469FC2 /* ZDDepartmentAPIHandler.swift in Sources */,
-				928C4BBD20A3009700EA75F7 /* ZDContractAPIHandler.swift in Sources */,
 				925DAA8820AEFB090012B811 /* ZDAPIExtension.swift in Sources */,
-				92B5C62D20A236D400469FC2 /* ZDAccountAPIHandler.swift in Sources */,
 				92B64B2E20A1789C00B19060 /* ZDTicket.swift in Sources */,
 				92B64B0720A05E6300B19060 /* ZDUserDefaults.swift in Sources */,
 				92B64B2220A1758200B19060 /* ZDTicketDetail.swift in Sources */,
-				92B64AFA20A057C700B19060 /* URLConstants.swift in Sources */,
+				92AD1A832110469900E0CE3C /* ZDContractAPIHandler.swift in Sources */,
 				92EC563A20B93D120019298C /* ZDView.swift in Sources */,
+				92AD1A932110469900E0CE3C /* ZDAgentSignaturesAPIHandler.swift in Sources */,
+				92AD1A8D2110469900E0CE3C /* ZDAccountAttachmentAPIHandler.swift in Sources */,
+				92AD1A882110469900E0CE3C /* ZDSearchAPIHandler.swift in Sources */,
+				92AD1A7F2110469900E0CE3C /* ZDTicketAPIHandler.swift in Sources */,
+				92AD1A8E2110469900E0CE3C /* ZDTaskAttachementAPIHandler.swift in Sources */,
+				92AD1A802110469900E0CE3C /* ZDContactAPIHandler.swift in Sources */,
 				92B64AEC20A0556900B19060 /* ZDURLConstructor.swift in Sources */,
 				92B64B3920A1A34800B19060 /* ZDThreadAction.swift in Sources */,
-				928C4BA720A2C39500EA75F7 /* ZDAttachementProvoider.swift in Sources */,
 				92C19ECE20B6E2230088D7AC /* ZDLastThread.swift in Sources */,
 				92B5C62620A2330300469FC2 /* ZDContactDetail.swift in Sources */,
 				92B64AE620A0554500B19060 /* ZDBaseRequester.swift in Sources */,
-				928C4BB920A2FE7600EA75F7 /* ZDUploadAPIHandler.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		92B64A8120A053A200B19060 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				92B5C62420A2327900469FC2 /* ZDContactAPIHandler.swift in Sources */,
-				92B64AED20A0556A00B19060 /* ZDURLConstructor.swift in Sources */,
-				92B64AE420A0552800B19060 /* ZDBaseRequest.swift in Sources */,
-				92B64AE720A0554500B19060 /* ZDBaseRequester.swift in Sources */,
-				92B5C64C20A23CAC00469FC2 /* ZDDepartment.swift in Sources */,
-				92B5C63420A2377600469FC2 /* ZDAccountDetail.swift in Sources */,
-				92B64B3E20A1A34800B19060 /* ZDThreadDetail.swift in Sources */,
-				92B64B0820A05E6300B19060 /* ZDUserDefaults.swift in Sources */,
-				92B64B2320A1758200B19060 /* ZDTicketDetail.swift in Sources */,
-				92B64B4720A1D2AA00B19060 /* ZDTicketCommentsAPIHandler.swift in Sources */,
-				92B5C63820A2394A00469FC2 /* ZDTaskAPIHandler.swift in Sources */,
-				928C4BC520A303F500EA75F7 /* ZDContract.swift in Sources */,
-				92B64B3A20A1A34800B19060 /* ZDThreadAction.swift in Sources */,
-				92B64B2C20A1768300B19060 /* ZDAccount.swift in Sources */,
-				92B5C61F20A22E9200469FC2 /* ZDTicketTimeEntry.swift in Sources */,
-				92B64B2F20A1789C00B19060 /* ZDTicket.swift in Sources */,
-				92B5C62E20A236D400469FC2 /* ZDAccountAPIHandler.swift in Sources */,
-				92B64AF220A056B000B19060 /* ZDOrganization.swift in Sources */,
-				92B5C62720A2330300469FC2 /* ZDContactDetail.swift in Sources */,
-				92B64B0220A05E0C00B19060 /* DataExtention.swift in Sources */,
-				92B5C64420A23B9800469FC2 /* ZDAgent.swift in Sources */,
-				92B64AEA20A0555A00B19060 /* ZDRequestMaker.swift in Sources */,
-				92B5C64020A23B4E00469FC2 /* ZDAgentAPIHandler.swift in Sources */,
-				92B64B2820A1766900B19060 /* ZDContact.swift in Sources */,
-				92B64AFE20A0587200B19060 /* ZohoDeskSDK.swift in Sources */,
-				92B64B4020A1A34800B19060 /* ZDThread.swift in Sources */,
-				92B64B3C20A1A34800B19060 /* ZDAttachment.swift in Sources */,
-				92B5C64820A23C7C00469FC2 /* ZDDepartmentAPIHandler.swift in Sources */,
-				92B64B4320A1A37400B19060 /* ZDConverstaion.swift in Sources */,
-				92B64B0C20A0613F00B19060 /* StringExtention.swift in Sources */,
-				92B64B4A20A1D34600B19060 /* ZDTicketComment.swift in Sources */,
-				928C4BB320A2D43900EA75F7 /* ZDTaskAttachementAPIHandler.swift in Sources */,
-				928C4BBE20A3009700EA75F7 /* ZDContractAPIHandler.swift in Sources */,
-				92B64B3320A1A28900B19060 /* ZDThreadAPIHandler.swift in Sources */,
-				928C4BAE20A2D2BC00EA75F7 /* ZDContactAttachementAPIHandler.swift in Sources */,
-				92B5C62A20A2358800469FC2 /* ZDCustomerHappiness.swift in Sources */,
-				92B64AF720A0572D00B19060 /* OptionalUNWrap.swift in Sources */,
-				92B64AFB20A057C700B19060 /* URLConstants.swift in Sources */,
-				92B5C63C20A2397000469FC2 /* ZDTask.swift in Sources */,
-				928C4BB620A2D44F00EA75F7 /* ZDAccountAttachmentAPIHandler.swift in Sources */,
-				92B64B2020A1735D00B19060 /* ZDTicketAPIHandler.swift in Sources */,
-				92B64AE020A054AA00B19060 /* ZDOrganizationAPIHandler.swift in Sources */,
-				928C4BBA20A2FE7600EA75F7 /* ZDUploadAPIHandler.swift in Sources */,
+				92AD1A872110469900E0CE3C /* ZDTicketAttachmentAPIHandler.swift in Sources */,
+				92AD1AB82110A2E000E0CE3C /* ZDLayoutSections.swift in Sources */,
+				92AD1A8B2110469900E0CE3C /* ZDAccountAPIHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		92B64A8820A053A200B19060 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 92B64A7B20A053A200B19060 /* ZohoDeskSDK */;
-			targetProxy = 92B64A8720A053A200B19060 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		92B64A8E20A053A200B19060 /* Debug */ = {
@@ -998,44 +923,6 @@
 			};
 			name = Release;
 		};
-		92B64A9420A053A200B19060 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TZ824L8Y37;
-				INFOPLIST_FILE = DeskSDKTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zoho.desksdk.DeskSDKTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		92B64A9520A053A200B19060 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TZ824L8Y37;
-				INFOPLIST_FILE = DeskSDKTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zoho.desksdk.DeskSDKTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1053,15 +940,6 @@
 			buildConfigurations = (
 				92B64A9120A053A200B19060 /* Debug */,
 				92B64A9220A053A200B19060 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		92B64A9320A053A200B19060 /* Build configuration list for PBXNativeTarget "ZohoDeskSDKTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				92B64A9420A053A200B19060 /* Debug */,
-				92B64A9520A053A200B19060 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

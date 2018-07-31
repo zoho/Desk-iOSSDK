@@ -8,20 +8,20 @@
 
 import Foundation
 
-typealias ZDRequestMakerSuccess = ((Data?, _ responseCode: Int) -> Void)?
+public typealias ZDRequestMakerSuccess = ((Data?, _ responseCode: Int) -> Void)?
 
-typealias ZDRequestMakerFailure = ((_ data: Data?, _ error: Error?, _ responseCode: Int) -> Void)?
+public typealias ZDRequestMakerFailure = ((_ data: Data?, _ error: Error?, _ responseCode: Int) -> Void)?
 
-internal class ZDRequestMaker {
+public class ZDRequestMaker{
 
-    static let sharedInstance = ZDRequestMaker()
+    public static let sharedInstance = ZDRequestMaker()
 
     
     private var task: URLSessionDataTask?
     private var successCodes: CountableRange<Int> = 200..<299
     private var failureCodes: CountableRange<Int> = 400..<499
     
-    @discardableResult func makeRequest(for request:ZDBaseRequest,
+    @discardableResult public func makeRequest(for request:ZDBaseRequest,
                           success: ZDRequestMakerSuccess = nil,
                           failure: ZDRequestMakerFailure = nil) -> URLRequest  {
     

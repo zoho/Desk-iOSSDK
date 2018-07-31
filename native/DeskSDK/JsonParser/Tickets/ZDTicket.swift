@@ -12,70 +12,70 @@ import Foundation
 ///Tickets are organizing units using which service agents handle customer enquiries, requests, complaints, and other such interactions in Zoho Desk.
 @objc public class ZDTicket : NSObject {
 
-    public var ticketNumber         = ""
-    public var customerResponseTime = ""
+    @objc public var ticketNumber         = ""
+    @objc public var customerResponseTime = ""
 
     ///Product to which the ticket is mapped
-    public var productId:String?
+    @objc public var productId:String?
 
     ///Contact who raised the ticket.
-    public var contactId            = ""
+    @objc public var contactId            = ""
 
     ///Ticket subject
-    public var subject              = ""
+    @objc public var subject              = ""
 
     //Ticket dueDate
-    public var dueDate:String?
+    @objc public var dueDate:String?
 
     //Department to which the ticket belongs.
-    public var departmentId         = ""
+    @objc public var departmentId         = ""
 
     //Channel through which the ticket originated.
-    public var channel:String?
-    public var threadCount          = ""
+    @objc public var channel:String?
+    @objc public var threadCount          = ""
 
     //Ticket priority
-    public var priority:String?
+    @objc public var priority:String?
 
     ///ID of agent to whom the ticket is assigned.
-    public var assigneeId:String?
-    public var closedTime:String?
-    public var commentCount         = ""
+    @objc public var assigneeId:String?
+    @objc public var closedTime:String?
+    @objc public var commentCount         = ""
 
     //Phone number in the ticket
-    public var phone:String?
-    public var createdTime          = ""
+    @objc public var phone:String?
+    @objc public var createdTime          = ""
 
     ///Id of the ticket.
-    public var id                   = ""
+    @objc public var id                   = ""
 
     ///Email ID in the ticket.
-    public var email:String?
+    @objc public var email:String?
 
     ///Status of the ticket. Includes the custom statuses that exist in your help desk.
-    public var status               = ""
+    @objc public var status               = ""
 
-    public var teamId:String?
+    @objc public var teamId:String?
 
-    public var contact : ZDContact?
-    public var product : ZDProduct?
+    @objc public var contact : ZDContact?
+    @objc public var product : ZDProduct?
 
-    public var webUrl               = ""
-    public var ticketDetail:ZDTicketDetail?
+    @objc public var webUrl               = ""
+    @objc public var ticketDetail:ZDTicketDetail?
 
-    public var lastThread:ZDLastThread?
+    @objc public var lastThread:ZDLastThread?
 
-    public var assignee:ZDAssignee?
-    public var orgId:String         = ""
+    @objc public var assignee:ZDAssignee?
+    @objc public var orgId:String         = ""
 
-    public init(orgId:String,ticketId:String){
+    @objc public  init(orgId:String,ticketId:String){
         self.orgId = orgId
         self.id = ticketId
     }
     
-    public override init() {}
+    @objc public  override init() {}
 
-    internal class func modelsFromDictionary(dictionary:[String:AnyObject],orgId:String) -> [ZDTicket] {
+    @objc public  class func modelsFromDictionary(dictionary:[String:AnyObject],orgId:String) -> [ZDTicket] {
         
         guard let array:[[String:AnyObject]] = dictionary["data"] as? [[String : AnyObject]] else{
             return [ZDTicket]()
@@ -84,14 +84,14 @@ import Foundation
         return modelsFromArray(array: array,orgId:orgId)
     }
     
-    internal class func modelsFromArray(array:[[String:AnyObject]],orgId:String) -> [ZDTicket]{
+    @objc public  class func modelsFromArray(array:[[String:AnyObject]],orgId:String) -> [ZDTicket]{
         
         return array.map{ZDTicket(ticketJsonObject: $0,orgId:orgId)}
         
     }
 
 
-    internal init(ticketJsonObject: [String:AnyObject],orgId:String) {
+    @objc public  init(ticketJsonObject: [String:AnyObject],orgId:String) {
         
         self.orgId = orgId
         ticketNumber         = ticketJsonObject["ticketNumber"].toString()
@@ -165,15 +165,15 @@ extension ZDTicket{
 
 @objc public class ZDAssignee:NSObject{
     
-    public var email  = ""
-    public var firstName:String?
-    public var id  = ""
-    public var lastName  = ""
-    public var photoURL:String?
+    @objc public var email  = ""
+    @objc public var firstName:String?
+    @objc public var id  = ""
+    @objc public var lastName  = ""
+    @objc public var photoURL:String?
 
-    internal override init() {super.init()}
+    @objc public  override init() {super.init()}
     
-    internal init(assignee:[String:AnyObject]) {
+    @objc public  init(assignee:[String:AnyObject]) {
         super.init()
         self.email = assignee["email"].toString()
         self.firstName = assignee["firstName"] as? String

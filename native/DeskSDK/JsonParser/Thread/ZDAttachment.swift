@@ -18,19 +18,19 @@ internal enum ZDAttachmentParent{
     internal var subParentID     = ""
     internal var parentType      = ZDAttachmentParent.none
 
-    public var size: Double     = 0
-    public var name              = ""
-    public var id                = ""
-    public var href              = ""
+    @objc public var size: Double      = 0
+    @objc public var name              = ""
+    @objc public var id                = ""
+    @objc public var href              = ""
     
-    public var creatorId         = ""
-    public var isPublic          = false
-    public var createdTime       = ""
+    @objc public var creatorId         = ""
+    @objc public var isPublic          = false
+    @objc public var createdTime       = ""
     
-    public var downloadURL       = ""
-    internal var orgId           = ""
+    @objc public var downloadURL       = ""
+    @objc public var  orgId            = ""
     
-    public var data: Data?
+    @objc public var data: Data?
     
     internal class func modelsFrom(json:[String:AnyObject]?,orgId:String,parentID:String,subParentID:String,parentType:ZDAttachmentParent) -> [ZDAttachment]?{
         guard  let attachementArray = json?["data"] as?[[String:AnyObject]] else {return nil}
@@ -66,7 +66,7 @@ internal enum ZDAttachmentParent{
 }
 
 extension ZDAttachment{
-    public func downloadAttachement(onCompliton:@escaping (Data?,Error?,Int)->()){
+    fileprivate func downloadAttachement(onCompliton:@escaping (Data?,Error?,Int)->()){
         
         if data != nil{onCompliton(data,nil,200);return}
         

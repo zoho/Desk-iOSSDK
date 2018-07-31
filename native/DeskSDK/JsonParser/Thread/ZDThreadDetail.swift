@@ -11,32 +11,32 @@ import Foundation
 
 @objc public class ZDThreadDetail :NSObject {
     
-    public var ticketID:String?
-    public var cc:String?
-    public var summary          = ""
-	public var attachments      = [ZDAttachment]()
-    public var bcc:String?
-    public var channel:String?
-    public var content          = ""
-    public var visibity         = ""
-    public var isForward        = false
-    public var hasAttach:String?
-    public var createdTime      = ""
-    public var to:String?
-    public var id               = ""
-    public var fromEmailAddress:String?
-	public var actions          = [ZDThreadAction]()
-    public var status           = ""
-    public var direction        = ""
-    public var responderId:String?
-    public var phoneno:String?
-    public var author:ZDAuthor?
-    public var facebookProfile:String?
-    public var twitterProfile:String?
+    @objc public var ticketID:String?
+    @objc public var cc:String?
+    @objc public var summary          = ""
+	@objc public var attachments      = [ZDAttachment]()
+    @objc public var bcc:String?
+    @objc public var channel:String?
+    @objc public var content          = ""
+    @objc public var visibity         = ""
+    @objc public var isForward        = false
+    @objc public var hasAttach:String?
+    @objc public var createdTime      = ""
+    @objc public var to:String?
+    @objc public var id               = ""
+    @objc public var fromEmailAddress:String?
+	@objc public var actions          = [ZDThreadAction]()
+    @objc public var status           = ""
+    @objc public var direction        = ""
+    @objc public var responderId:String?
+    @objc public var phoneno:String?
+    @objc public var author:ZDAuthor?
+    @objc public var facebookProfile:String?
+    @objc public var twitterProfile:String?
     
-    internal var orgId = ""
+    @objc public  var orgId = ""
     
-    public class func modelsFromArray(array:[[String:AnyObject]],orgId:String,ticketId:String) -> [ZDThreadDetail]
+    @objc public  class func modelsFromArray(array:[[String:AnyObject]],orgId:String,ticketId:String) -> [ZDThreadDetail]
     {
         return array.map{ZDThreadDetail(Json: $0, orgId: orgId, ticketId: ticketId)}
         
@@ -81,14 +81,14 @@ import Foundation
 
 @objc public class ZDAuthor:NSObject{
     
-    public var email:String?
-    public var name  = ""
-    public var photoURL:String?
-    public var type:String?
+    @objc public var email:String?
+    @objc public var name  = ""
+    @objc public var photoURL:String?
+    @objc public var type:String?
     
-    internal override init() {}
+    @objc public  override init() {}
     
-    internal init(author:[String:AnyObject]) {
+    @objc public  init(author:[String:AnyObject]) {
         super.init()
         self.email = author["email"] as? String
         self.name = author["name"].toString()
