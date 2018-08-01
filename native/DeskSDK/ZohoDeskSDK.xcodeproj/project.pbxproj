@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		923A8C2F21117E0D002942A0 /* URLPathConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923A8C2E21117E0D002942A0 /* URLPathConstants.swift */; };
+		923A8C3921117E31002942A0 /* ZDLayouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923A8C3221117E30002942A0 /* ZDLayouts.swift */; };
+		923A8C3A21117E31002942A0 /* ZDLayoutSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923A8C3421117E30002942A0 /* ZDLayoutSections.swift */; };
+		923A8C3B21117E31002942A0 /* ZDMyForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923A8C3521117E30002942A0 /* ZDMyForm.swift */; };
+		923A8C3C21117E31002942A0 /* ZDAgentSignatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923A8C3721117E31002942A0 /* ZDAgentSignatures.swift */; };
+		923A8C3D21117E31002942A0 /* ZDCustomizedSignatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923A8C3821117E31002942A0 /* ZDCustomizedSignatures.swift */; };
 		925DAA8820AEFB090012B811 /* ZDAPIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925DAA8720AEFB090012B811 /* ZDAPIExtension.swift */; };
 		928C4BC420A303F500EA75F7 /* ZDContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C4BC320A303F500EA75F7 /* ZDContract.swift */; };
 		92AD1A7E2110469900E0CE3C /* ZDOrganizationAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A522110469900E0CE3C /* ZDOrganizationAPIHandler.swift */; };
@@ -31,12 +37,6 @@
 		92AD1A912110469900E0CE3C /* ZDThreadAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A792110469900E0CE3C /* ZDThreadAPIHandler.swift */; };
 		92AD1A922110469900E0CE3C /* ZDDepartmentAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A7B2110469900E0CE3C /* ZDDepartmentAPIHandler.swift */; };
 		92AD1A932110469900E0CE3C /* ZDAgentSignaturesAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A7D2110469900E0CE3C /* ZDAgentSignaturesAPIHandler.swift */; };
-		92AD1AAB2110A2A700E0CE3C /* URLPathConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1AAA2110A2A700E0CE3C /* URLPathConstants.swift */; };
-		92AD1AB52110A2E000E0CE3C /* ZDAgentSignatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1AAD2110A2DF00E0CE3C /* ZDAgentSignatures.swift */; };
-		92AD1AB62110A2E000E0CE3C /* ZDCustomizedSignatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1AAE2110A2DF00E0CE3C /* ZDCustomizedSignatures.swift */; };
-		92AD1AB72110A2E000E0CE3C /* ZDLayouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1AB12110A2E000E0CE3C /* ZDLayouts.swift */; };
-		92AD1AB82110A2E000E0CE3C /* ZDLayoutSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1AB32110A2E000E0CE3C /* ZDLayoutSections.swift */; };
-		92AD1AB92110A2E000E0CE3C /* ZDMyForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1AB42110A2E000E0CE3C /* ZDMyForm.swift */; };
 		92B5C61E20A22E9200469FC2 /* ZDTicketTimeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C61D20A22E9200469FC2 /* ZDTicketTimeEntry.swift */; };
 		92B5C62620A2330300469FC2 /* ZDContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C62520A2330300469FC2 /* ZDContactDetail.swift */; };
 		92B5C62920A2358800469FC2 /* ZDCustomerHappiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C62820A2358800469FC2 /* ZDCustomerHappiness.swift */; };
@@ -71,6 +71,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		923A8C2E21117E0D002942A0 /* URLPathConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLPathConstants.swift; sourceTree = "<group>"; };
+		923A8C3221117E30002942A0 /* ZDLayouts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDLayouts.swift; sourceTree = "<group>"; };
+		923A8C3421117E30002942A0 /* ZDLayoutSections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDLayoutSections.swift; sourceTree = "<group>"; };
+		923A8C3521117E30002942A0 /* ZDMyForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDMyForm.swift; sourceTree = "<group>"; };
+		923A8C3721117E31002942A0 /* ZDAgentSignatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDAgentSignatures.swift; sourceTree = "<group>"; };
+		923A8C3821117E31002942A0 /* ZDCustomizedSignatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDCustomizedSignatures.swift; sourceTree = "<group>"; };
 		925DAA8720AEFB090012B811 /* ZDAPIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDAPIExtension.swift; sourceTree = "<group>"; };
 		928C4BC320A303F500EA75F7 /* ZDContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDContract.swift; sourceTree = "<group>"; };
 		92AD1A522110469900E0CE3C /* ZDOrganizationAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDOrganizationAPIHandler.swift; sourceTree = "<group>"; };
@@ -95,12 +101,6 @@
 		92AD1A792110469900E0CE3C /* ZDThreadAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDThreadAPIHandler.swift; sourceTree = "<group>"; };
 		92AD1A7B2110469900E0CE3C /* ZDDepartmentAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDDepartmentAPIHandler.swift; sourceTree = "<group>"; };
 		92AD1A7D2110469900E0CE3C /* ZDAgentSignaturesAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDAgentSignaturesAPIHandler.swift; sourceTree = "<group>"; };
-		92AD1AAA2110A2A700E0CE3C /* URLPathConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLPathConstants.swift; sourceTree = "<group>"; };
-		92AD1AAD2110A2DF00E0CE3C /* ZDAgentSignatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDAgentSignatures.swift; sourceTree = "<group>"; };
-		92AD1AAE2110A2DF00E0CE3C /* ZDCustomizedSignatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDCustomizedSignatures.swift; sourceTree = "<group>"; };
-		92AD1AB12110A2E000E0CE3C /* ZDLayouts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDLayouts.swift; sourceTree = "<group>"; };
-		92AD1AB32110A2E000E0CE3C /* ZDLayoutSections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDLayoutSections.swift; sourceTree = "<group>"; };
-		92AD1AB42110A2E000E0CE3C /* ZDMyForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDMyForm.swift; sourceTree = "<group>"; };
 		92B5C61D20A22E9200469FC2 /* ZDTicketTimeEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTicketTimeEntry.swift; sourceTree = "<group>"; };
 		92B5C62520A2330300469FC2 /* ZDContactDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDContactDetail.swift; sourceTree = "<group>"; };
 		92B5C62820A2358800469FC2 /* ZDCustomerHappiness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDCustomerHappiness.swift; sourceTree = "<group>"; };
@@ -147,6 +147,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		923A8C3021117E30002942A0 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				923A8C3121117E30002942A0 /* GetLayouts */,
+				923A8C3321117E30002942A0 /* MyForm */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		923A8C3121117E30002942A0 /* GetLayouts */ = {
+			isa = PBXGroup;
+			children = (
+				923A8C3221117E30002942A0 /* ZDLayouts.swift */,
+			);
+			path = GetLayouts;
+			sourceTree = "<group>";
+		};
+		923A8C3321117E30002942A0 /* MyForm */ = {
+			isa = PBXGroup;
+			children = (
+				923A8C3421117E30002942A0 /* ZDLayoutSections.swift */,
+				923A8C3521117E30002942A0 /* ZDMyForm.swift */,
+			);
+			path = MyForm;
+			sourceTree = "<group>";
+		};
+		923A8C3621117E31002942A0 /* AgentSignatures */ = {
+			isa = PBXGroup;
+			children = (
+				923A8C3721117E31002942A0 /* ZDAgentSignatures.swift */,
+				923A8C3821117E31002942A0 /* ZDCustomizedSignatures.swift */,
+			);
+			path = AgentSignatures;
+			sourceTree = "<group>";
+		};
 		928C4BC220A303D900EA75F7 /* Contracts */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,41 +403,6 @@
 			path = AgentSignatures;
 			sourceTree = "<group>";
 		};
-		92AD1AAC2110A2DF00E0CE3C /* AgentSignatures */ = {
-			isa = PBXGroup;
-			children = (
-				92AD1AAD2110A2DF00E0CE3C /* ZDAgentSignatures.swift */,
-				92AD1AAE2110A2DF00E0CE3C /* ZDCustomizedSignatures.swift */,
-			);
-			path = AgentSignatures;
-			sourceTree = "<group>";
-		};
-		92AD1AAF2110A2E000E0CE3C /* Layouts */ = {
-			isa = PBXGroup;
-			children = (
-				92AD1AB02110A2E000E0CE3C /* GetLayouts */,
-				92AD1AB22110A2E000E0CE3C /* MyForm */,
-			);
-			path = Layouts;
-			sourceTree = "<group>";
-		};
-		92AD1AB02110A2E000E0CE3C /* GetLayouts */ = {
-			isa = PBXGroup;
-			children = (
-				92AD1AB12110A2E000E0CE3C /* ZDLayouts.swift */,
-			);
-			path = GetLayouts;
-			sourceTree = "<group>";
-		};
-		92AD1AB22110A2E000E0CE3C /* MyForm */ = {
-			isa = PBXGroup;
-			children = (
-				92AD1AB32110A2E000E0CE3C /* ZDLayoutSections.swift */,
-				92AD1AB42110A2E000E0CE3C /* ZDMyForm.swift */,
-			);
-			path = MyForm;
-			sourceTree = "<group>";
-		};
 		92B5C61C20A22E8100469FC2 /* TicketTimeEntry */ = {
 			isa = PBXGroup;
 			children = (
@@ -479,8 +479,8 @@
 		92B64AEE20A0563000B19060 /* JsonParser */ = {
 			isa = PBXGroup;
 			children = (
-				92AD1AAC2110A2DF00E0CE3C /* AgentSignatures */,
-				92AD1AAF2110A2E000E0CE3C /* Layouts */,
+				923A8C3621117E31002942A0 /* AgentSignatures */,
+				923A8C3021117E30002942A0 /* Layouts */,
 				92EC563820B93CFF0019298C /* Views */,
 				92C19ED720B888100088D7AC /* Search */,
 				928C4BC220A303D900EA75F7 /* Contracts */,
@@ -529,7 +529,7 @@
 		92B64AF820A057A600B19060 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				92AD1AAA2110A2A700E0CE3C /* URLPathConstants.swift */,
+				923A8C2E21117E0D002942A0 /* URLPathConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -685,16 +685,17 @@
 				92B64B2720A1766900B19060 /* ZDContact.swift in Sources */,
 				92B64B3D20A1A34800B19060 /* ZDThreadDetail.swift in Sources */,
 				92B64B0320A05E0C00B19060 /* StringExtention.swift in Sources */,
+				923A8C3D21117E31002942A0 /* ZDCustomizedSignatures.swift in Sources */,
 				92AD1A852110469900E0CE3C /* ZDUploadAPIHandler.swift in Sources */,
 				92AD1A7E2110469900E0CE3C /* ZDOrganizationAPIHandler.swift in Sources */,
-				92AD1AB72110A2E000E0CE3C /* ZDLayouts.swift in Sources */,
 				92C19ED920B8882C0088D7AC /* ZDSearch.swift in Sources */,
 				92B64AF120A056B000B19060 /* ZDOrganization.swift in Sources */,
+				923A8C3921117E31002942A0 /* ZDLayouts.swift in Sources */,
 				92AD1A8F2110469900E0CE3C /* ZDViewAPIHandler.swift in Sources */,
 				92AD1A842110469900E0CE3C /* ZDAgentAPIHandler.swift in Sources */,
 				92B5C62920A2358800469FC2 /* ZDCustomerHappiness.swift in Sources */,
-				92AD1AB52110A2E000E0CE3C /* ZDAgentSignatures.swift in Sources */,
 				92AD1A912110469900E0CE3C /* ZDThreadAPIHandler.swift in Sources */,
+				923A8C3C21117E31002942A0 /* ZDAgentSignatures.swift in Sources */,
 				92B64AE320A0552800B19060 /* ZDBaseRequest.swift in Sources */,
 				92B64B4220A1A37400B19060 /* ZDConverstaion.swift in Sources */,
 				928C4BC420A303F500EA75F7 /* ZDContract.swift in Sources */,
@@ -707,7 +708,6 @@
 				92B5C63B20A2397000469FC2 /* ZDTask.swift in Sources */,
 				92AD1A922110469900E0CE3C /* ZDDepartmentAPIHandler.swift in Sources */,
 				92B64AF620A0572D00B19060 /* OptionalUNWrap.swift in Sources */,
-				92AD1AB62110A2E000E0CE3C /* ZDCustomizedSignatures.swift in Sources */,
 				92B64B3F20A1A34800B19060 /* ZDThread.swift in Sources */,
 				92AD1A902110469900E0CE3C /* ZDMailReplyAddressAPIHandler.swift in Sources */,
 				92AD1A892110469900E0CE3C /* ZDAttachementProvoider.swift in Sources */,
@@ -717,10 +717,10 @@
 				92B5C61E20A22E9200469FC2 /* ZDTicketTimeEntry.swift in Sources */,
 				92B64B0120A05E0C00B19060 /* DataExtention.swift in Sources */,
 				92AD1A822110469900E0CE3C /* ZDTicketTimeEntryAPIHandler.swift in Sources */,
-				92AD1AB92110A2E000E0CE3C /* ZDMyForm.swift in Sources */,
-				92AD1AAB2110A2A700E0CE3C /* URLPathConstants.swift in Sources */,
+				923A8C2F21117E0D002942A0 /* URLPathConstants.swift in Sources */,
 				92B64AE920A0555A00B19060 /* ZDRequestMaker.swift in Sources */,
 				925DAA8820AEFB090012B811 /* ZDAPIExtension.swift in Sources */,
+				923A8C3A21117E31002942A0 /* ZDLayoutSections.swift in Sources */,
 				92B64B2E20A1789C00B19060 /* ZDTicket.swift in Sources */,
 				92B64B0720A05E6300B19060 /* ZDUserDefaults.swift in Sources */,
 				92B64B2220A1758200B19060 /* ZDTicketDetail.swift in Sources */,
@@ -737,8 +737,8 @@
 				92C19ECE20B6E2230088D7AC /* ZDLastThread.swift in Sources */,
 				92B5C62620A2330300469FC2 /* ZDContactDetail.swift in Sources */,
 				92B64AE620A0554500B19060 /* ZDBaseRequester.swift in Sources */,
+				923A8C3B21117E31002942A0 /* ZDMyForm.swift in Sources */,
 				92AD1A872110469900E0CE3C /* ZDTicketAttachmentAPIHandler.swift in Sources */,
-				92AD1AB82110A2E000E0CE3C /* ZDLayoutSections.swift in Sources */,
 				92AD1A8B2110469900E0CE3C /* ZDAccountAPIHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -886,7 +886,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zoho.desksdk.DeskSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zoho.desksdk;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -915,7 +915,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zoho.desksdk.DeskSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zoho.desksdk;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class ZDContact : ZDSearch {
+@objc public class ZDContact : ZDSearch {
 
     @objc public var firstName:String?
     @objc public var lastName  = ""
