@@ -9,7 +9,7 @@
 import Foundation
 @objc public class ZDMailReplyAddressAPIHandler : NSObject{
     
-    @objc public static func listAllMailReplyAddresses(_ orgId:String = String().getZDOrgId(),optionalParams:Parameters = Parameters(),onComplition:@escaping (([ZDMailReplyAddresses]?,Error?,Int)->())) -> Void {
+    @objc open static func listAllMailReplyAddresses(_ orgId:String = String().getZDOrgId(),optionalParams:Parameters = Parameters(),onComplition:@escaping (([ZDMailReplyAddresses]?,Error?,Int)->())) -> Void {
                 let request = ZDBaseRequest(path: String(format: URLPathConstants.MailReplyAddress.mailReplyAddress),parameters:optionalParams, headers: ["orgId":orgId])
         ZDBaseRequester.getJsonDicReponce(baseRequest: request) { (json, data, error, statusCode) in
             guard let mailReplyAddressesJson = json else{onComplition(nil,error,statusCode);return}
@@ -18,7 +18,7 @@ import Foundation
     }
 }
 
-@objc public class ZDMailReplyAddresses:NSObject{
+@objc open class ZDMailReplyAddresses:NSObject{
     
     @objc public var address = ""
     @objc public var isVerified = false
@@ -29,7 +29,7 @@ import Foundation
     
     @objc public var orgId = ""
     
-    @objc public class func modelFromArry(json:[String:AnyObject],orgId:String) -> [ZDMailReplyAddresses]? {
+    @objc open class func modelFromArry(json:[String:AnyObject],orgId:String) -> [ZDMailReplyAddresses]? {
         if let mailAddressJson = json["data"] as? [[String:AnyObject]]{
             return mailAddressJson.map({ZDMailReplyAddresses(json: $0, orgId: orgId)})
         }

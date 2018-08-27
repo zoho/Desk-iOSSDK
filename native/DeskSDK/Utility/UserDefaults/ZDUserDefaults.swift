@@ -7,9 +7,21 @@
 //
 
 import Foundation
-@objc public class ZDUtility :NSObject{
-    @objc public static func setOrgId(orgId:String){
-        orgId.saveZDOrgID()
+extension ZohoDeskSDK{
+    @objc public class ZDUtility :NSObject{
+        
+        @objc public static func setOrgId(orgId:String){
+            orgId.saveZDOrgID()
+        }
+        
+        @objc public static func sdkLog(state:Bool){
+            if state{
+                UserDefaultConfiguration.save(key: ZDUserDefaultKeyConstants.enableLog, value:"true" as AnyObject)
+            }
+            else{
+                UserDefaultConfiguration.save(key: ZDUserDefaultKeyConstants.enableLog, value: "false" as AnyObject)
+            }
+        }
     }
 }
 
@@ -30,4 +42,5 @@ internal class UserDefaultConfiguration: NSObject {
 internal struct ZDUserDefaultKeyConstants{
     
     static let defaultOrgID = "defaultOrgID"
+    static let enableLog    = "enableLog"
 }

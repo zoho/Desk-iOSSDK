@@ -10,7 +10,7 @@ import Foundation
  
 ///Tickets
 ///Tickets are organizing units using which service agents handle customer enquiries, requests, complaints, and other such interactions in Zoho Desk.
-@objc public class ZDTicket : NSObject {
+@objc open class ZDTicket : NSObject {
 
     @objc public var ticketNumber         = ""
     @objc public var customerResponseTime = ""
@@ -55,6 +55,8 @@ import Foundation
     ///Status of the ticket. Includes the custom statuses that exist in your help desk.
     @objc public var status               = ""
 
+    @objc public var category:String = ""
+    @objc public var subCategory:String = ""
     @objc public var teamId:String?
 
     @objc public var contact : ZDContact?
@@ -62,7 +64,6 @@ import Foundation
 
     @objc public var webUrl               = ""
     @objc public var ticketDetail:ZDTicketDetail?
-
     @objc public var lastThread:ZDLastThread?
 
     @objc public var assignee:ZDAssignee?
@@ -75,7 +76,7 @@ import Foundation
     
     @objc public  override init() {}
 
-    @objc public  class func modelsFromDictionary(dictionary:[String:AnyObject],orgId:String) -> [ZDTicket] {
+    @objc open  class func modelsFromDictionary(dictionary:[String:AnyObject],orgId:String) -> [ZDTicket] {
         
         guard let array:[[String:AnyObject]] = dictionary["data"] as? [[String : AnyObject]] else{
             return [ZDTicket]()
@@ -84,7 +85,7 @@ import Foundation
         return modelsFromArray(array: array,orgId:orgId)
     }
     
-    @objc public  class func modelsFromArray(array:[[String:AnyObject]],orgId:String) -> [ZDTicket]{
+    @objc open  class func modelsFromArray(array:[[String:AnyObject]],orgId:String) -> [ZDTicket]{
         
         return array.map{ZDTicket(ticketJsonObject: $0,orgId:orgId)}
         
@@ -113,7 +114,9 @@ import Foundation
         email                = ticketJsonObject["email"] as? String
         status               = ticketJsonObject["status"].toString()
         webUrl               = ticketJsonObject["webUrl"].toString()
-        teamId             = ticketJsonObject["teamId"] as? String
+        teamId               = ticketJsonObject["teamId"] as? String
+        category             = ticketJsonObject["category"].toString()
+        subCategory          = ticketJsonObject["subCategory"].toString()
 
         if let contacts = ticketJsonObject["contact"] as? [String:AnyObject]{
             contact = ZDContact(contactJsonReponce: contacts, orgId: orgId)
@@ -163,7 +166,7 @@ extension ZDTicket{
     
 }
 
-@objc public class ZDAssignee:NSObject{
+@objc open class ZDAssignee:NSObject{
     
     @objc public var email  = ""
     @objc public var firstName:String?

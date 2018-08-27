@@ -10,12 +10,12 @@ import Foundation
 ///Organizations
 
 ///In Zoho Desk, each business is categorized as an organization. If you have multiple businesses, set each business up as an individual organization by creating a new signup and generating a unique organization ID. All APIs except the ones directly related to organizations must include the organization ID in the header in this format: orgId:{organization_id}
-@objc public class ZDOrganizationAPIHandler : NSObject{
+@objc open class ZDOrganizationAPIHandler : NSObject{
     
     /// This API lists all organizations to which the current user belongs
     ///
     /// - Parameter onCompletion: Will retrun array of Organization Swift modelObject.
-    @objc public static func getAllOrganizations(_ onCompletion:@escaping (([ZDOrganization]?,Error?,Int)->())) -> Void{
+    @objc open static func getAllOrganizations(_ onCompletion:@escaping (([ZDOrganization]?,Error?,Int)->())) -> Void{
    
         let request = ZDBaseRequest(path: URLPathConstants.Organizations.allOrganizations)
         request.genralAPI = true
@@ -32,7 +32,7 @@ import Foundation
     /// - Parameters:
     ///   - orgId: Unique ID of the Organization
     ///   - onCompletion: Organization Swift modelObject
-    @objc public static func getOrganization(_ orgId:String, onCompletion:@escaping((ZDOrganization?,Error?,Int)->())) -> Void{
+    @objc open static func getOrganization(_ orgId:String, onCompletion:@escaping((ZDOrganization?,Error?,Int)->())) -> Void{
 
         let details = ZDBaseRequest(path: URLPathConstants.Organizations.allOrganizations,headers:["orgId":orgId])
         

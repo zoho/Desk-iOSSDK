@@ -8,12 +8,10 @@
 
 import Foundation
 
-@objc public class ZDSearchAPIHandler: NSObject {
+@objc open class ZDSearchAPIHandler: NSObject {
 
-    @objc public static func searchAcrossEntities(_ orgId:String = String().getZDOrgId(),searchKeyWord:String,from:Int = 0,limit:Int = 50,optionalParams:Parameters = Parameters(),onComplition:@escaping (([String:AnyObject]?,Error?,Int)->())) -> Void{
+    @objc open static func searchAcrossEntities(_ orgId:String = String().getZDOrgId(),searchKeyWord:String,optionalParams:Parameters = Parameters(),onComplition:@escaping (([String:AnyObject]?,Error?,Int)->())) -> Void{
         var params = optionalParams
-        params["from"] = from as AnyObject
-        params["limit"] = limit as AnyObject
         params ["searchStr"] = searchKeyWord
         
         let request = ZDBaseRequest(path: URLPathConstants.Search.searchAcrossEntities, method: .GET, parameters: params, headers:["orgId":orgId])
@@ -23,11 +21,10 @@ import Foundation
         }
     }
     
-    @objc public static func searchTicket(_ orgId:String = String().getZDOrgId(),from:Int = 0,limit:Int = 50,optionalParams:Parameters = Parameters(),onComplition:@escaping ((ZDTicketSearch?,Error?,Int)->())) -> Void{
+    @objc open static func searchTicket(_ orgId:String = String().getZDOrgId(),optionalParams:Parameters = Parameters(),onComplition:@escaping ((ZDTicketSearch?,Error?,Int)->())) -> Void{
         
         var params = optionalParams
-        params["from"] = from as AnyObject
-        params["limit"] = limit as AnyObject
+
         let request = ZDBaseRequest(path: URLPathConstants.Search.searchTicket, method: .GET, parameters: params, headers:["orgId":orgId])
         
         ZDBaseRequester.getJsonDicReponce(baseRequest: request) { (json, data, error, statusCode) in
@@ -36,12 +33,9 @@ import Foundation
         }
     }
     
-    @objc public static func searchAccount(_ orgId:String = String().getZDOrgId(),from:Int = 0,limit:Int = 50,optionalParams:Parameters = Parameters(),onComplition:@escaping ((ZDAccountSearch?,Error?,Int)->())) -> Void{
+    @objc open static func searchAccount(_ orgId:String = String().getZDOrgId(),optionalParams:Parameters = Parameters(),onComplition:@escaping ((ZDAccountSearch?,Error?,Int)->())) -> Void{
         
         var params = optionalParams
-        params["from"] = from as AnyObject
-        params["limit"] = limit as AnyObject
-        
         let request = ZDBaseRequest(path: URLPathConstants.Search.searchAccount, method: .GET, parameters: params, headers:["orgId":orgId])
         
         ZDBaseRequester.getJsonDicReponce(baseRequest: request) { (json, data, error, statusCode) in
@@ -50,13 +44,9 @@ import Foundation
         }
     }
     
-    @objc public static func searchContact(_ orgId:String = String().getZDOrgId(),from:Int = 0,limit:Int = 50,optionalParams:Parameters = Parameters(),onComplition:@escaping ((ZDContactSearch?,Error?,Int)->())) -> Void{
+    @objc open static func searchContact(_ orgId:String = String().getZDOrgId(),optionalParams:Parameters = Parameters(),onComplition:@escaping ((ZDContactSearch?,Error?,Int)->())) -> Void{
         
-        var params = optionalParams
-        params["from"] = from as AnyObject
-        params["limit"] = limit as AnyObject
-        
-        let request = ZDBaseRequest(path: URLPathConstants.Search.searchContact, method: .GET, parameters: params, headers:["orgId":orgId])
+        let request = ZDBaseRequest(path: URLPathConstants.Search.searchContact, method: .GET, parameters: optionalParams, headers:["orgId":orgId])
         
         ZDBaseRequester.getJsonDicReponce(baseRequest: request) { (json, data, error, statusCode) in
             guard let contactJson = json else{onComplition(nil,nil,statusCode);return}
@@ -64,13 +54,9 @@ import Foundation
         }
     }
     
-    @objc public static func searchTask(_ orgId:String = String().getZDOrgId(),from:Int = 0,limit:Int = 50,optionalParams:Parameters = Parameters(),onComplition:@escaping ((ZDTaskSearch?,Error?,Int)->())) -> Void{
-        
-        var params = optionalParams
-        params["from"] = from as AnyObject
-        params["limit"] = limit as AnyObject
-        
-        let request = ZDBaseRequest(path: URLPathConstants.Search.searchTask, method: .GET, parameters: params, headers:["orgId":orgId])
+    @objc open static func searchTask(_ orgId:String = String().getZDOrgId(),optionalParams:Parameters = Parameters(),onComplition:@escaping ((ZDTaskSearch?,Error?,Int)->())) -> Void{
+            
+        let request = ZDBaseRequest(path: URLPathConstants.Search.searchTask, method: .GET, parameters: optionalParams, headers:["orgId":orgId])
         
         ZDBaseRequester.getJsonDicReponce(baseRequest: request) { (json, data, error, statusCode) in
             guard let taskJson = json else{onComplition(nil,nil,statusCode);return}

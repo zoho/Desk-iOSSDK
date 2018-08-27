@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc public class ZDContactDetail :NSObject {
+@objc open class ZDContactDetail :NSObject {
 
     @objc public var state:String?
     @objc public var twitter:String?
@@ -41,7 +41,7 @@ import Foundation
     
     @objc public var orgId = ""
     
-    @objc public class func modelsFromArray(dic:[String:AnyObject],orgId:String) -> [ZDContactDetail]{
+    @objc open class func modelsFromArray(dic:[String:AnyObject],orgId:String) -> [ZDContactDetail]{
         
         if let array = dic["data"] as? [[String:AnyObject]]{
             return array.map{ZDContactDetail(contactDetailJson: $0, orgId: orgId)}

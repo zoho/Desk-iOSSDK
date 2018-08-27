@@ -9,7 +9,7 @@
 
 import Foundation
 
-@objc public class ZDThread : ZDConverstaion {
+@objc open class ZDThread : ZDConverstaion {
 
     @objc public var ticketId    = ""
 
@@ -36,7 +36,7 @@ import Foundation
     
     @objc public override init() {super.init()}
 
-    @objc public class func modelsFromJSON(orgId:String,ticketId:String,jsonList:[String : AnyObject]) -> [ZDThread]{
+    @objc open class func modelsFromJSON(orgId:String,ticketId:String,jsonList:[String : AnyObject]) -> [ZDThread]{
         
         guard let array = jsonList["data"] as? [[String:AnyObject]] else{return [ZDThread]()}
         let models = array.map{ZDThread(orgId: orgId,ticketId: ticketId,JSONThread: $0)}

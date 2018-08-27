@@ -1,7 +1,7 @@
 
 import Foundation
 
-@objc public class ZDLayouts :NSObject {
+@objc open class ZDLayouts :NSObject {
     
     @objc public var orgId           = ""
 
@@ -14,7 +14,7 @@ import Foundation
     @objc public var isDefaultLayout = false
     @objc public var layoutName      = ""
 
-    @objc public class func modelsFromArray(responce:[String:AnyObject]?,orgId:String) -> [ZDLayouts]?
+    @objc open class func modelsFromArray(responce:[String:AnyObject]?,orgId:String) -> [ZDLayouts]?
     {
         var layouts:[ZDLayouts] = []
         guard let layoutJsonArray = responce?["data"] as? [[String:AnyObject]] else { return layouts }

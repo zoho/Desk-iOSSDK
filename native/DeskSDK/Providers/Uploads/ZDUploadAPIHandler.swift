@@ -9,10 +9,10 @@
 import Foundation
 
 /// Uploads are temporary attachments that exist with a ticket for just 24 hours.
-@objc public class ZDUploadAPIHandler : NSObject {
+@objc open class ZDUploadAPIHandler : NSObject {
     
 //    https://desk.zoho.com/DeskAPIDocument#Uploads#Uploads_Uploadafile
-    @objc public static func uploadFile(_ orgID:String = String().getZDOrgId(),data:Data,fileName:String,onComplition:@escaping ((ZDAttachment?,Error?,Int)->())) -> URLRequest {
+    @objc open static func uploadFile(_ orgID:String = String().getZDOrgId(),data:Data,fileName:String,onComplition:@escaping ((ZDAttachment?,Error?,Int)->())) -> URLRequest {
         let path = String(format: URLPathConstants.Uploads.uploads)
         return ZDAttachementProvoider.createAttachement(orgID, path: path, data: data, fileName: fileName, isPublic: false, parentId: "", parentType: .none, addPublicData: false, onComplition: onComplition)
     }

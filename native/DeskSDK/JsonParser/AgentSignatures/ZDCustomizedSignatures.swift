@@ -1,11 +1,11 @@
 
 import Foundation
 
-@objc public class ZDCustomizedSignatures:NSObject{
+@objc open class ZDCustomizedSignatures:NSObject{
 	@objc public var signature : String?
 	@objc public var departmentId  = ""
 
-    public class func modelsFromDictionaryArray(jsonArray:[[String:AnyObject]]?) -> [ZDCustomizedSignatures]{
+     open static func modelsFromDictionaryArray(jsonArray:[[String:AnyObject]]?) -> [ZDCustomizedSignatures]{
         var models:[ZDCustomizedSignatures] = []
         guard let array = jsonArray else{return models}
         models = array.map({ZDCustomizedSignatures(json: $0)})

@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc public class ZDCustomerHappiness: NSObject {
+@objc open class ZDCustomerHappiness: NSObject {
     
     @objc public var badPercentage  = 0
     @objc public var goodPercentage = 0

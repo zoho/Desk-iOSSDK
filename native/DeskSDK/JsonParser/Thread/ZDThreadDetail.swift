@@ -9,7 +9,7 @@
 
 import Foundation
 
-@objc public class ZDThreadDetail :NSObject {
+@objc open class ZDThreadDetail :NSObject {
     
     @objc public var ticketID:String?
     @objc public var cc:String?
@@ -36,7 +36,7 @@ import Foundation
     
     @objc public  var orgId = ""
     
-    @objc public  class func modelsFromArray(array:[[String:AnyObject]],orgId:String,ticketId:String) -> [ZDThreadDetail]
+    @objc open  class func modelsFromArray(array:[[String:AnyObject]],orgId:String,ticketId:String) -> [ZDThreadDetail]
     {
         return array.map{ZDThreadDetail(Json: $0, orgId: orgId, ticketId: ticketId)}
         
@@ -79,7 +79,7 @@ import Foundation
 	}
 }
 
-@objc public class ZDAuthor:NSObject{
+@objc open class ZDAuthor:NSObject{
     
     @objc public var email:String?
     @objc public var name  = ""

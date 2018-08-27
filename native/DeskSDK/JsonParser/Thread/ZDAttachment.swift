@@ -12,7 +12,7 @@ internal enum ZDAttachmentParent{
     case ticket,contact,accounts,task,thread,comment,none
 }
 
-@objc public class ZDAttachment: NSObject {
+@objc open class ZDAttachment: NSObject {
 
     internal var parentID        = ""
     internal var subParentID     = ""

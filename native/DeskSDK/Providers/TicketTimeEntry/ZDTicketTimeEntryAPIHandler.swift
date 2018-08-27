@@ -7,10 +7,10 @@
 //
 
 import Foundation
-@objc public class ZDTicketTimeEntryAPIHandler:NSObject{
+@objc open class ZDTicketTimeEntryAPIHandler:NSObject{
     
 //    https://desk.zoho.com/DeskAPIDocument#TicketTimeEntry#TicketTimeEntry_GetaTicketTimeEntry
-    @objc public static func getTicketTimeEntry(_ orgID:String = String().getZDOrgId(),ticketId:String,ticketTimeEntryId:String,addtionalParms:Parameters = Parameters(), onComplition:@escaping ((ZDTicketTimeEntry?,Error?,Int)->())) -> Void{
+    @objc open static func getTicketTimeEntry(_ orgID:String = String().getZDOrgId(),ticketId:String,ticketTimeEntryId:String,addtionalParms:Parameters = Parameters(), onComplition:@escaping ((ZDTicketTimeEntry?,Error?,Int)->())) -> Void{
         
         let request = ZDBaseRequest(path: String(format: URLPathConstants.TicketTimeEntry.getTicketTimeEntry,ticketId,ticketTimeEntryId),parameters:addtionalParms, headers:["orgId":orgID])
         ZDBaseRequester.getJsonDicReponce(baseRequest: request) { (json, responceDTA, error, statusCode) in
@@ -20,7 +20,7 @@ import Foundation
     }
     
 //    https://desk.zoho.com/DeskAPIDocument#TicketTimeEntry#TicketTimeEntry_ListTicketTimeEntries
-    @objc public static func getAllTicketTimeEntries(_ orgID:String = String().getZDOrgId(),ticketId:String,optionalParams:[String:AnyObject] = [String:AnyObject](),onComplition:@escaping (([ZDTicketTimeEntry]?,Error?,Int)->())) -> Void{
+    @objc open static func getAllTicketTimeEntries(_ orgID:String = String().getZDOrgId(),ticketId:String,optionalParams:[String:AnyObject] = [String:AnyObject](),onComplition:@escaping (([ZDTicketTimeEntry]?,Error?,Int)->())) -> Void{
         
         let request = ZDBaseRequest(path: String(format: URLPathConstants.TicketTimeEntry.listAllTicketTimeEntry,ticketId), parameters: optionalParams, headers: ["orgId":orgID])
         
@@ -31,7 +31,7 @@ import Foundation
     }
     
 //    https://desk.zoho.com/DeskAPIDocument#TicketTimeEntry#TicketTimeEntry_AddaTicketTimeEntry
-    @objc public static func addTicketTimeEntry(_ orgID:String = String().getZDOrgId(),ticketId:String,requestChargeType:String,optionalParams:[String:AnyObject] = [String:AnyObject](),onComplition:@escaping ((ZDTicketTimeEntry?,Error?,Int)->())) -> Void{
+    @objc open static func addTicketTimeEntry(_ orgID:String = String().getZDOrgId(),ticketId:String,requestChargeType:String,optionalParams:[String:AnyObject] = [String:AnyObject](),onComplition:@escaping ((ZDTicketTimeEntry?,Error?,Int)->())) -> Void{
         
        let request =  ZDBaseRequest(path: String(format: URLPathConstants.TicketTimeEntry.addTicketTimeEntry,ticketId), method: .POST, paramType: .json, parameters: optionalParams, headers: ["orgId":orgID,"content-type": "application/json"])
         request.parameters["requestChargeType"] = requestChargeType
@@ -43,7 +43,7 @@ import Foundation
     }
     
 //    https://desk.zoho.com/DeskAPIDocument#TicketTimeEntry#TicketTimeEntry_UpdateaTicketTimeEntry
-    @objc public static func updateTicketTimeEntry(_ orgID:String = String().getZDOrgId(),ticketId:String,ticketTimeEntryId:String,optionalParams:[String:AnyObject] = [String:AnyObject](),onComplition:@escaping ((ZDTicketTimeEntry?,Error?,Int)->())) -> Void{
+    @objc open static func updateTicketTimeEntry(_ orgID:String = String().getZDOrgId(),ticketId:String,ticketTimeEntryId:String,optionalParams:[String:AnyObject] = [String:AnyObject](),onComplition:@escaping ((ZDTicketTimeEntry?,Error?,Int)->())) -> Void{
         
         let request =  ZDBaseRequest(path: String(format: URLPathConstants.TicketTimeEntry.updateTicketTimeEntry,ticketId,ticketTimeEntryId), method: .POST, paramType: .json, parameters: optionalParams, headers: ["orgId":orgID,"content-type": "application/json"])
 
@@ -54,7 +54,7 @@ import Foundation
     }
     
 //    https://desk.zoho.com/DeskAPIDocument#TicketTimeEntry#TicketTimeEntry_DeleteaTicketTimeEntry
-    @objc public static func deleteTicketTimeEntry(_ orgID:String = String().getZDOrgId(),ticketID:String,ticketTimeEntryId:String,onComplition:@escaping ((Error?,Int)->())) -> Void{
+    @objc open static func deleteTicketTimeEntry(_ orgID:String = String().getZDOrgId(),ticketID:String,ticketTimeEntryId:String,onComplition:@escaping ((Error?,Int)->())) -> Void{
         
         let request = ZDBaseRequest(path: String(format: URLPathConstants.TicketTimeEntry.deleteTicketTimeEntry, ticketID,ticketTimeEntryId), method: .DELETE, headers: ["orgId":orgID])
         ZDRequestMaker.sharedInstance.makeRequest(for:request,

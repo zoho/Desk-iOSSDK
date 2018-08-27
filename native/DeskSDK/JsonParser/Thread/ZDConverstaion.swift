@@ -9,7 +9,7 @@ import Foundation
 @objc public enum ZDConverstaionType:Int{
     case thread,comment
 }
-@objc public class ZDConverstaion:NSObject{
+@objc open class ZDConverstaion:NSObject{
     @objc public var orgId = ""
     @objc public var type = ZDConverstaionType.thread
     @objc public var hasAttach = false

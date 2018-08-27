@@ -11,7 +11,7 @@ import Foundation
  
 //Tickets
 //Tickets are organizing units using which service agents handle customer enquiries, requests, complaints, and other such interactions in Zoho Desk.
-@objc public class ZDTicketDetail : ZDSearch{
+@objc open class ZDTicketDetail : ZDSearch{
 
     @objc public var modifiedTime:String?
     @objc public var ticketNumber         = ""

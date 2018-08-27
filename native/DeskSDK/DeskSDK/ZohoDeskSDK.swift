@@ -9,7 +9,7 @@
 import Foundation
 public typealias tokenHandler = (String?,Error?)
 @objc public enum ZDDomain : Int{
-    case us,eu
+    case us,eu,cn
 }
 
 @objc public class ZohoDeskSDK: NSObject {

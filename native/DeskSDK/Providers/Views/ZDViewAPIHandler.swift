@@ -8,9 +8,9 @@
 
 import Foundation
 
-@objcMembers public class ZDViewsAPIHandler: NSObject {
+@objcMembers open class ZDViewsAPIHandler: NSObject {
     
-    public static func listAllViews(_ orgId:String,department:String, onCompletion:@escaping (([ZDView]?,Error?,Int)->())) -> Void{
+    open static func listAllViews(_ orgId:String,department:String, onCompletion:@escaping (([ZDView]?,Error?,Int)->())) -> Void{
         let request = ZDBaseRequest(path: URLPathConstants.Views.listTicketViews, parameters: ["department":department], headers: ["orgId":orgId])
         ZDBaseRequester.getJsonDicReponce(baseRequest: request) { (json, reponceData, error, status) in
             onCompletion(ZDView.modelsFromArray(jsonResponce: json, orgId: orgId),error,status)

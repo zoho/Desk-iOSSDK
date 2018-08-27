@@ -9,7 +9,7 @@
 import Foundation
  
 
-@objc public class ZDAccountDetail:NSObject {
+@objc open class ZDAccountDetail:NSObject {
 
     @objc public var country:String?
     @objc public var modifiedTime:String?
@@ -34,7 +34,7 @@ import Foundation
 
     internal var orgId = ""
     
-    @objc public class func modelsFromDic(dic:[String:AnyObject],orgId:String) -> [ZDAccountDetail]
+    @objc open class func modelsFromDic(dic:[String:AnyObject],orgId:String) -> [ZDAccountDetail]
     {
         var models:[ZDAccountDetail] = []
         guard let array = dic["data"] as? [[String:AnyObject]] else { return models }

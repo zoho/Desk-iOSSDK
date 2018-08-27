@@ -34,7 +34,13 @@ extension String {
     }
     
     internal func makeLog(){
-        print(self)
+        guard
+            let value = UserDefaultConfiguration.get(key: ZDUserDefaultKeyConstants.enableLog) as? String else{print(self);return}
+
+        if value == "true"{
+            print(self)
+        }
+        
     }
 }
 

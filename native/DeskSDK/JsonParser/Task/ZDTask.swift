@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc public class ZDTask : ZDSearch {
+@objc open class ZDTask : ZDSearch {
 
     @objc public var modifiedTime  = ""
     @objc public var subject       = ""
@@ -30,7 +30,7 @@ import Foundation
     
     internal var orgId = ""
     
-    public class func modelsFromDictionaryArray(dic:[String:AnyObject]?,orgId:String) -> [ZDTask]?
+    @objc open class func modelsFromDictionaryArray(dic:[String:AnyObject]?,orgId:String) -> [ZDTask]?
     {
         var models:[ZDTask] = []
         guard let array = dic?["data"] as? [[String:AnyObject]] else{return models}
@@ -71,7 +71,7 @@ import Foundation
 	}
 }
 
-@objc public class ZDTaskTicket:NSObject{
+@objc open class ZDTaskTicket:NSObject{
     
     @objc public var orgId = ""
     
@@ -94,7 +94,7 @@ import Foundation
     }
 }
 
-@objc public class ZDTaskContact:NSObject{
+@objc open class ZDTaskContact:NSObject{
     
     @objc public var orgId = ""
     @objc public var firstName:String?

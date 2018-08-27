@@ -52,6 +52,8 @@ public class ZDBaseRequest {
             return "https://desk.zoho.com"
         case .eu:
             return "https://desk.zoho.eu"
+        case .cn:
+            return "https://desk.zoho.com.cn"
         }
     }
 }

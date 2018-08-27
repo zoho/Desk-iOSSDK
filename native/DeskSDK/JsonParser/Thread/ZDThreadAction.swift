@@ -9,7 +9,7 @@
 
 import Foundation
 
-@objc public class ZDThreadAction: NSObject {
+@objc open class ZDThreadAction: NSObject {
     
     @objc public var orgId  = ""
     @objc public var method:String?
@@ -18,7 +18,7 @@ import Foundation
 
     @objc public  override init() {super.init()}
     
-    @objc public  class func initWithArray(orgId:String,actions:[[String:AnyObject]]) -> [ZDThreadAction]{
+    @objc open  class func initWithArray(orgId:String,actions:[[String:AnyObject]]) -> [ZDThreadAction]{
         return actions.map{ZDThreadAction(orgId:orgId,Json: $0)}
     }
     

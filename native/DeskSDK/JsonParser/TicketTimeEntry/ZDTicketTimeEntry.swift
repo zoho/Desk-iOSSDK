@@ -9,7 +9,7 @@
 
 import Foundation
 
-@objc public class ZDTicketTimeEntry:NSObject {
+@objc open class ZDTicketTimeEntry:NSObject {
 
     @objc public var secondsSpent:String?
     @objc public var executedTime:String?
@@ -29,7 +29,7 @@ import Foundation
     @objc public var owner = ZDAuthor()
     @objc public  var orgId = ""
     
-    @objc public  class func modelsFrom(dic:[String:AnyObject],orgId:String) -> [ZDTicketTimeEntry]
+    @objc open  class func modelsFrom(dic:[String:AnyObject],orgId:String) -> [ZDTicketTimeEntry]
     {
         var models:[ZDTicketTimeEntry] = []
         guard let array = dic["data"] as? [[String:AnyObject]] else { return models }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc public class ZDContact : ZDSearch {
+@objc open class ZDContact : ZDSearch {
 
     @objc public var firstName:String?
     @objc public var lastName  = ""
@@ -26,7 +26,7 @@ import Foundation
 
     @objc public var orgId = ""
     
-    @objc public class func modelsFromArray(dic:[String:AnyObject]?,orgId:String) -> [ZDContact]?{
+    @objc open class func modelsFromArray(dic:[String:AnyObject]?,orgId:String) -> [ZDContact]?{
         
         var model = [ZDContact]()
         guard let array = dic?["data"] as? [[String:AnyObject]] else{return nil}
@@ -72,7 +72,7 @@ import Foundation
 
 }
 
-@objc public class ZDZohoCRMContact:NSObject{
+@objc open class ZDZohoCRMContact:NSObject{
     @objc public var orgId = ""
     
     @objc public var type = ""
@@ -90,7 +90,7 @@ import Foundation
     }
 }
 
-@objc public class ZDProduct:NSObject{
+@objc open class ZDProduct:NSObject{
     @objc public var orgId = ""
     @objc public var productName = ""
     @objc public var id = ""

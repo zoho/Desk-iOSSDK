@@ -9,7 +9,7 @@
 import Foundation
 
 /// Departments are the organizational divisions configured in your helpdesk.
-@objc public class ZDDepartment : NSObject {
+@objc open class ZDDepartment : NSObject {
     
     ///Is this is default department for particular organization
     @objc public var isDefault                 = false
@@ -43,7 +43,7 @@ import Foundation
 
     @objc public var orgId                   = ""
     
-    @objc public class func modelsFromDictionaryArray(dic:[String: AnyObject]?,orgId:String) -> [ZDDepartment]?{
+    @objc open class func modelsFromDictionaryArray(dic:[String: AnyObject]?,orgId:String) -> [ZDDepartment]?{
         var models:[ZDDepartment] = []
         guard let array = dic?["data"] as? [[String:AnyObject]] else { return models }
         for item in array{

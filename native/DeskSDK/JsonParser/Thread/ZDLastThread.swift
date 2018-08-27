@@ -9,7 +9,7 @@
 import Foundation
 import Foundation
 
-@objc public class ZDLastThread : NSObject{
+@objc open class ZDLastThread : NSObject{
     
     @objc public var orgId           = ""
     

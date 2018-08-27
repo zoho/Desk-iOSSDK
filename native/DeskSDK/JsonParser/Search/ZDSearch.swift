@@ -8,9 +8,9 @@
 
 import Foundation
 
-@objc public class ZDSearch: NSObject {}
+@objc open class ZDSearch: NSObject {}
 
-@objc public class ZDTicketSearch: NSObject {
+@objc open class ZDTicketSearch: NSObject {
     
     @objc public var orgId  = ""
     @objc public var tickets = [ZDTicketDetail]()
@@ -26,7 +26,7 @@ import Foundation
 }
 
 
-@objc public class ZDTaskSearch: NSObject {
+@objc open class ZDTaskSearch: NSObject {
     
     @objc public var orgId  = ""
     @objc public var tasks = [ZDTask]()
@@ -41,7 +41,7 @@ import Foundation
     }
 }
 
-@objc public class ZDContactSearch: NSObject {
+@objc open class ZDContactSearch: NSObject {
     
     @objc public var orgId  = ""
     @objc public var contacts = [ZDContactDetail]()
@@ -56,7 +56,7 @@ import Foundation
     }
 }
 
-@objc public class ZDAccountSearch: NSObject {
+@objc open class ZDAccountSearch: NSObject {
     
     @objc public var orgId  = ""
     @objc public var account = [ZDAccount]()

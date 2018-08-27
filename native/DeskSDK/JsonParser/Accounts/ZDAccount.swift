@@ -7,7 +7,7 @@
 //
 import Foundation
 
-@objc public class ZDAccount : ZDSearch {
+@objc open class ZDAccount : ZDSearch {
     
     @objc public var website:String?
     @objc public var phone:String?
@@ -17,7 +17,7 @@ import Foundation
     
     @objc public var orgId = ""
     
-    @objc public class func modelsFromArray(dic:[String:AnyObject]?,orgId:String) -> [ZDAccount]?{
+    @objc open class func modelsFromArray(dic:[String:AnyObject]?,orgId:String) -> [ZDAccount]?{
         
         var model = [ZDAccount]()
         guard let array = dic?["data"] as? [[String:AnyObject]] else { return nil}

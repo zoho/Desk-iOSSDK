@@ -1,7 +1,7 @@
 
 import Foundation
 
-@objc public class ZDMyForm :ZDLayouts{
+@objc open class ZDMyForm :ZDLayouts{
     
     @objc public var layoutId = ""
     

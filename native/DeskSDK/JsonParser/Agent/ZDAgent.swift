@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc public class ZDAgent:NSObject {
+@objc open class ZDAgent:NSObject {
 
     @objc public var orgId       = ""
     @objc public var lastName    = ""
@@ -31,7 +31,7 @@ import Foundation
     @objc public var associatedDepartmentIds = [String]()
     @objc public var associatedChatDepartmentIds : [String]?
 
-    @objc public class func modelsFrom(orgId:String,dic:[String:AnyObject]?) -> [ZDAgent]?
+    @objc open class func modelsFrom(orgId:String,dic:[String:AnyObject]?) -> [ZDAgent]?
     {
         var models:[ZDAgent] = []
         guard let array = dic?["data"] as? [[String:AnyObject]] else{return models}
@@ -76,7 +76,7 @@ import Foundation
 	}
 }
 
-@objc public class ZDAgentDetail:ZDAgent{
+@objc open class ZDAgentDetail:ZDAgent{
     
     @objc public override init() {super.init()}
     
@@ -107,7 +107,7 @@ import Foundation
     
 }
 
-@objc public class ZDObjectHolder:NSObject{
+@objc open class ZDObjectHolder:NSObject{
     
     @objc public var orgId = ""
     @objc public var name = ""
@@ -120,7 +120,7 @@ import Foundation
     }
 }
 
-@objc public class ZDAssociatedDepartments:ZDObjectHolder{
+@objc open class ZDAssociatedDepartments:ZDObjectHolder{
     
 
     @objc public override init() {super.init()}
@@ -129,7 +129,7 @@ import Foundation
     }
 }
 
-@objc public class ZDAssociatedChatDepartments:ZDObjectHolder{
+@objc open class ZDAssociatedChatDepartments:ZDObjectHolder{
     
     @objc public override init() {super.init()}
     @objc public override init(orgId:String,jsonReponce: [String:AnyObject]) {
@@ -137,7 +137,7 @@ import Foundation
     }
 }
 
-@objc public class ZDProfile:ZDObjectHolder{
+@objc open class ZDProfile:ZDObjectHolder{
     
     @objc public override init() {super.init()}
     @objc public override init(orgId:String,jsonReponce: [String:AnyObject]) {
@@ -145,7 +145,7 @@ import Foundation
     }
 }
 
-@objc public class ZDRole:ZDObjectHolder{
+@objc open class ZDRole:ZDObjectHolder{
     
     @objc public override init() {super.init()}
     @objc public override init(orgId:String,jsonReponce: [String:AnyObject]) {

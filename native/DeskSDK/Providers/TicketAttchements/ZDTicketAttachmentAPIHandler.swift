@@ -7,32 +7,29 @@
 //
 
 import Foundation
-@objc public class ZDTicketAttachmentAPIHandler:NSObject{
+@objc open class ZDTicketAttachmentAPIHandler:NSObject{
 
-    @objc public static func listAllAttachments(_ orgID:String = String().getZDOrgId(),ticketID:String = "",from:Int,limit:Int, optionalParams:[String:AnyObject] = [String:AnyObject](),onComplition:@escaping (([ZDAttachment]?,Error?,Int)->())) -> Void{
+    @objc open static func listAllAttachments(_ orgID:String = String().getZDOrgId(),ticketID:String = "", optionalParams:[String:AnyObject] = [String:AnyObject](),onComplition:@escaping (([ZDAttachment]?,Error?,Int)->())) -> Void{
         
         let path = String(format: URLPathConstants.TicketAttachments.listAllTicketAttchements, ticketID)
-        var params = optionalParams
-        params["from"] = from as AnyObject
-        params["to"] = limit as AnyObject
-        ZDAttachementProvoider.listAllAttachments(orgID, urlPath: path, parentId: ticketID, parentType: .ticket, optionalParams: params, onComplition: onComplition)
+        ZDAttachementProvoider.listAllAttachments(orgID, urlPath: path, parentId: ticketID, parentType: .ticket, optionalParams: optionalParams, onComplition: onComplition)
         
     }
     
-    @objc public static func createAttachement(_ orgID:String = String().getZDOrgId(),ticketID:String,isPublic:Bool,data:Data,fileName:String,onComplition:@escaping ((ZDAttachment?,Error?,Int)->())) -> URLRequest {
+    @objc open static func createAttachement(_ orgID:String = String().getZDOrgId(),ticketID:String,isPublic:Bool,data:Data,fileName:String,onComplition:@escaping ((ZDAttachment?,Error?,Int)->())) -> URLRequest {
         
         let path = String(format: URLPathConstants.TicketAttachments.createTicketAttachment, ticketID)
 
         return ZDAttachementProvoider.createAttachement(orgID, path: path, data: data, fileName: fileName, isPublic: isPublic, parentId: ticketID, parentType: .ticket, addPublicData: true, onComplition: onComplition)
     }
     
-    @objc public static func updateAttachement(_ orgID:String = String().getZDOrgId(),ticketID:String,attachementID:String,optionalPrams:Parameters,onComplition:@escaping ((ZDAttachment?,Error?,Int)->())) -> Void{
+    @objc open static func updateAttachement(_ orgID:String = String().getZDOrgId(),ticketID:String,attachementID:String,optionalPrams:Parameters,onComplition:@escaping ((ZDAttachment?,Error?,Int)->())) -> Void{
         let path = String(format: URLPathConstants.TicketAttachments.updateTicketAttachment, ticketID,attachementID)
         ZDAttachementProvoider.updateAttachement(orgID, path: path, updateDetails: optionalPrams, parentId: ticketID, subParentId: "", parentType: .ticket, onComplition: onComplition)
     }
     
     
-    @objc public static func deleteAttachment(_ orgID:String = String().getZDOrgId(),ticketID:String,attachementID:String,onComplition:@escaping ((Error?,Int)->())) -> Void{
+    @objc open static func deleteAttachment(_ orgID:String = String().getZDOrgId(),ticketID:String,attachementID:String,onComplition:@escaping ((Error?,Int)->())) -> Void{
         
         let path = String(format: URLPathConstants.TicketAttachments.deleteTicketAttachment, ticketID,attachementID)
         ZDAttachementProvoider.deleteAttachment(orgID, path: path, onComplition: onComplition)

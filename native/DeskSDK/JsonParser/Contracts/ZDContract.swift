@@ -8,7 +8,7 @@
 
 import Foundation
 
- @objc public class ZDContract : NSObject {
+ @objc open class ZDContract : NSObject {
     
     @objc public var orgId = ""
     
@@ -39,7 +39,7 @@ import Foundation
     //Details
     
     
-    @objc public class func modelsFromDArray(json:[String:AnyObject]?,orgId:String) -> [ZDContract]?{
+    @objc open class func modelsFromDArray(json:[String:AnyObject]?,orgId:String) -> [ZDContract]?{
         guard let jsonObjectArray = json?["data"] as? [[String:AnyObject]] else {return nil}
         return jsonObjectArray.map({ZDContract(json: $0, orgId: orgId)})
     }
@@ -77,4 +77,4 @@ import Foundation
     }
 }
 
-@objc public class ZDContractDetail : ZDContract{}
+@objc open class ZDContractDetail : ZDContract{}

@@ -1,13 +1,13 @@
 
 import Foundation
 
-@objc public class ZDLayoutSections :NSObject {
+@objc open class ZDLayoutSections :NSObject {
     @objc public var name            = ""
     @objc public var isCustomSection = false
     @objc public var id              = ""
     @objc public var fields:[[String:AnyObject]]?
 
-    @objc public class func modelsFromJsonArray(json:[[String:AnyObject]]?) -> [ZDLayoutSections]
+    @objc open class func modelsFromJsonArray(json:[[String:AnyObject]]?) -> [ZDLayoutSections]
     {
         var models:[ZDLayoutSections] = []
         guard let sections = json else {

@@ -144,7 +144,12 @@ internal struct URLPathConstants {
         static let updateAgentSignatures     = "agents/%@/signatures"//{agent_id}
         static let updateCustomizedSignature = "agents/%@/updateCustomizedSignature"//{agent_id}
     }
-     
+    
+    struct TicketCount {
+        static let getTicketCount = "ticketsCount"
+        static let getTicketCountByField = "ticketsCountByFieldValues"
+    }
+    
 }
 
 

@@ -7,7 +7,7 @@
 
 import Foundation
 
-@objc public class ZDLayoutAPIHandler: NSObject {
+@objc open class ZDLayoutAPIHandler: NSObject {
     
     
     /// This API fetches an Layouts for a module.
@@ -16,7 +16,7 @@ import Foundation
     ///   - orgId: ID of the organization
     ///   - module: module name
     ///   - onCompletion: List of Layout Json
-    @objc public static func getLayouts(_ orgId:String,module:String,optionalParams:Parameters = Parameters(),onCompletion:@escaping (([String:
+    @objc open static func getLayouts(_ orgId:String,module:String,optionalParams:Parameters = Parameters(),onCompletion:@escaping (([String:
         AnyObject]?,[ZDLayouts]?,Error?,Int)->())) -> Void{
         
         var params = optionalParams
@@ -28,7 +28,7 @@ import Foundation
     }
     
     
-    @objc public static func getMyForm(_ orgId:String,layoutId:String = "",module:String = "",optionalParams:Parameters = Parameters(),onCompletion:@escaping (([String:
+    @objc open static func getMyForm(_ orgId:String,layoutId:String = "",module:String = "",optionalParams:Parameters = Parameters(),onCompletion:@escaping (([String:
         AnyObject]?,ZDMyForm?,Error?,Int)->())) -> Void{
         var params = optionalParams
         params["layoutId"]  = layoutId

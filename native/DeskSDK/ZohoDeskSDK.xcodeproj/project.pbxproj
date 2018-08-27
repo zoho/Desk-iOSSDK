@@ -7,14 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		923A8C2F21117E0D002942A0 /* URLPathConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923A8C2E21117E0D002942A0 /* URLPathConstants.swift */; };
-		923A8C3921117E31002942A0 /* ZDLayouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923A8C3221117E30002942A0 /* ZDLayouts.swift */; };
-		923A8C3A21117E31002942A0 /* ZDLayoutSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923A8C3421117E30002942A0 /* ZDLayoutSections.swift */; };
-		923A8C3B21117E31002942A0 /* ZDMyForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923A8C3521117E30002942A0 /* ZDMyForm.swift */; };
-		923A8C3C21117E31002942A0 /* ZDAgentSignatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923A8C3721117E31002942A0 /* ZDAgentSignatures.swift */; };
-		923A8C3D21117E31002942A0 /* ZDCustomizedSignatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923A8C3821117E31002942A0 /* ZDCustomizedSignatures.swift */; };
 		925DAA8820AEFB090012B811 /* ZDAPIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925DAA8720AEFB090012B811 /* ZDAPIExtension.swift */; };
 		928C4BC420A303F500EA75F7 /* ZDContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C4BC320A303F500EA75F7 /* ZDContract.swift */; };
+		928C4BC520A303F500EA75F7 /* ZDContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C4BC320A303F500EA75F7 /* ZDContract.swift */; };
 		92AD1A7E2110469900E0CE3C /* ZDOrganizationAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A522110469900E0CE3C /* ZDOrganizationAPIHandler.swift */; };
 		92AD1A7F2110469900E0CE3C /* ZDTicketAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A542110469900E0CE3C /* ZDTicketAPIHandler.swift */; };
 		92AD1A802110469900E0CE3C /* ZDContactAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A562110469900E0CE3C /* ZDContactAPIHandler.swift */; };
@@ -38,45 +33,85 @@
 		92AD1A922110469900E0CE3C /* ZDDepartmentAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A7B2110469900E0CE3C /* ZDDepartmentAPIHandler.swift */; };
 		92AD1A932110469900E0CE3C /* ZDAgentSignaturesAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD1A7D2110469900E0CE3C /* ZDAgentSignaturesAPIHandler.swift */; };
 		92B5C61E20A22E9200469FC2 /* ZDTicketTimeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C61D20A22E9200469FC2 /* ZDTicketTimeEntry.swift */; };
+		92B5C61F20A22E9200469FC2 /* ZDTicketTimeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C61D20A22E9200469FC2 /* ZDTicketTimeEntry.swift */; };
 		92B5C62620A2330300469FC2 /* ZDContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C62520A2330300469FC2 /* ZDContactDetail.swift */; };
+		92B5C62720A2330300469FC2 /* ZDContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C62520A2330300469FC2 /* ZDContactDetail.swift */; };
 		92B5C62920A2358800469FC2 /* ZDCustomerHappiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C62820A2358800469FC2 /* ZDCustomerHappiness.swift */; };
+		92B5C62A20A2358800469FC2 /* ZDCustomerHappiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C62820A2358800469FC2 /* ZDCustomerHappiness.swift */; };
 		92B5C63320A2377600469FC2 /* ZDAccountDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C63220A2377600469FC2 /* ZDAccountDetail.swift */; };
+		92B5C63420A2377600469FC2 /* ZDAccountDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C63220A2377600469FC2 /* ZDAccountDetail.swift */; };
 		92B5C63B20A2397000469FC2 /* ZDTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C63A20A2397000469FC2 /* ZDTask.swift */; };
+		92B5C63C20A2397000469FC2 /* ZDTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C63A20A2397000469FC2 /* ZDTask.swift */; };
 		92B5C64320A23B9800469FC2 /* ZDAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C64220A23B9800469FC2 /* ZDAgent.swift */; };
+		92B5C64420A23B9800469FC2 /* ZDAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C64220A23B9800469FC2 /* ZDAgent.swift */; };
 		92B5C64B20A23CAC00469FC2 /* ZDDepartment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C64A20A23CAC00469FC2 /* ZDDepartment.swift */; };
+		92B5C64C20A23CAC00469FC2 /* ZDDepartment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B5C64A20A23CAC00469FC2 /* ZDDepartment.swift */; };
+		92B64A8620A053A200B19060 /* ZohoDeskSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B64A7C20A053A200B19060 /* ZohoDeskSDK.framework */; };
 		92B64A8D20A053A200B19060 /* ZohoDeskSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 92B64A7F20A053A200B19060 /* ZohoDeskSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92B64AE320A0552800B19060 /* ZDBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AE220A0552800B19060 /* ZDBaseRequest.swift */; };
+		92B64AE420A0552800B19060 /* ZDBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AE220A0552800B19060 /* ZDBaseRequest.swift */; };
 		92B64AE620A0554500B19060 /* ZDBaseRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AE520A0554500B19060 /* ZDBaseRequester.swift */; };
+		92B64AE720A0554500B19060 /* ZDBaseRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AE520A0554500B19060 /* ZDBaseRequester.swift */; };
 		92B64AE920A0555A00B19060 /* ZDRequestMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AE820A0555A00B19060 /* ZDRequestMaker.swift */; };
+		92B64AEA20A0555A00B19060 /* ZDRequestMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AE820A0555A00B19060 /* ZDRequestMaker.swift */; };
 		92B64AEC20A0556900B19060 /* ZDURLConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AEB20A0556900B19060 /* ZDURLConstructor.swift */; };
+		92B64AED20A0556A00B19060 /* ZDURLConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AEB20A0556900B19060 /* ZDURLConstructor.swift */; };
 		92B64AF120A056B000B19060 /* ZDOrganization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AF020A056B000B19060 /* ZDOrganization.swift */; };
+		92B64AF220A056B000B19060 /* ZDOrganization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AF020A056B000B19060 /* ZDOrganization.swift */; };
 		92B64AF620A0572D00B19060 /* OptionalUNWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AF520A0572D00B19060 /* OptionalUNWrap.swift */; };
+		92B64AF720A0572D00B19060 /* OptionalUNWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AF520A0572D00B19060 /* OptionalUNWrap.swift */; };
 		92B64AFD20A0587200B19060 /* ZohoDeskSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AFC20A0587200B19060 /* ZohoDeskSDK.swift */; };
+		92B64AFE20A0587200B19060 /* ZohoDeskSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AFC20A0587200B19060 /* ZohoDeskSDK.swift */; };
 		92B64B0120A05E0C00B19060 /* DataExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AFF20A05E0C00B19060 /* DataExtention.swift */; };
+		92B64B0220A05E0C00B19060 /* DataExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64AFF20A05E0C00B19060 /* DataExtention.swift */; };
 		92B64B0320A05E0C00B19060 /* StringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B0020A05E0C00B19060 /* StringExtention.swift */; };
 		92B64B0720A05E6300B19060 /* ZDUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B0620A05E6300B19060 /* ZDUserDefaults.swift */; };
+		92B64B0820A05E6300B19060 /* ZDUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B0620A05E6300B19060 /* ZDUserDefaults.swift */; };
+		92B64B0C20A0613F00B19060 /* StringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B0020A05E0C00B19060 /* StringExtention.swift */; };
 		92B64B2220A1758200B19060 /* ZDTicketDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B2120A1758200B19060 /* ZDTicketDetail.swift */; };
+		92B64B2320A1758200B19060 /* ZDTicketDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B2120A1758200B19060 /* ZDTicketDetail.swift */; };
 		92B64B2720A1766900B19060 /* ZDContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B2620A1766900B19060 /* ZDContact.swift */; };
+		92B64B2820A1766900B19060 /* ZDContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B2620A1766900B19060 /* ZDContact.swift */; };
 		92B64B2B20A1768300B19060 /* ZDAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B2A20A1768300B19060 /* ZDAccount.swift */; };
+		92B64B2C20A1768300B19060 /* ZDAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B2A20A1768300B19060 /* ZDAccount.swift */; };
 		92B64B2E20A1789C00B19060 /* ZDTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B2D20A1789C00B19060 /* ZDTicket.swift */; };
+		92B64B2F20A1789C00B19060 /* ZDTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B2D20A1789C00B19060 /* ZDTicket.swift */; };
 		92B64B3920A1A34800B19060 /* ZDThreadAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B3520A1A34700B19060 /* ZDThreadAction.swift */; };
+		92B64B3A20A1A34800B19060 /* ZDThreadAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B3520A1A34700B19060 /* ZDThreadAction.swift */; };
 		92B64B3B20A1A34800B19060 /* ZDAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B3620A1A34800B19060 /* ZDAttachment.swift */; };
+		92B64B3C20A1A34800B19060 /* ZDAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B3620A1A34800B19060 /* ZDAttachment.swift */; };
 		92B64B3D20A1A34800B19060 /* ZDThreadDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B3720A1A34800B19060 /* ZDThreadDetail.swift */; };
+		92B64B3E20A1A34800B19060 /* ZDThreadDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B3720A1A34800B19060 /* ZDThreadDetail.swift */; };
 		92B64B3F20A1A34800B19060 /* ZDThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B3820A1A34800B19060 /* ZDThread.swift */; };
+		92B64B4020A1A34800B19060 /* ZDThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B3820A1A34800B19060 /* ZDThread.swift */; };
 		92B64B4220A1A37400B19060 /* ZDConverstaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B4120A1A37400B19060 /* ZDConverstaion.swift */; };
+		92B64B4320A1A37400B19060 /* ZDConverstaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B4120A1A37400B19060 /* ZDConverstaion.swift */; };
 		92B64B4920A1D34600B19060 /* ZDTicketComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B4820A1D34600B19060 /* ZDTicketComment.swift */; };
+		92B64B4A20A1D34600B19060 /* ZDTicketComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B64B4820A1D34600B19060 /* ZDTicketComment.swift */; };
 		92C19ECE20B6E2230088D7AC /* ZDLastThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C19ECD20B6E2230088D7AC /* ZDLastThread.swift */; };
 		92C19ED920B8882C0088D7AC /* ZDSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C19ED820B8882C0088D7AC /* ZDSearch.swift */; };
+		92E04266212AE27F000A8191 /* URLPathConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E04265212AE27F000A8191 /* URLPathConstants.swift */; };
+		92E04270212AE2DA000A8191 /* ZDAgentSignatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E04268212AE2DA000A8191 /* ZDAgentSignatures.swift */; };
+		92E04271212AE2DA000A8191 /* ZDCustomizedSignatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E04269212AE2DA000A8191 /* ZDCustomizedSignatures.swift */; };
+		92E04272212AE2DA000A8191 /* ZDLayouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E0426C212AE2DA000A8191 /* ZDLayouts.swift */; };
+		92E04273212AE2DA000A8191 /* ZDLayoutSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E0426E212AE2DA000A8191 /* ZDLayoutSections.swift */; };
+		92E04274212AE2DA000A8191 /* ZDMyForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E0426F212AE2DA000A8191 /* ZDMyForm.swift */; };
+		92E04277212AEDC9000A8191 /* ZDTicketCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E04276212AEDC9000A8191 /* ZDTicketCount.swift */; };
+		92E0427A212AEDE9000A8191 /* getTicketCountApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E04279212AEDE9000A8191 /* getTicketCountApiHandler.swift */; };
 		92EC563A20B93D120019298C /* ZDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EC563920B93D120019298C /* ZDView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		92B64A8720A053A200B19060 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92B64A7320A053A200B19060 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92B64A7B20A053A200B19060;
+			remoteInfo = DeskSDK;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		923A8C2E21117E0D002942A0 /* URLPathConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLPathConstants.swift; sourceTree = "<group>"; };
-		923A8C3221117E30002942A0 /* ZDLayouts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDLayouts.swift; sourceTree = "<group>"; };
-		923A8C3421117E30002942A0 /* ZDLayoutSections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDLayoutSections.swift; sourceTree = "<group>"; };
-		923A8C3521117E30002942A0 /* ZDMyForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDMyForm.swift; sourceTree = "<group>"; };
-		923A8C3721117E31002942A0 /* ZDAgentSignatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDAgentSignatures.swift; sourceTree = "<group>"; };
-		923A8C3821117E31002942A0 /* ZDCustomizedSignatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDCustomizedSignatures.swift; sourceTree = "<group>"; };
 		925DAA8720AEFB090012B811 /* ZDAPIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDAPIExtension.swift; sourceTree = "<group>"; };
 		928C4BC320A303F500EA75F7 /* ZDContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDContract.swift; sourceTree = "<group>"; };
 		92AD1A522110469900E0CE3C /* ZDOrganizationAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDOrganizationAPIHandler.swift; sourceTree = "<group>"; };
@@ -111,6 +146,7 @@
 		92B64A7C20A053A200B19060 /* ZohoDeskSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZohoDeskSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B64A7F20A053A200B19060 /* ZohoDeskSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZohoDeskSDK.h; sourceTree = "<group>"; };
 		92B64A8020A053A200B19060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92B64A8520A053A200B19060 /* ZohoDeskSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZohoDeskSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B64AE220A0552800B19060 /* ZDBaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDBaseRequest.swift; sourceTree = "<group>"; };
 		92B64AE520A0554500B19060 /* ZDBaseRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDBaseRequester.swift; sourceTree = "<group>"; };
 		92B64AE820A0555A00B19060 /* ZDRequestMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDRequestMaker.swift; sourceTree = "<group>"; };
@@ -133,6 +169,14 @@
 		92B64B4820A1D34600B19060 /* ZDTicketComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDTicketComment.swift; sourceTree = "<group>"; };
 		92C19ECD20B6E2230088D7AC /* ZDLastThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDLastThread.swift; sourceTree = "<group>"; };
 		92C19ED820B8882C0088D7AC /* ZDSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDSearch.swift; sourceTree = "<group>"; };
+		92E04265212AE27F000A8191 /* URLPathConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLPathConstants.swift; sourceTree = "<group>"; };
+		92E04268212AE2DA000A8191 /* ZDAgentSignatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDAgentSignatures.swift; sourceTree = "<group>"; };
+		92E04269212AE2DA000A8191 /* ZDCustomizedSignatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDCustomizedSignatures.swift; sourceTree = "<group>"; };
+		92E0426C212AE2DA000A8191 /* ZDLayouts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDLayouts.swift; sourceTree = "<group>"; };
+		92E0426E212AE2DA000A8191 /* ZDLayoutSections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDLayoutSections.swift; sourceTree = "<group>"; };
+		92E0426F212AE2DA000A8191 /* ZDMyForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDMyForm.swift; sourceTree = "<group>"; };
+		92E04276212AEDC9000A8191 /* ZDTicketCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDTicketCount.swift; sourceTree = "<group>"; };
+		92E04279212AEDE9000A8191 /* getTicketCountApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getTicketCountApiHandler.swift; sourceTree = "<group>"; };
 		92EC563920B93D120019298C /* ZDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,44 +188,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		92B64A8220A053A200B19060 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92B64A8620A053A200B19060 /* ZohoDeskSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		923A8C3021117E30002942A0 /* Layouts */ = {
-			isa = PBXGroup;
-			children = (
-				923A8C3121117E30002942A0 /* GetLayouts */,
-				923A8C3321117E30002942A0 /* MyForm */,
-			);
-			path = Layouts;
-			sourceTree = "<group>";
-		};
-		923A8C3121117E30002942A0 /* GetLayouts */ = {
-			isa = PBXGroup;
-			children = (
-				923A8C3221117E30002942A0 /* ZDLayouts.swift */,
-			);
-			path = GetLayouts;
-			sourceTree = "<group>";
-		};
-		923A8C3321117E30002942A0 /* MyForm */ = {
-			isa = PBXGroup;
-			children = (
-				923A8C3421117E30002942A0 /* ZDLayoutSections.swift */,
-				923A8C3521117E30002942A0 /* ZDMyForm.swift */,
-			);
-			path = MyForm;
-			sourceTree = "<group>";
-		};
-		923A8C3621117E31002942A0 /* AgentSignatures */ = {
-			isa = PBXGroup;
-			children = (
-				923A8C3721117E31002942A0 /* ZDAgentSignatures.swift */,
-				923A8C3821117E31002942A0 /* ZDCustomizedSignatures.swift */,
-			);
-			path = AgentSignatures;
-			sourceTree = "<group>";
-		};
 		928C4BC220A303D900EA75F7 /* Contracts */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +210,7 @@
 		92AD1A502110469900E0CE3C /* Providers */ = {
 			isa = PBXGroup;
 			children = (
+				92E04278212AEDE0000A8191 /* TicketCount */,
 				92AD1A512110469900E0CE3C /* Organizations */,
 				92AD1A532110469900E0CE3C /* Tickets */,
 				92AD1A552110469900E0CE3C /* Contact */,
@@ -451,6 +469,7 @@
 			isa = PBXGroup;
 			children = (
 				92B64A7C20A053A200B19060 /* ZohoDeskSDK.framework */,
+				92B64A8520A053A200B19060 /* ZohoDeskSDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -479,8 +498,9 @@
 		92B64AEE20A0563000B19060 /* JsonParser */ = {
 			isa = PBXGroup;
 			children = (
-				923A8C3621117E31002942A0 /* AgentSignatures */,
-				923A8C3021117E30002942A0 /* Layouts */,
+				92E04275212AEDB3000A8191 /* TicketCount */,
+				92E04267212AE2DA000A8191 /* AgentSignatures */,
+				92E0426A212AE2DA000A8191 /* Layouts */,
 				92EC563820B93CFF0019298C /* Views */,
 				92C19ED720B888100088D7AC /* Search */,
 				928C4BC220A303D900EA75F7 /* Contracts */,
@@ -529,7 +549,7 @@
 		92B64AF820A057A600B19060 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				923A8C2E21117E0D002942A0 /* URLPathConstants.swift */,
+				92E04265212AE27F000A8191 /* URLPathConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -592,6 +612,57 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		92E04267212AE2DA000A8191 /* AgentSignatures */ = {
+			isa = PBXGroup;
+			children = (
+				92E04268212AE2DA000A8191 /* ZDAgentSignatures.swift */,
+				92E04269212AE2DA000A8191 /* ZDCustomizedSignatures.swift */,
+			);
+			path = AgentSignatures;
+			sourceTree = "<group>";
+		};
+		92E0426A212AE2DA000A8191 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				92E0426B212AE2DA000A8191 /* GetLayouts */,
+				92E0426D212AE2DA000A8191 /* MyForm */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		92E0426B212AE2DA000A8191 /* GetLayouts */ = {
+			isa = PBXGroup;
+			children = (
+				92E0426C212AE2DA000A8191 /* ZDLayouts.swift */,
+			);
+			path = GetLayouts;
+			sourceTree = "<group>";
+		};
+		92E0426D212AE2DA000A8191 /* MyForm */ = {
+			isa = PBXGroup;
+			children = (
+				92E0426E212AE2DA000A8191 /* ZDLayoutSections.swift */,
+				92E0426F212AE2DA000A8191 /* ZDMyForm.swift */,
+			);
+			path = MyForm;
+			sourceTree = "<group>";
+		};
+		92E04275212AEDB3000A8191 /* TicketCount */ = {
+			isa = PBXGroup;
+			children = (
+				92E04276212AEDC9000A8191 /* ZDTicketCount.swift */,
+			);
+			path = TicketCount;
+			sourceTree = "<group>";
+		};
+		92E04278212AEDE0000A8191 /* TicketCount */ = {
+			isa = PBXGroup;
+			children = (
+				92E04279212AEDE9000A8191 /* getTicketCountApiHandler.swift */,
+			);
+			path = TicketCount;
+			sourceTree = "<group>";
+		};
 		92EC563820B93CFF0019298C /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -632,6 +703,24 @@
 			productReference = 92B64A7C20A053A200B19060 /* ZohoDeskSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		92B64A8420A053A200B19060 /* ZohoDeskSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92B64A9320A053A200B19060 /* Build configuration list for PBXNativeTarget "ZohoDeskSDKTests" */;
+			buildPhases = (
+				92B64A8120A053A200B19060 /* Sources */,
+				92B64A8220A053A200B19060 /* Frameworks */,
+				92B64A8320A053A200B19060 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92B64A8820A053A200B19060 /* PBXTargetDependency */,
+			);
+			name = ZohoDeskSDKTests;
+			productName = DeskSDKTests;
+			productReference = 92B64A8520A053A200B19060 /* ZohoDeskSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -645,6 +734,9 @@
 					92B64A7B20A053A200B19060 = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 0930;
+					};
+					92B64A8420A053A200B19060 = {
+						CreatedOnToolsVersion = 9.3;
 					};
 				};
 			};
@@ -661,12 +753,20 @@
 			projectRoot = "";
 			targets = (
 				92B64A7B20A053A200B19060 /* ZohoDeskSDK */,
+				92B64A8420A053A200B19060 /* ZohoDeskSDKTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		92B64A7A20A053A200B19060 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92B64A8320A053A200B19060 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -685,20 +785,20 @@
 				92B64B2720A1766900B19060 /* ZDContact.swift in Sources */,
 				92B64B3D20A1A34800B19060 /* ZDThreadDetail.swift in Sources */,
 				92B64B0320A05E0C00B19060 /* StringExtention.swift in Sources */,
-				923A8C3D21117E31002942A0 /* ZDCustomizedSignatures.swift in Sources */,
 				92AD1A852110469900E0CE3C /* ZDUploadAPIHandler.swift in Sources */,
 				92AD1A7E2110469900E0CE3C /* ZDOrganizationAPIHandler.swift in Sources */,
+				92E04272212AE2DA000A8191 /* ZDLayouts.swift in Sources */,
 				92C19ED920B8882C0088D7AC /* ZDSearch.swift in Sources */,
 				92B64AF120A056B000B19060 /* ZDOrganization.swift in Sources */,
-				923A8C3921117E31002942A0 /* ZDLayouts.swift in Sources */,
 				92AD1A8F2110469900E0CE3C /* ZDViewAPIHandler.swift in Sources */,
 				92AD1A842110469900E0CE3C /* ZDAgentAPIHandler.swift in Sources */,
 				92B5C62920A2358800469FC2 /* ZDCustomerHappiness.swift in Sources */,
+				92E04270212AE2DA000A8191 /* ZDAgentSignatures.swift in Sources */,
 				92AD1A912110469900E0CE3C /* ZDThreadAPIHandler.swift in Sources */,
-				923A8C3C21117E31002942A0 /* ZDAgentSignatures.swift in Sources */,
 				92B64AE320A0552800B19060 /* ZDBaseRequest.swift in Sources */,
 				92B64B4220A1A37400B19060 /* ZDConverstaion.swift in Sources */,
 				928C4BC420A303F500EA75F7 /* ZDContract.swift in Sources */,
+				92E04277212AEDC9000A8191 /* ZDTicketCount.swift in Sources */,
 				92B64B2B20A1768300B19060 /* ZDAccount.swift in Sources */,
 				92AD1A8A2110469900E0CE3C /* ZDLayoutAPIHandler.swift in Sources */,
 				92B5C64320A23B9800469FC2 /* ZDAgent.swift in Sources */,
@@ -708,6 +808,7 @@
 				92B5C63B20A2397000469FC2 /* ZDTask.swift in Sources */,
 				92AD1A922110469900E0CE3C /* ZDDepartmentAPIHandler.swift in Sources */,
 				92B64AF620A0572D00B19060 /* OptionalUNWrap.swift in Sources */,
+				92E04271212AE2DA000A8191 /* ZDCustomizedSignatures.swift in Sources */,
 				92B64B3F20A1A34800B19060 /* ZDThread.swift in Sources */,
 				92AD1A902110469900E0CE3C /* ZDMailReplyAddressAPIHandler.swift in Sources */,
 				92AD1A892110469900E0CE3C /* ZDAttachementProvoider.swift in Sources */,
@@ -717,12 +818,13 @@
 				92B5C61E20A22E9200469FC2 /* ZDTicketTimeEntry.swift in Sources */,
 				92B64B0120A05E0C00B19060 /* DataExtention.swift in Sources */,
 				92AD1A822110469900E0CE3C /* ZDTicketTimeEntryAPIHandler.swift in Sources */,
-				923A8C2F21117E0D002942A0 /* URLPathConstants.swift in Sources */,
+				92E04274212AE2DA000A8191 /* ZDMyForm.swift in Sources */,
+				92E0427A212AEDE9000A8191 /* getTicketCountApiHandler.swift in Sources */,
 				92B64AE920A0555A00B19060 /* ZDRequestMaker.swift in Sources */,
 				925DAA8820AEFB090012B811 /* ZDAPIExtension.swift in Sources */,
-				923A8C3A21117E31002942A0 /* ZDLayoutSections.swift in Sources */,
 				92B64B2E20A1789C00B19060 /* ZDTicket.swift in Sources */,
 				92B64B0720A05E6300B19060 /* ZDUserDefaults.swift in Sources */,
+				92E04266212AE27F000A8191 /* URLPathConstants.swift in Sources */,
 				92B64B2220A1758200B19060 /* ZDTicketDetail.swift in Sources */,
 				92AD1A832110469900E0CE3C /* ZDContractAPIHandler.swift in Sources */,
 				92EC563A20B93D120019298C /* ZDView.swift in Sources */,
@@ -737,13 +839,56 @@
 				92C19ECE20B6E2230088D7AC /* ZDLastThread.swift in Sources */,
 				92B5C62620A2330300469FC2 /* ZDContactDetail.swift in Sources */,
 				92B64AE620A0554500B19060 /* ZDBaseRequester.swift in Sources */,
-				923A8C3B21117E31002942A0 /* ZDMyForm.swift in Sources */,
 				92AD1A872110469900E0CE3C /* ZDTicketAttachmentAPIHandler.swift in Sources */,
+				92E04273212AE2DA000A8191 /* ZDLayoutSections.swift in Sources */,
 				92AD1A8B2110469900E0CE3C /* ZDAccountAPIHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		92B64A8120A053A200B19060 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92B64AED20A0556A00B19060 /* ZDURLConstructor.swift in Sources */,
+				92B64AE420A0552800B19060 /* ZDBaseRequest.swift in Sources */,
+				92B64AE720A0554500B19060 /* ZDBaseRequester.swift in Sources */,
+				92B5C64C20A23CAC00469FC2 /* ZDDepartment.swift in Sources */,
+				92B5C63420A2377600469FC2 /* ZDAccountDetail.swift in Sources */,
+				92B64B3E20A1A34800B19060 /* ZDThreadDetail.swift in Sources */,
+				92B64B0820A05E6300B19060 /* ZDUserDefaults.swift in Sources */,
+				92B64B2320A1758200B19060 /* ZDTicketDetail.swift in Sources */,
+				928C4BC520A303F500EA75F7 /* ZDContract.swift in Sources */,
+				92B64B3A20A1A34800B19060 /* ZDThreadAction.swift in Sources */,
+				92B64B2C20A1768300B19060 /* ZDAccount.swift in Sources */,
+				92B5C61F20A22E9200469FC2 /* ZDTicketTimeEntry.swift in Sources */,
+				92B64B2F20A1789C00B19060 /* ZDTicket.swift in Sources */,
+				92B64AF220A056B000B19060 /* ZDOrganization.swift in Sources */,
+				92B5C62720A2330300469FC2 /* ZDContactDetail.swift in Sources */,
+				92B64B0220A05E0C00B19060 /* DataExtention.swift in Sources */,
+				92B5C64420A23B9800469FC2 /* ZDAgent.swift in Sources */,
+				92B64AEA20A0555A00B19060 /* ZDRequestMaker.swift in Sources */,
+				92B64B2820A1766900B19060 /* ZDContact.swift in Sources */,
+				92B64AFE20A0587200B19060 /* ZohoDeskSDK.swift in Sources */,
+				92B64B4020A1A34800B19060 /* ZDThread.swift in Sources */,
+				92B64B3C20A1A34800B19060 /* ZDAttachment.swift in Sources */,
+				92B64B4320A1A37400B19060 /* ZDConverstaion.swift in Sources */,
+				92B64B0C20A0613F00B19060 /* StringExtention.swift in Sources */,
+				92B64B4A20A1D34600B19060 /* ZDTicketComment.swift in Sources */,
+				92B5C62A20A2358800469FC2 /* ZDCustomerHappiness.swift in Sources */,
+				92B64AF720A0572D00B19060 /* OptionalUNWrap.swift in Sources */,
+				92B5C63C20A2397000469FC2 /* ZDTask.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92B64A8820A053A200B19060 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92B64A7B20A053A200B19060 /* ZohoDeskSDK */;
+			targetProxy = 92B64A8720A053A200B19060 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		92B64A8E20A053A200B19060 /* Debug */ = {
@@ -886,7 +1031,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zoho.desksdk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zoho.desksdk.DeskSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -915,9 +1060,47 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zoho.desksdk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zoho.desksdk.DeskSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		92B64A9420A053A200B19060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TZ824L8Y37;
+				INFOPLIST_FILE = DeskSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zoho.desksdk.DeskSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92B64A9520A053A200B19060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TZ824L8Y37;
+				INFOPLIST_FILE = DeskSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zoho.desksdk.DeskSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -940,6 +1123,15 @@
 			buildConfigurations = (
 				92B64A9120A053A200B19060 /* Debug */,
 				92B64A9220A053A200B19060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92B64A9320A053A200B19060 /* Build configuration list for PBXNativeTarget "ZohoDeskSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92B64A9420A053A200B19060 /* Debug */,
+				92B64A9520A053A200B19060 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

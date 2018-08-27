@@ -9,7 +9,7 @@
 
 import Foundation
 
-@objc public class ZDTicketComment : ZDConverstaion{
+@objc open class ZDTicketComment : ZDConverstaion{
 
     @objc public var ticketID       = ""
     @objc public var commentedTime  = ""
@@ -27,7 +27,7 @@ import Foundation
     }
 
     
-    @objc public  class func modelsFromArrayOfDictionary(JSONDictionary:[String:AnyObject],ordId:String,ticketId:String) -> [ZDTicketComment] {
+    @objc open  class func modelsFromArrayOfDictionary(JSONDictionary:[String:AnyObject],ordId:String,ticketId:String) -> [ZDTicketComment] {
         var models:[ZDTicketComment] = []
         
         guard let array = JSONDictionary["data"] as? [[String:AnyObject]] else{return models}
